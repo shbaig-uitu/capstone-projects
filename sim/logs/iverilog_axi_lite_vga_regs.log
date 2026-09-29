@@ -1,0 +1,19 @@
+VCD info: dumpfile sim/output/axi_lite_vga_regs.vcd opened for output.
+AXI PASS: reset clears control bits
+AXI PASS: reset framebuffer base
+AXI PASS: CTRL enables display + animation
+AXI PASS: CTRL readback
+AXI PASS: FB_BASE write/read
+AXI PASS: unaligned FB_BASE configuration returns SLVERR
+AXI PASS: invalid FB_BASE does not change register
+AXI PASS: WIDTH register
+AXI PASS: HEIGHT register
+AXI PASS: HCOUNT status
+AXI PASS: VCOUNT status
+AXI PASS: invalid register read returns SLVERR
+AXI PASS: invalid register write returns SLVERR
+AXI PASS: display disable operation
+============================================
+ AXI4-LITE VGA REGISTER TEST PASSED
+============================================
+sim/system/tb_axi_lite_vga_regs.sv:116: $finish called at 1370000 (1ps)

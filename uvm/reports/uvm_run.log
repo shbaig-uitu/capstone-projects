@@ -1,0 +1,148 @@
+Reading pref.tcl
+
+# 2025.3
+
+# do uvm/run_uvm.do
+# if {[file exists work]} { vdel -lib work -all }
+# vlib work
+# vmap work work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.3 Lib Mapping Utility 2025.09 Sep 15 2025
+# vmap work work 
+# ** Note: (vmap-220) 'modelsim.ini' is used as the ini file.
+# Modifying modelsim.ini
+# 
+# set ROOT [file normalize [pwd]]
+# /home/samad/Downloads/Project02_RV32I_VGA_FIXED4
+# if {[info exists ::env(UVM_HOME)]} {
+#     set UVM_HOME $::env(UVM_HOME)
+# } elseif {[info exists ::env(QUESTA_HOME)]} {
+#     set UVM_HOME [file join $::env(QUESTA_HOME) verilog_src uvm-1.2]
+# } else {
+#     puts "ERROR: Set UVM_HOME to your Questa UVM installation."
+#     quit -code 2
+# }
+# /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2
+# 
+# vlog -sv -cover bcestf +define+SIMULATION +incdir+$UVM_HOME/src \
+#   $UVM_HOME/src/uvm_pkg.sv \
+#   $ROOT/rtl/peripherals/duck_animation.v \
+#   $ROOT/rtl/peripherals/vga_timing.v \
+#   $ROOT/rtl/peripherals/pixel_address_gen.v \
+#   $ROOT/rtl/peripherals/rgb_output.v \
+#   $ROOT/rtl/peripherals/vga_controller.v \
+#   $ROOT/rtl/peripherals/axi_lite_vga_regs.v \
+#   $ROOT/uvm/axi_lite_if.sv \
+#   $ROOT/uvm/native_mem_if.sv \
+#   $ROOT/rtl/interconnect/mem_interconnect.v \
+#   $ROOT/rtl/peripherals/framebuffer_ram.v \
+#   $ROOT/uvm/vga_uvm_pkg.sv \
+#   $ROOT/uvm/vga_assertions.sv \
+#   $ROOT/uvm/tb_uvm_vga.sv
+# Questa Altera Starter FPGA Edition-64 vlog 2025.3 Compiler 2025.09 Sep 15 2025
+# Start time: 02:26:23 on Sep 13,2026
+# vlog -sv -cover bcestf "+define+SIMULATION" "+incdir+/home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src" /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src/uvm_pkg.sv /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/duck_animation.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/vga_timing.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/pixel_address_gen.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/rgb_output.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/vga_controller.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/axi_lite_vga_regs.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/axi_lite_if.sv /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/native_mem_if.sv /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/interconnect/mem_interconnect.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/rtl/peripherals/framebuffer_ram.v /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/vga_uvm_pkg.sv /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/vga_assertions.sv /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/tb_uvm_vga.sv 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling package uvm_pkg (uvm-1.2 Built-in)
+# -- Compiling module duck_animation
+# -- Compiling module duck_renderer
+# -- Compiling module vga_timing
+# -- Compiling module pixel_address_gen
+# -- Compiling module rgb_output
+# -- Compiling module vga_controller
+# -- Compiling module axi_lite_vga_regs
+# -- Compiling interface axi_lite_if
+# -- Compiling interface native_mem_if
+# -- Compiling module mem_interconnect
+# -- Compiling module framebuffer_ram
+# -- Compiling package vga_uvm_pkg
+# -- Importing package uvm_pkg (uvm-1.2 Built-in)
+# -- Compiling module vga_assertions
+# -- Compiling module tb_uvm_vga
+# -- Importing package vga_uvm_pkg
+# 
+# Top level modules:
+# 	duck_animation
+# 	tb_uvm_vga
+# End time: 02:26:27 on Sep 13,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# 
+# vsim -c -nocvg -coverage -sv_lib $ROOT/uvm/dpi_lib/libuvm_dpi work.tb_uvm_vga +UVM_TESTNAME=vga_uvm_test
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -nocvg -coverage -sv_lib /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/dpi_lib/libuvm_dpi work.tb_uvm_vga "+UVM_TESTNAME=vga_uvm_test" 
+# Start time: 02:26:27 on Sep 13,2026
+# Loading /tmp/samad@samad-VMware-Virtual-Platform_dpi_11330/linux_x86_64_gcc-15/export_tramp.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vopt-143) Recognized 1 FSM in module "mem_interconnect(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.3 linux_x86_64 Sep 15 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.native_mem_if(fast)
+# Loading work.axi_lite_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.vga_uvm_pkg(fast)
+# ** Warning: (vsim-3394) Covergroup object construction is disabled because of '-nocvg' switch. As a result, any hierarchical access of covergroup/coverpoint/cross option variable in a procedural context will crash.
+#    Time: 0 ns  Iteration: 0  Region: /vga_uvm_pkg::axi_coverage::#cg# File: /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/vga_uvm_pkg.sv
+# Loading work.tb_uvm_vga(fast)
+# Compiling /tmp/samad@samad-VMware-Virtual-Platform_dpi_11330/linux_x86_64_gcc-15/exportwrapper.c
+# Loading /tmp/samad@samad-VMware-Virtual-Platform_dpi_11330/linux_x86_64_gcc-15/vsim_auto_compile.so
+# Loading /home/samad/Downloads/Project02_RV32I_VGA_FIXED4/uvm/dpi_lib/libuvm_dpi.so
+# run -all
+# UVM_INFO /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test vga_uvm_test...
+# UVM_INFO /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 4900000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 4900000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : /home/samad/altera_pro/26.1/questa_fse/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 4900 ns  Iteration: 75  Instance: /tb_uvm_vga
+# End time: 02:26:41 on Sep 13,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 2

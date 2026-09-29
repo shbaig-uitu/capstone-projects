@@ -1,0 +1,15 @@
+VCD info: dumpfile sim/output/mem_interconnect.vcd opened for output.
+BUS PASS: word write uses all four byte lanes
+BUS PASS: byte-lane write at framebuffer offset 5
+BUS PASS: unaligned halfword byte lanes remain aligned to the containing word
+BUS PASS: programmable FB_BASE remaps CPU framebuffer access
+BUS PASS: readback through remapped framebuffer base
+BUS PASS: framebuffer byte read at offset 2
+BUS PASS: last valid framebuffer address readable
+BUS PASS: first unmapped address returns error marker
+BUS PASS: instruction memory route
+BUS PASS: data memory route
+============================================
+ MEMORY INTERCONNECT TEST PASSED
+============================================
+sim/system/tb_mem_interconnect.sv:121: $finish called at 970000 (1ps)

@@ -1,0 +1,23 @@
+VCD info: dumpfile sim/output/riscv_vga_soc.vcd opened for output.
+============================================
+ PROJECT 02: RV32I + VGA SoC TEST
+============================================
+SOC PASS: CPU enabled display via AXI-Lite
+SOC PASS:            CPU enabled animation
+SOC PASS: mebuffer first pixel initialized
+SOC PASS: mebuffer end-of-line initialized
+SOC PASS: amebuffer last pixel initialized
+SOC PASS:         default framebuffer base
+SOC PASS:           CPU trap remains clear
+SOC PASS:  VGA active-video region reached
+SOC PASS:        visible coordinates valid
+SOC PASS: rlay is detected in visible area
+SOC PASS: HSYNC asserted for sync interval
+SOC PASS: HSYNC deasserted after 96 pixels
+SOC PASS:       VSYNC asserted at line 490
+SOC PASS:   VSYNC deasserted after 2 lines
+SOC PASS:  is black while display disabled
+============================================
+ ALL RV32I/VGA SOC TESTS PASSED
+============================================
+sim/system/tb_riscv_vga_soc.sv:80: $finish called at 49344341000 (1ps)

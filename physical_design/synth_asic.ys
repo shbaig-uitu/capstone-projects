@@ -1,0 +1,25 @@
+# Generic Yosys synthesis entry for the Project 02 ASIC handoff.
+# The course PDK flow must provide the technology library and SRAM macros.
+read_verilog -sv \
+  rtl/core/rv32i_core.v \
+  rtl/peripherals/block_ram.v \
+  rtl/peripherals/framebuffer_ram.v \
+  rtl/peripherals/duck_animation.v \
+  rtl/peripherals/vga_timing.v \
+  rtl/peripherals/pixel_address_gen.v \
+  rtl/peripherals/rgb_output.v \
+  rtl/peripherals/vga_controller.v \
+  rtl/peripherals/axi_lite_vga_regs.v \
+  rtl/interconnect/mem_interconnect.v \
+  rtl/top/riscv_vga_soc.v
+
+hierarchy -top riscv_vga_soc
+proc; opt
+memory -nomap
+opt
+flatten
+opt
+techmap; opt
+abc -g simple
+clean
+write_verilog -noattr build_asic/riscv_vga_soc.v
