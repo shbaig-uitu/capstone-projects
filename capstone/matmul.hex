@@ -1,0 +1,28 @@
+// Address 0x00: lui x1, 0x40000
+400000b7
+// Address 0x04: addi x2, x0, 1      (Counter starts at 1)
+00100113
+// Address 0x08: addi x3, x1, 0x40   (Start addr = 0x40000040)
+04008193
+// Address 0x0C: addi x4, x1, 0xc0   (End addr = 0x400000C0)
+0c008213
+// Address 0x10: sw x2, 0(x3)        (loop: mem[addr] = counter)
+0021a023
+// Address 0x14: addi x2, x2, 1      (counter++)
+00110113
+// Address 0x18: addi x3, x3, 4      (addr += 4)
+00418193
+// Address 0x1C: blt x3, x4, -12     (If addr < end, jump to loop)
+fe41cae3
+// Address 0x20: addi x5, x0, 1
+00100293
+// Address 0x24: sw x5, 0(x1)        (Start Accelerator)
+0050a023
+// Address 0x28: lw x5, 4(x1)        (poll: Read STATUS)
+0040a283
+// Address 0x2C: addi x6, x0, 2      (Check for DONE bit)
+00200313
+// Address 0x30: bne x5, x6, -8      (If not done, poll again)
+fe629ce3
+// Address 0x34: jal x0, 0           (Halt)
+0000006f

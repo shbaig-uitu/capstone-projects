@@ -1,0 +1,138 @@
+// tb_riscv_core.v
+// Testbench for the complete single-cycle RV32I core
+// Loads program.hex, runs for 50 cycles, checks DMEM address 0 == 15
+
+`timescale 1ns/1ps
+
+module tb_riscv_core;
+
+    // ------------------------------------------------------------
+    // Clock and Reset
+    // ------------------------------------------------------------
+    reg clk = 1'b0;
+    reg rst = 1'b1;
+
+    always #5 clk = ~clk;   // 100 MHz clock
+
+
+    // ------------------------------------------------------------
+    // CPU <-> Data Memory Interface
+    // ------------------------------------------------------------
+    wire [31:0] mem_addr;
+    wire [31:0] mem_wdata;
+    wire        mem_we;
+    wire [2:0]  mem_funct3;
+    wire [31:0] mem_rdata;
+
+
+    // ------------------------------------------------------------
+    // Instantiate CPU
+    // ------------------------------------------------------------
+    riscv_core dut (
+        .clk        (clk),
+        .rst        (rst),
+        .mem_addr   (mem_addr),
+        .mem_wdata  (mem_wdata),
+        .mem_we     (mem_we),
+        .mem_funct3 (mem_funct3),
+        .mem_rdata  (mem_rdata)
+    );
+
+
+    // ------------------------------------------------------------
+    // Instantiate Data Memory
+    // ------------------------------------------------------------
+    dmem dmem0 (
+        .clk    (clk),
+        .addr   (mem_addr),
+        .wdata  (mem_wdata),
+        .we     (mem_we),
+        .funct3 (mem_funct3),
+        .rdata  (mem_rdata)
+    );
+
+
+    // ------------------------------------------------------------
+    // Variables
+    // ------------------------------------------------------------
+    integer i;
+    reg [31:0] result;
+
+
+    // ------------------------------------------------------------
+    // Test
+    // ------------------------------------------------------------
+    initial begin
+
+        // Load instruction memory
+        $readmemh("program.hex", dut.imem0.mem);
+
+        // Waveform dump
+        $dumpfile("tb_riscv_core.vcd");
+        $dumpvars(0, tb_riscv_core);
+
+
+        // --------------------------------------------------------
+        // Initialize data memory
+        // --------------------------------------------------------
+        for (i = 0; i < 256; i = i + 1)
+            dmem0.mem[i] = 8'h00;
+
+
+        // --------------------------------------------------------
+        // Hold reset for 2 clock cycles
+        // --------------------------------------------------------
+        repeat (2) @(posedge clk);
+        rst = 1'b0;
+
+
+        // --------------------------------------------------------
+        // Run processor for 50 cycles
+        // --------------------------------------------------------
+        repeat (50) @(posedge clk);
+
+        #1;
+
+
+        // --------------------------------------------------------
+        // Read 32-bit value from byte-addressed memory address 0
+        // Little-endian:
+        //   mem[0] = bits [7:0]
+        //   mem[1] = bits [15:8]
+        //   mem[2] = bits [23:16]
+        //   mem[3] = bits [31:24]
+        // --------------------------------------------------------
+        result = {dmem0.mem[3],
+                  dmem0.mem[2],
+                  dmem0.mem[1],
+                  dmem0.mem[0]};
+
+
+        // --------------------------------------------------------
+        // Check result
+        // --------------------------------------------------------
+        if (result === 32'd15)
+            $display("PASS: sum(1..5) = %0d stored at mem[0]", result);
+        else
+            $display("FAIL: mem[0] = %0d (expected 15)", result);
+
+
+        // --------------------------------------------------------
+        // Register file snapshot
+        // --------------------------------------------------------
+        $display("");
+        $display("--- Register File Snapshot ---");
+
+        for (i = 0; i < 8; i = i + 1)
+            $display("  x%0d = %0d", i, dut.rf.regs[i]);
+
+
+        // --------------------------------------------------------
+        // Finish simulation
+        // --------------------------------------------------------
+        $finish;
+
+    end
+
+endmodule
+

@@ -1,0 +1,42 @@
+# Basics
+DESIGN_NAME: asic_top
+VERILOG_FILES: 
+  - dir::src/*.v
+  - dir::src/*.sv
+CLOCK_PORT: clk
+PNR_SDC_FILE: dir::src/impl.sdc
+SIGNOFF_SDC_FILE: dir::src/signoff.sdc
+CLOCK_PERIOD: 25.0
+# PDN (Power Distribution Network)
+PDN_CORE_RING: true
+PDN_ENABLE_RAILS: true
+PDN_HORIZONTAL_LAYER: met5
+PDN_VERTICAL_LAYER: met4
+PDN_HWIDTH: 3.1
+PDN_VWIDTH: 3.1
+PDN_HPITCH: 153.6
+PDN_VPITCH: 153.6
+PDN_HOFFSET: 16.32
+PDN_VOFFSET: 16.32
+
+# Placement & Sizing
+FP_SIZING: "absolute"
+DIE_AREA: [0, 0, 480, 480]
+CORE_AREA: [15, 15, 465, 465]
+FP_CORE_UTIL: 35
+DIODE_INSERTION_STRATEGY: 3
+GPL_CELL_PADDING: 2
+DPL_CELL_PADDING: 2
+
+# Routing Safeguards (Prevents GRT-0183 Heap Underflow)
+GRT_ALLOW_CONGESTION: true
+DIODE_INSERTION_STRATEGY: 4
+
+# Pin Order
+IO_PIN_ORDER_CFG: dir::pin_order.cfg
+
+# Technology-Specific Configs (Sky130)
+pdk::sky130*:
+  CLOCK_PERIOD: 25.0
+  scl::sky130_fd_sc_ls:
+    MAX_FANOUT_CONSTRAINT: 5

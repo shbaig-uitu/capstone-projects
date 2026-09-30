@@ -1,0 +1,35 @@
+{
+    "default_part": "XC7A100TCSG324-1",
+    "values": {
+        "top": "arty_top"
+    },
+    "dependencies": {
+        "sources": [
+	    "arty_top.v",
+            "soc_top.v",
+            "riscv_core.v",
+            "alu.v",
+            "branch_unit.v",
+            "control.v",
+            "immgen.v",
+            "regfile.v",
+            "imem.v",
+            "dmem.v",
+            "axi4lite_master_bridge.v",
+            "accelerator_top.sv",
+            "systolic_4x4.sv",
+            "pe.sv"
+        ],
+        "synth_log": "synth.log",
+        "pack_log": "pack.log"
+    },
+    "XC7A100TCSG324-1": {
+        "default_target": "bitstream",
+        "dependencies": {
+            "build_dir": "build/arty_100",
+            "xdc": [
+                "arty.xdc"
+            ]
+        }
+    }
+}

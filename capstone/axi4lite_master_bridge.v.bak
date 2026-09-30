@@ -1,0 +1,75 @@
+// axi4lite_master_bridge.v
+module axi4lite_master_bridge (
+    input  wire        clk, rst,
+    input  wire        cpu_req,     
+    input  wire [31:0] cpu_addr, cpu_wdata,
+    input  wire        cpu_we,
+    output reg  [31:0] cpu_rdata,
+    output reg         cpu_stall,   
+    // AXI4-Lite Master Interface
+    output reg  [31:0] awaddr,
+    output reg         awvalid,
+    input  wire        awready,
+    output reg  [31:0] wdata,
+    output reg         wvalid,
+    input  wire        wready,
+    input  wire        bvalid,
+    output reg         bready,
+    output reg  [31:0] araddr,
+    output reg         arvalid,
+    input  wire        arready,
+    input  wire [31:0] rdata,
+    input  wire        rvalid,
+    output reg         rready
+);
+
+    localparam IDLE = 0, WR_ADDR = 1, WR_DATA = 2, WR_RESP = 3;
+    localparam RD_ADDR = 4, RD_DATA = 5, WAIT_NEXT = 6;
+    reg [2:0] state;
+
+    always @(posedge clk) begin
+        if (rst) begin
+            state <= IDLE;
+            cpu_stall <= 0;
+            cpu_rdata <= 0;
+            {awvalid, wvalid, bready, arvalid, rready} <= 0;
+        end else begin
+            case (state)
+                IDLE: begin
+                    if (cpu_req) begin
+                        cpu_stall <= 1;
+                        if (cpu_we) begin
+                            awaddr <= cpu_addr; awvalid <= 1; state <= WR_ADDR;
+                        end else begin
+                            araddr <= cpu_addr; arvalid <= 1; state <= RD_ADDR;
+                        end
+                    end else cpu_stall <= 0;
+                end
+                
+                // Write Path
+                WR_ADDR: if (awready) begin 
+                    awvalid <= 0; wdata <= cpu_wdata; wvalid <= 1; state <= WR_DATA; 
+                end
+                WR_DATA: if (wready) begin 
+                    wvalid <= 0; bready <= 1; state <= WR_RESP; 
+                end
+                WR_RESP: if (bvalid) begin 
+                    bready <= 0; cpu_stall <= 0; state <= WAIT_NEXT; 
+                end
+                
+                // Read Path
+                RD_ADDR: if (arready) begin 
+                    arvalid <= 0; rready <= 1; state <= RD_DATA; 
+                end
+                RD_DATA: if (rvalid) begin 
+                    cpu_rdata <= rdata; rready <= 0; cpu_stall <= 0; state <= WAIT_NEXT; 
+                end
+
+                // Wait 1 cycle for CPU's Program Counter to physically advance
+                WAIT_NEXT: begin
+                    state <= IDLE;
+                end
+            endcase
+        end
+    end
+endmodule

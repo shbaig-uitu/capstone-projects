@@ -1,0 +1,52 @@
+
+module soc_top (
+    input clk,
+    input rst
+);
+    // CPU Memory Bus Wires
+    wire [31:0] cpu_mem_addr;
+    wire [31:0] cpu_mem_wdata;
+    wire        cpu_mem_we;
+    wire [ 2:0] cpu_mem_funct3;
+    wire [31:0] cpu_mem_rdata;
+
+    // Instantiate CPU
+    riscv_core cpu (
+        .clk(clk),
+        .rst(rst),
+        .mem_addr  (cpu_mem_addr),
+        .mem_wdata (cpu_mem_wdata),
+        .mem_we    (cpu_mem_we),
+        .mem_funct3(cpu_mem_funct3),
+        .mem_rdata (cpu_mem_rdata)
+    );
+
+    // Memory Map Decoding
+    // 0x0000_0000 to 0x0000_03FF -> DMEM
+    // 0x4000_0000 and above      -> Accelerator
+    wire is_dmem  = (cpu_mem_addr < 32'h4000_0000);
+    wire is_accel = (cpu_mem_addr >= 32'h4000_0000);
+
+    // DMEM Wires
+    wire [31:0] dmem_rdata;
+    wire        dmem_we = cpu_mem_we & is_dmem;
+
+    // Instantiate Data Memory
+    dmem dmem0 (
+        .clk   (clk),
+        .we    (dmem_we),
+        .addr  (cpu_mem_addr),
+        .wdata (cpu_mem_wdata),
+        .funct3(cpu_mem_funct3),
+        .rdata (dmem_rdata)
+    );
+
+    // ---------------------------------------------------------
+    // FUTURE: AXI4-Lite Master Bridge & Accelerator Instantiate here
+    // ---------------------------------------------------------
+    wire [31:0] accel_rdata = 32'd0; // Placeholder for now
+
+    // Route correct read data back to CPU
+    assign cpu_mem_rdata = is_accel ? accel_rdata : dmem_rdata;
+
+endmodule
