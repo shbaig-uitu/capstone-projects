@@ -1,0 +1,65 @@
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/mailbox_system.v:51:13: Signal is not used: 'mem_init_done'
+                                                                                 : ... note: In instance 'dual_core_soc.system'
+   51 | wire        mem_init_done;
+      |             ^~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/rv32i_core.v:44:13: Signal is not used: 'lui'
+                                                                             : ... note: In instance 'dual_core_soc.core1'
+   44 | wire        lui;
+      |             ^~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/rv32i_core.v:57:6: Signal is not used: 'zero'
+                                                                            : ... note: In instance 'dual_core_soc.core1'
+   57 | wire zero;
+      |      ^~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/instruction_memory.v:9:19: Bits of signal are not used: 'boot_address'[7:5]
+                                                                                    : ... note: In instance 'dual_core_soc.imem_core0'
+    9 |     input  [7:0]  boot_address,
+      |                   ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/instruction_memory.v:13:19: Bits of signal are not used: 'address'[31:7,1:0]
+                                                                                     : ... note: In instance 'dual_core_soc.imem_core0'
+   13 |     input  [31:0] address,
+      |                   ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/noc_interconnect.v:67:18: Signal is not used: 'uart_error'
+                                                                                   : ... note: In instance 'dual_core_soc.system.interconnect_unit'
+   67 |     input        uart_error
+      |                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/register_file.v:3:19: Signal is not used: 'reset'
+                                                                               : ... note: In instance 'dual_core_soc.core1.regs'
+    3 |     input         reset,
+      |                   ^~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/shared_data_memory.v:9:18: Bits of signal are not used: 'address'[31:8,1:0]
+                                                                                    : ... note: In instance 'dual_core_soc.system.shared_memory'
+    9 |     input [31:0] address,
+      |                  ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:45:23: Bits of signal are not used: 'm_axi_bresp'[0]
+                                                                                         : ... note: In instance 'dual_core_soc.system.uart_system.master_bridge'
+   45 |     input      [1:0]  m_axi_bresp,
+      |                       ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:62:23: Bits of signal are not used: 'm_axi_rresp'[0]
+                                                                                         : ... note: In instance 'dual_core_soc.system.uart_system.master_bridge'
+   62 |     input      [1:0]  m_axi_rresp,
+      |                       ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:75:12: Signal is not used: 'saved_address'
+                                                                                         : ... note: In instance 'dual_core_soc.system.uart_system.master_bridge'
+   75 | reg [31:0] saved_address;
+      |            ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:76:12: Signal is not used: 'saved_write_data'
+                                                                                         : ... note: In instance 'dual_core_soc.system.uart_system.master_bridge'
+   76 | reg [31:0] saved_write_data;
+      |            ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:77:12: Signal is not used: 'saved_write_strobe'
+                                                                                         : ... note: In instance 'dual_core_soc.system.uart_system.master_bridge'
+   77 | reg [3:0]  saved_write_strobe;
+      |            ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_uart_slave.v:52:12: Bits of signal are not used: 'write_data'[31:8]
+                                                                                 : ... note: In instance 'dual_core_soc.system.uart_system.uart_slave'
+   52 | reg [31:0] write_data;
+      |            ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/asic/src/axi_uart_slave.v:53:11: Bits of signal are not used: 'write_strobe'[3:1]
+                                                                                 : ... note: In instance 'dual_core_soc.system.uart_system.uart_slave'
+   53 | reg [3:0] write_strobe;
+      |           ^~~~~~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 4.659 MB sources in 465 modules, into 0.496 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.413 s (elab=0.050, cvt=0.223, bld=0.000); cpu 0.384 s on 1 threads; alloced 30.336 MB

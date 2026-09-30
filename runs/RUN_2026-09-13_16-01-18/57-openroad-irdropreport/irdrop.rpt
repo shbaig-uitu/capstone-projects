@@ -1,0 +1,26 @@
++ analyze_power_grid -net VPWR -voltage_file /home/cl4/Desktop/training/asic/runs/RUN_2026-09-13_16-01-18/57-openroad-irdropreport/net-VPWR.csv
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : nom_tt_025C_1v80
+Total power      : 1.32e-02 W
+Supply voltage   : 1.80e+00 V
+Worstcase voltage: 1.80e+00 V
+Average voltage  : 1.80e+00 V
+Average IR drop  : 1.20e-05 V
+Worstcase IR drop: 1.64e-04 V
+Percentage drop  : 0.01 %
+######################################
++ analyze_power_grid -net VGND -voltage_file /home/cl4/Desktop/training/asic/runs/RUN_2026-09-13_16-01-18/57-openroad-irdropreport/net-VGND.csv
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : nom_tt_025C_1v80
+Total power      : 1.32e-02 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 1.69e-04 V
+Average voltage  : 1.18e-05 V
+Average IR drop  : 1.18e-05 V
+Worstcase IR drop: 1.69e-04 V
+Percentage drop  : 0.01 %
+######################################

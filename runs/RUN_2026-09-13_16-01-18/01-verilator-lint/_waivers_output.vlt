@@ -1,0 +1,39 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/mailbox_system.v" -match "Signal is not used: 'mem_init_done'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/rv32i_core.v" -match "Signal is not used: 'lui'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/rv32i_core.v" -match "Signal is not used: 'zero'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/instruction_memory.v" -match "Bits of signal are not used: 'boot_address'[7:5]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/instruction_memory.v" -match "Bits of signal are not used: 'address'[31:7,1:0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/noc_interconnect.v" -match "Signal is not used: 'uart_error'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/register_file.v" -match "Signal is not used: 'reset'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/shared_data_memory.v" -match "Bits of signal are not used: 'address'[31:8,1:0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v" -match "Bits of signal are not used: 'm_axi_bresp'[0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v" -match "Bits of signal are not used: 'm_axi_rresp'[0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v" -match "Signal is not used: 'saved_address'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v" -match "Signal is not used: 'saved_write_data'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v" -match "Signal is not used: 'saved_write_strobe'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_uart_slave.v" -match "Bits of signal are not used: 'write_data'[31:8]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/asic/src/axi_uart_slave.v" -match "Bits of signal are not used: 'write_strobe'[3:1]*"
+

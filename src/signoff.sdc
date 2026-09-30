@@ -1,0 +1,16 @@
+create_clock -name clk -period $::env(CLOCK_PERIOD) [get_ports clk]
+set clocks [get_clocks clk]
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_DELAY_CONSTRAINT) / 100]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_DELAY_CONSTRAINT) / 100]
+set_input_delay $input_delay_value -clock $clocks [get_ports uart_rx_line]
+set_output_delay $output_delay_value -clock $clocks [get_ports uart_tx_line]
+set_false_path -from [get_ports reset]
+set_clock_uncertainty $::env(CLOCK_UNCERTAINTY_CONSTRAINT) $clocks
+set_clock_transition $::env(CLOCK_TRANSITION_CONSTRAINT) $clocks
+set_max_fanout $::env(MAX_FANOUT_CONSTRAINT) [current_design]
+set_max_transition $::env(MAX_TRANSITION_CONSTRAINT) [current_design]
+set_max_capacitance $::env(MAX_CAPACITANCE_CONSTRAINT) [current_design]
+set_driving_cell -lib_cell [lindex [split $::env(SYNTH_DRIVING_CELL) "/"] 0] -pin [lindex [split $::env(SYNTH_DRIVING_CELL) "/"] 1] [get_ports uart_rx_line]
+set_load [expr $::env(OUTPUT_CAP_LOAD) / 1000.0] [all_outputs]
+set_timing_derate -early [expr 1.0 - $::env(TIME_DERATING_CONSTRAINT) / 100.0]
+set_timing_derate -late [expr 1.0 + $::env(TIME_DERATING_CONSTRAINT) / 100.0]

@@ -1,0 +1,1438 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/runs/RUN_2026-09-13_16-01-18/tmp/6bc9c99cc17c4b5da1ee345204547879.bb.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/runs/RUN_2026-09-13_16-01-18/tmp/6bc9c99cc17c4b5da1ee345204547879.bb.v' to AST representation.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_20_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_40_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_60_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_80_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a222oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__conb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__diode_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd1_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fah_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcin_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcon_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__macro_sparecell'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probe_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probec_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/alu.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/alu.v' to AST representation.
+Storing AST representation for module `$abstract\alu'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v' to AST representation.
+Storing AST representation for module `$abstract\axi_lite_master_bridge'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/axi_uart_slave.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/axi_uart_slave.v' to AST representation.
+Storing AST representation for module `$abstract\axi_uart_slave'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/axi_uart_system.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/axi_uart_system.v' to AST representation.
+Storing AST representation for module `$abstract\axi_uart_system'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/baud_gen.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/baud_gen.v' to AST representation.
+Storing AST representation for module `$abstract\baud_gen'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/control_unit.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/control_unit.v' to AST representation.
+Storing AST representation for module `$abstract\control_unit'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/dual_core_soc.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/dual_core_soc.v' to AST representation.
+Storing AST representation for module `$abstract\dual_core_soc'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/immediate_generator.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/immediate_generator.v' to AST representation.
+Storing AST representation for module `$abstract\immediate_generator'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/instruction_memory.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/instruction_memory.v' to AST representation.
+Storing AST representation for module `$abstract\instruction_memory'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/mailbox_reg.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/mailbox_reg.v' to AST representation.
+Storing AST representation for module `$abstract\mailbox_reg'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/mailbox_system.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/mailbox_system.v' to AST representation.
+Storing AST representation for module `$abstract\mailbox_system'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/noc_interconnect.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/noc_interconnect.v' to AST representation.
+Storing AST representation for module `$abstract\noc_interconnect'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/program_counter.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/program_counter.v' to AST representation.
+Storing AST representation for module `$abstract\program_counter'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/register_file.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/register_file.v' to AST representation.
+Storing AST representation for module `$abstract\register_file'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/rv32i_core.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/rv32i_core.v' to AST representation.
+Storing AST representation for module `$abstract\rv32i_core'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/shared_data_memory.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/shared_data_memory.v' to AST representation.
+Storing AST representation for module `$abstract\shared_data_memory'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/uart_rx.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/uart_rx.v' to AST representation.
+Storing AST representation for module `$abstract\uart_rx'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /home/cl4/Desktop/training/asic/src/uart_tx.v
+Parsing SystemVerilog input from `/home/cl4/Desktop/training/asic/src/uart_tx.v' to AST representation.
+Storing AST representation for module `$abstract\uart_tx'.
+Successfully finished Verilog frontend.
+
+20. Executing HIERARCHY pass (managing design hierarchy).
+
+21. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_core_soc'.
+Generating RTLIL representation for module `\dual_core_soc'.
+
+21.1. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+
+21.2. Executing AST frontend in derive mode using pre-parsed AST for module `\mailbox_system'.
+Generating RTLIL representation for module `\mailbox_system'.
+
+21.3. Executing AST frontend in derive mode using pre-parsed AST for module `\rv32i_core'.
+Generating RTLIL representation for module `\rv32i_core'.
+Parameter \INIT_FILE = 144'011001100110100101110010011011010111011101100001011100100110010101011111011000110110111101110010011001010011000100101110011010000110010101111000
+
+21.4. Executing AST frontend in derive mode using pre-parsed AST for module `\instruction_memory'.
+Parameter \INIT_FILE = 144'011001100110100101110010011011010111011101100001011100100110010101011111011000110110111101110010011001010011000100101110011010000110010101111000
+Generating RTLIL representation for module `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory'.
+Parameter \INIT_FILE = 144'011001100110100101110010011011010111011101100001011100100110010101011111011000110110111101110010011001010011000000101110011010000110010101111000
+
+21.5. Executing AST frontend in derive mode using pre-parsed AST for module `\instruction_memory'.
+Parameter \INIT_FILE = 144'011001100110100101110010011011010111011101100001011100100110010101011111011000110110111101110010011001010011000000101110011010000110010101111000
+Generating RTLIL representation for module `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory'.
+
+21.6. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:     \rv32i_core
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+
+21.7. Executing AST frontend in derive mode using pre-parsed AST for module `\alu'.
+Generating RTLIL representation for module `\alu'.
+
+21.8. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit'.
+Generating RTLIL representation for module `\control_unit'.
+
+21.9. Executing AST frontend in derive mode using pre-parsed AST for module `\immediate_generator'.
+Generating RTLIL representation for module `\immediate_generator'.
+
+21.10. Executing AST frontend in derive mode using pre-parsed AST for module `\register_file'.
+Generating RTLIL representation for module `\register_file'.
+
+21.11. Executing AST frontend in derive mode using pre-parsed AST for module `\program_counter'.
+Generating RTLIL representation for module `\program_counter'.
+Parameter \CLKS_PER_BIT = 8
+
+21.12. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_uart_system'.
+Parameter \CLKS_PER_BIT = 8
+Generating RTLIL representation for module `$paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+
+21.13. Executing AST frontend in derive mode using pre-parsed AST for module `\mailbox_reg'.
+Generating RTLIL representation for module `\mailbox_reg'.
+
+21.14. Executing AST frontend in derive mode using pre-parsed AST for module `\shared_data_memory'.
+Generating RTLIL representation for module `\shared_data_memory'.
+
+21.15. Executing AST frontend in derive mode using pre-parsed AST for module `\noc_interconnect'.
+Generating RTLIL representation for module `\noc_interconnect'.
+
+21.16. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:         $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:         \mailbox_reg
+Used module:         \shared_data_memory
+Used module:         \noc_interconnect
+Used module:     \rv32i_core
+Used module:         \alu
+Used module:         \control_unit
+Used module:         \immediate_generator
+Used module:         \register_file
+Used module:         \program_counter
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+Parameter \CLKS_PER_BIT = 8
+
+21.17. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_uart_slave'.
+Parameter \CLKS_PER_BIT = 8
+Generating RTLIL representation for module `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+
+21.18. Executing AST frontend in derive mode using pre-parsed AST for module `\axi_lite_master_bridge'.
+Generating RTLIL representation for module `\axi_lite_master_bridge'.
+
+21.19. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:         $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             \axi_lite_master_bridge
+Used module:         \mailbox_reg
+Used module:         \shared_data_memory
+Used module:         \noc_interconnect
+Used module:     \rv32i_core
+Used module:         \alu
+Used module:         \control_unit
+Used module:         \immediate_generator
+Used module:         \register_file
+Used module:         \program_counter
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+Parameter \CLKS_PER_BIT = 8
+
+21.20. Executing AST frontend in derive mode using pre-parsed AST for module `\uart_rx'.
+Parameter \CLKS_PER_BIT = 8
+Generating RTLIL representation for module `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+Parameter \CLKS_PER_BIT = 8
+
+21.21. Executing AST frontend in derive mode using pre-parsed AST for module `\uart_tx'.
+Parameter \CLKS_PER_BIT = 8
+Generating RTLIL representation for module `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+
+21.22. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:         $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             \axi_lite_master_bridge
+Used module:         \mailbox_reg
+Used module:         \shared_data_memory
+Used module:         \noc_interconnect
+Used module:     \rv32i_core
+Used module:         \alu
+Used module:         \control_unit
+Used module:         \immediate_generator
+Used module:         \register_file
+Used module:         \program_counter
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+Parameter \CLKS_PER_BIT = 8
+
+21.23. Executing AST frontend in derive mode using pre-parsed AST for module `\baud_gen'.
+Parameter \CLKS_PER_BIT = 8
+Generating RTLIL representation for module `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+Parameter \CLKS_PER_BIT = 8
+Found cached RTLIL representation for module `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000'.
+
+21.24. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:         $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                     $paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             \axi_lite_master_bridge
+Used module:         \mailbox_reg
+Used module:         \shared_data_memory
+Used module:         \noc_interconnect
+Used module:     \rv32i_core
+Used module:         \alu
+Used module:         \control_unit
+Used module:         \immediate_generator
+Used module:         \register_file
+Used module:         \program_counter
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+
+21.25. Analyzing design hierarchy..
+Top module:  \dual_core_soc
+Used module:     \mailbox_system
+Used module:         $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                     $paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:                 $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000
+Used module:             \axi_lite_master_bridge
+Used module:         \mailbox_reg
+Used module:         \shared_data_memory
+Used module:         \noc_interconnect
+Used module:     \rv32i_core
+Used module:         \alu
+Used module:         \control_unit
+Used module:         \immediate_generator
+Used module:         \register_file
+Used module:         \program_counter
+Used module:     $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory
+Used module:     $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory
+Removing unused module `$abstract\uart_tx'.
+Removing unused module `$abstract\uart_rx'.
+Removing unused module `$abstract\shared_data_memory'.
+Removing unused module `$abstract\rv32i_core'.
+Removing unused module `$abstract\register_file'.
+Removing unused module `$abstract\program_counter'.
+Removing unused module `$abstract\noc_interconnect'.
+Removing unused module `$abstract\mailbox_system'.
+Removing unused module `$abstract\mailbox_reg'.
+Removing unused module `$abstract\instruction_memory'.
+Removing unused module `$abstract\immediate_generator'.
+Removing unused module `$abstract\dual_core_soc'.
+Removing unused module `$abstract\control_unit'.
+Removing unused module `$abstract\baud_gen'.
+Removing unused module `$abstract\axi_uart_system'.
+Removing unused module `$abstract\axi_uart_slave'.
+Removing unused module `$abstract\axi_lite_master_bridge'.
+Removing unused module `$abstract\alu'.
+Removed 18 unused modules.
+Renaming module dual_core_soc to dual_core_soc.
+
+22. Executing PROC pass (convert processes to netlists).
+
+22.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:44$85'.
+Removing empty process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:44$73'.
+Cleaned up 0 empty switches.
+
+22.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/baud_gen.v:16$315 in module $paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 3 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307 in module $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 5 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284 in module $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280 in module $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 3 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266 in module axi_lite_master_bridge.
+Marked 5 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259 in module $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 5 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244 in module $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:83$240 in module $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Marked 3 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227 in module noc_interconnect.
+Marked 8 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219 in module noc_interconnect.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217 in module noc_interconnect.
+Marked 6 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:111$210 in module noc_interconnect.
+Marked 7 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134 in module shared_data_memory.
+Marked 2 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:33$125 in module mailbox_reg.
+Marked 2 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120 in module mailbox_reg.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/program_counter.v:9$119 in module program_counter.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110 in module register_file.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/immediate_generator.v:6$102 in module immediate_generator.
+Removed 2 dead cases from process $proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100 in module control_unit.
+Marked 9 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100 in module control_unit.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/alu.v:9$86 in module alu.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77 in module $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65 in module $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.
+Removed 2 dead cases from process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11 in module rv32i_core.
+Marked 3 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11 in module rv32i_core.
+Marked 3 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:233$10 in module rv32i_core.
+Removed 1 dead cases from process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9 in module rv32i_core.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9 in module rv32i_core.
+Removed 1 dead cases from process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8 in module rv32i_core.
+Marked 1 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8 in module rv32i_core.
+Marked 2 switch rules as full_case in process $proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:79$1 in module rv32i_core.
+Removed a total of 6 dead cases.
+
+22.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 13 redundant assignments.
+Promoted 71 assignments to connections.
+
+22.4. Executing PROC_INIT pass (extract init attributes).
+
+22.5. Executing PROC_ARST pass (detect async resets in processes).
+
+22.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~114 debug messages>
+
+22.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/baud_gen.v:16$315'.
+     1/1: $0\count[15:0]
+Creating decoders for process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+     1/6: $0\parity_reg[0:0]
+     2/6: $0\data_reg[7:0]
+     3/6: $0\bit_index[2:0]
+     4/6: $0\state[2:0]
+     5/6: $0\busy[0:0]
+     6/6: $0\tx_line[0:0]
+Creating decoders for process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+     1/13: $3$lookahead\data_reg$283[7:0]$294
+     2/13: $3$bitselwrite$pos$/home/cl4/Desktop/training/asic/src/uart_rx.v:82$279[2:0]$293
+     3/13: $2$lookahead\data_reg$283[7:0]$290
+     4/13: $2$bitselwrite$pos$/home/cl4/Desktop/training/asic/src/uart_rx.v:82$279[2:0]$289
+     5/13: $0\frame_err[0:0]
+     6/13: $0\parity_err[0:0]
+     7/13: $0\rx_done[0:0]
+     8/13: $1$lookahead\data_reg$283[7:0]$288
+     9/13: $1$bitselwrite$pos$/home/cl4/Desktop/training/asic/src/uart_rx.v:82$279[2:0]$287
+    10/13: $0\parity_bad[0:0]
+    11/13: $0\bit_index[2:0]
+    12/13: $0\state[2:0]
+    13/13: $0\rx_data[7:0]
+Creating decoders for process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280'.
+     1/2: $0\rx_sync[0:0]
+     2/2: $0\rx_ff1[0:0]
+Creating decoders for process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+     1/16: $0\resp_error[0:0]
+     2/16: $0\resp_ready[0:0]
+     3/16: $0\saved_write_strobe[3:0]
+     4/16: $0\saved_write_data[31:0]
+     5/16: $0\saved_address[31:0]
+     6/16: $0\state[2:0]
+     7/16: $0\m_axi_rready[0:0]
+     8/16: $0\m_axi_arvalid[0:0]
+     9/16: $0\m_axi_araddr[31:0]
+    10/16: $0\m_axi_bready[0:0]
+    11/16: $0\m_axi_wvalid[0:0]
+    12/16: $0\m_axi_wstrb[3:0]
+    13/16: $0\m_axi_wdata[31:0]
+    14/16: $0\m_axi_awvalid[0:0]
+    15/16: $0\m_axi_awaddr[31:0]
+    16/16: $0\resp_read_data[31:0]
+Creating decoders for process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+     1/4: $0\S_AXI_ARREADY[0:0]
+     2/4: $0\S_AXI_RVALID[0:0]
+     3/4: $0\S_AXI_RRESP[1:0]
+     4/4: $0\S_AXI_RDATA[31:0]
+Creating decoders for process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+     1/11: $0\tx_send[0:0]
+     2/11: $0\S_AXI_WREADY[0:0]
+     3/11: $0\S_AXI_AWREADY[0:0]
+     4/11: $0\data_received[0:0]
+     5/11: $0\address_received[0:0]
+     6/11: $0\write_address[31:0]
+     7/11: $0\tx_data[7:0]
+     8/11: $0\S_AXI_BVALID[0:0]
+     9/11: $0\S_AXI_BRESP[1:0]
+    10/11: $0\write_data[31:0]
+    11/11: $0\write_strobe[3:0]
+Creating decoders for process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:83$240'.
+     1/1: $0\rx_valid[0:0]
+Creating decoders for process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+     1/5: $0\mem_owner[0:0]
+     2/5: $0\mem_lock[0:0]
+     3/5: $0\uart_owner[0:0]
+     4/5: $0\uart_lock[0:0]
+     5/5: $0\last_grant[0:0]
+Creating decoders for process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+     1/74: $8\core0_ready[0:0]
+     2/74: $8\core0_read_data[31:0]
+     3/74: $8\core1_ready[0:0]
+     4/74: $8\core1_read_data[31:0]
+     5/74: $7\core0_ready[0:0]
+     6/74: $7\core0_read_data[31:0]
+     7/74: $7\core1_ready[0:0]
+     8/74: $7\core1_read_data[31:0]
+     9/74: $6\core1_ready[0:0]
+    10/74: $6\core1_read_data[31:0]
+    11/74: $6\core0_ready[0:0]
+    12/74: $6\core0_read_data[31:0]
+    13/74: $4\uart_write_data[31:0]
+    14/74: $4\uart_address[31:0]
+    15/74: $4\uart_write_strobe[3:0]
+    16/74: $4\uart_write[0:0]
+    17/74: $4\uart_read[0:0]
+    18/74: $5\core0_ready[0:0]
+    19/74: $5\core0_read_data[31:0]
+    20/74: $5\core1_ready[0:0]
+    21/74: $5\core1_read_data[31:0]
+    22/74: $4\core1_ready[0:0]
+    23/74: $4\core1_read_data[31:0]
+    24/74: $4\core0_ready[0:0]
+    25/74: $4\core0_read_data[31:0]
+    26/74: $3\mailbox_write_data[31:0]
+    27/74: $3\mailbox_address[31:0]
+    28/74: $3\mailbox_write[0:0]
+    29/74: $3\mailbox_read[0:0]
+    30/74: $3\uart_write_data[31:0]
+    31/74: $3\uart_address[31:0]
+    32/74: $3\uart_write_strobe[3:0]
+    33/74: $3\uart_write[0:0]
+    34/74: $3\uart_read[0:0]
+    35/74: $3\core0_ready[0:0]
+    36/74: $3\core0_read_data[31:0]
+    37/74: $3\core1_ready[0:0]
+    38/74: $3\core1_read_data[31:0]
+    39/74: $2\core1_ready[0:0]
+    40/74: $2\core1_read_data[31:0]
+    41/74: $2\core0_ready[0:0]
+    42/74: $2\core0_read_data[31:0]
+    43/74: $2\mem_write_data[31:0]
+    44/74: $2\mem_address[31:0]
+    45/74: $2\mem_write_strobe[3:0]
+    46/74: $2\mem_write[0:0]
+    47/74: $2\mem_read[0:0]
+    48/74: $2\uart_write_data[31:0]
+    49/74: $2\uart_address[31:0]
+    50/74: $2\uart_write_strobe[3:0]
+    51/74: $2\uart_write[0:0]
+    52/74: $2\uart_read[0:0]
+    53/74: $2\mailbox_write_data[31:0]
+    54/74: $2\mailbox_address[31:0]
+    55/74: $2\mailbox_write[0:0]
+    56/74: $2\mailbox_read[0:0]
+    57/74: $1\uart_write_data[31:0]
+    58/74: $1\uart_address[31:0]
+    59/74: $1\uart_write_strobe[3:0]
+    60/74: $1\uart_write[0:0]
+    61/74: $1\uart_read[0:0]
+    62/74: $1\mailbox_write_data[31:0]
+    63/74: $1\mailbox_address[31:0]
+    64/74: $1\mailbox_write[0:0]
+    65/74: $1\mailbox_read[0:0]
+    66/74: $1\mem_write_data[31:0]
+    67/74: $1\mem_address[31:0]
+    68/74: $1\mem_write_strobe[3:0]
+    69/74: $1\mem_write[0:0]
+    70/74: $1\mem_read[0:0]
+    71/74: $1\core1_ready[0:0]
+    72/74: $1\core1_read_data[31:0]
+    73/74: $1\core0_ready[0:0]
+    74/74: $1\core0_read_data[31:0]
+Creating decoders for process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+     1/5: $1\selected_write_data[31:0]
+     2/5: $1\selected_address[31:0]
+     3/5: $1\selected_write_strobe[3:0]
+     4/5: $1\selected_write[0:0]
+     5/5: $1\selected_read[0:0]
+Creating decoders for process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:111$210'.
+     1/6: $6\grant_core[0:0]
+     2/6: $5\grant_core[0:0]
+     3/6: $4\grant_core[0:0]
+     4/6: $3\grant_core[0:0]
+     5/6: $2\grant_core[0:0]
+     6/6: $1\grant_core[0:0]
+Creating decoders for process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+     1/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_EN[31:0]$194
+     2/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_DATA[31:0]$193
+     3/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_ADDR[5:0]$192
+     4/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_EN[31:0]$191
+     5/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_DATA[31:0]$190
+     6/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_ADDR[5:0]$189
+     7/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_EN[31:0]$188
+     8/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_DATA[31:0]$187
+     9/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_ADDR[5:0]$186
+    10/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_EN[31:0]$185
+    11/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_DATA[31:0]$184
+    12/56: $4$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_ADDR[5:0]$183
+    13/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_EN[31:0]$182
+    14/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_DATA[31:0]$181
+    15/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_ADDR[5:0]$180
+    16/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_EN[31:0]$179
+    17/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_DATA[31:0]$178
+    18/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_ADDR[5:0]$177
+    19/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_EN[31:0]$176
+    20/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_DATA[31:0]$175
+    21/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_ADDR[5:0]$174
+    22/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_EN[31:0]$173
+    23/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_DATA[31:0]$172
+    24/56: $3$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_ADDR[5:0]$171
+    25/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_EN[31:0]$170
+    26/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_DATA[31:0]$169
+    27/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_ADDR[5:0]$168
+    28/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_EN[31:0]$167
+    29/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_DATA[31:0]$166
+    30/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_ADDR[5:0]$165
+    31/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_EN[31:0]$164
+    32/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_DATA[31:0]$163
+    33/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_ADDR[5:0]$162
+    34/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_EN[31:0]$161
+    35/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_DATA[31:0]$160
+    36/56: $2$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_ADDR[5:0]$159
+    37/56: $0\ready[0:0]
+    38/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_EN[31:0]$158
+    39/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_DATA[31:0]$157
+    40/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_ADDR[5:0]$156
+    41/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_EN[31:0]$155
+    42/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_DATA[31:0]$154
+    43/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_ADDR[5:0]$153
+    44/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_EN[31:0]$152
+    45/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_DATA[31:0]$151
+    46/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_ADDR[5:0]$150
+    47/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_EN[31:0]$149
+    48/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_DATA[31:0]$148
+    49/56: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_ADDR[5:0]$147
+    50/56: $0\pending_write_strobe[3:0]
+    51/56: $0\pending_write_data[31:0]
+    52/56: $0\pending_address[5:0]
+    53/56: $0\pending_write[0:0]
+    54/56: $0\pending[0:0]
+    55/56: $0\init_done[0:0]
+    56/56: $0\read_data[31:0]
+Creating decoders for process `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:33$125'.
+     1/2: $2\read_data[31:0]
+     2/2: $1\read_data[31:0]
+Creating decoders for process `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120'.
+     1/2: $0\valid[0:0]
+     2/2: $0\message[31:0]
+Creating decoders for process `\program_counter.$proc$/home/cl4/Desktop/training/asic/src/program_counter.v:9$119'.
+     1/1: $0\pc[31:0]
+Creating decoders for process `\register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+     1/3: $1$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_EN[31:0]$118
+     2/3: $1$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_DATA[31:0]$117
+     3/3: $1$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_ADDR[4:0]$116
+Creating decoders for process `\immediate_generator.$proc$/home/cl4/Desktop/training/asic/src/immediate_generator.v:6$102'.
+     1/1: $1\immediate[31:0]
+Creating decoders for process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+     1/30: $7\alu_control[3:0]
+     2/30: $2\result_src[1:0]
+     3/30: $2\alu_src[0:0]
+     4/30: $2\jalr[0:0]
+     5/30: $2\jump[0:0]
+     6/30: $3\reg_write[0:0]
+     7/30: $3\mem_size[1:0]
+     8/30: $2\mem_write[0:0]
+     9/30: $2\mem_signed[0:0]
+    10/30: $2\mem_size[1:0]
+    11/30: $2\reg_write[0:0]
+    12/30: $2\mem_read[0:0]
+    13/30: $6\alu_control[3:0]
+    14/30: $5\alu_control[3:0]
+    15/30: $4\alu_control[3:0]
+    16/30: $3\alu_control[3:0]
+    17/30: $2\alu_control[3:0]
+    18/30: $1\alu_control[3:0]
+    19/30: $1\alu_src[0:0]
+    20/30: $1\reg_write[0:0]
+    21/30: $1\mem_signed[0:0]
+    22/30: $1\mem_size[1:0]
+    23/30: $1\result_src[1:0]
+    24/30: $1\auipc[0:0]
+    25/30: $1\lui[0:0]
+    26/30: $1\jalr[0:0]
+    27/30: $1\jump[0:0]
+    28/30: $1\branch[0:0]
+    29/30: $1\mem_write[0:0]
+    30/30: $1\mem_read[0:0]
+Creating decoders for process `\alu.$proc$/home/cl4/Desktop/training/asic/src/alu.v:9$86'.
+     1/1: $1\result[31:0]
+Creating decoders for process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+     1/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_EN[31:0]$83
+     2/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_DATA[31:0]$82
+     3/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_ADDR[4:0]$81
+Creating decoders for process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$75'.
+Creating decoders for process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+     1/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_EN[31:0]$71
+     2/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_DATA[31:0]$70
+     3/3: $1$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_ADDR[4:0]$69
+Creating decoders for process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$63'.
+Creating decoders for process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11'.
+     1/6: $3\formatted_store_data[31:0]
+     2/6: $3\formatted_write_strobe[3:0]
+     3/6: $2\formatted_store_data[31:0]
+     4/6: $2\formatted_write_strobe[3:0]
+     5/6: $1\formatted_write_strobe[3:0]
+     6/6: $1\formatted_store_data[31:0]
+Creating decoders for process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:233$10'.
+     1/3: $3\formatted_load_data[31:0]
+     2/3: $2\formatted_load_data[31:0]
+     3/3: $1\formatted_load_data[31:0]
+Creating decoders for process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9'.
+     1/1: $1\selected_halfword[15:0]
+Creating decoders for process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8'.
+     1/1: $1\selected_byte[7:0]
+Creating decoders for process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:79$1'.
+     1/1: $0\execute_phase[0:0]
+
+22.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\noc_interconnect.\core0_read_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\core0_ready' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\core1_read_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\core1_ready' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mem_read' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mem_write' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mem_write_strobe' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mem_address' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mem_write_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mailbox_read' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mailbox_write' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mailbox_address' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\mailbox_write_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\uart_read' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\uart_write' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\uart_write_strobe' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\uart_address' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\uart_write_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+No latch inferred for signal `\noc_interconnect.\selected_read' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+No latch inferred for signal `\noc_interconnect.\selected_write' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+No latch inferred for signal `\noc_interconnect.\selected_write_strobe' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+No latch inferred for signal `\noc_interconnect.\selected_address' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+No latch inferred for signal `\noc_interconnect.\selected_write_data' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+No latch inferred for signal `\noc_interconnect.\grant_core' from process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:111$210'.
+No latch inferred for signal `\mailbox_reg.\read_data' from process `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:33$125'.
+No latch inferred for signal `\immediate_generator.\immediate' from process `\immediate_generator.$proc$/home/cl4/Desktop/training/asic/src/immediate_generator.v:6$102'.
+No latch inferred for signal `\control_unit.\mem_read' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\mem_write' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\reg_write' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\alu_src' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\branch' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\jump' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\jalr' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\lui' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\auipc' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\result_src' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\alu_control' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\mem_size' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\control_unit.\mem_signed' from process `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+No latch inferred for signal `\alu.\result' from process `\alu.$proc$/home/cl4/Desktop/training/asic/src/alu.v:9$86'.
+No latch inferred for signal `\rv32i_core.\formatted_store_data' from process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11'.
+No latch inferred for signal `\rv32i_core.\formatted_write_strobe' from process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11'.
+No latch inferred for signal `\rv32i_core.\formatted_load_data' from process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:233$10'.
+No latch inferred for signal `\rv32i_core.\selected_halfword' from process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9'.
+No latch inferred for signal `\rv32i_core.\selected_byte' from process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8'.
+
+22.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.\count' using process `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/baud_gen.v:16$315'.
+  created $dff cell `$procdff$2510' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\tx_line' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2511' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\busy' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2512' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\state' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2513' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\bit_index' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2514' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\data_reg' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2515' with positive edge clock.
+Creating register for signal `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\parity_reg' using process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+  created $dff cell `$procdff$2516' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\rx_data' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2517' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\rx_done' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2518' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\parity_err' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2519' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\frame_err' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2520' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\state' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2521' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\bit_index' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2522' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\data_reg' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2523' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\parity_bad' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2524' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$bitselwrite$pos$/home/cl4/Desktop/training/asic/src/uart_rx.v:82$279' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2525' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$lookahead\data_reg$283' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+  created $dff cell `$procdff$2526' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\rx_ff1' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280'.
+  created $dff cell `$procdff$2527' with positive edge clock.
+Creating register for signal `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.\rx_sync' using process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280'.
+  created $dff cell `$procdff$2528' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\resp_read_data' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2529' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\resp_ready' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2530' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\resp_error' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2531' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_awaddr' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2532' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_awvalid' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2533' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_wdata' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2534' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_wstrb' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2535' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_wvalid' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2536' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_bready' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2537' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_araddr' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2538' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_arvalid' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2539' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\m_axi_rready' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2540' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\state' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2541' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\saved_address' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2542' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\saved_write_data' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2543' with positive edge clock.
+Creating register for signal `\axi_lite_master_bridge.\saved_write_strobe' using process `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+  created $dff cell `$procdff$2544' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_ARREADY' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+  created $dff cell `$procdff$2545' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_RDATA' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+  created $dff cell `$procdff$2546' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_RRESP' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+  created $dff cell `$procdff$2547' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_RVALID' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+  created $dff cell `$procdff$2548' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\write_strobe' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2549' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\write_data' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2550' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_AWREADY' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2551' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_WREADY' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2552' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_BRESP' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2553' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\S_AXI_BVALID' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2554' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\tx_data' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2555' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\tx_send' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2556' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\write_address' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2557' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\address_received' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2558' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\data_received' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+  created $dff cell `$procdff$2559' with positive edge clock.
+Creating register for signal `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.\rx_valid' using process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:83$240'.
+  created $dff cell `$procdff$2560' with positive edge clock.
+Creating register for signal `\noc_interconnect.\last_grant' using process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+  created $dff cell `$procdff$2561' with positive edge clock.
+Creating register for signal `\noc_interconnect.\uart_lock' using process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+  created $dff cell `$procdff$2562' with positive edge clock.
+Creating register for signal `\noc_interconnect.\uart_owner' using process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+  created $dff cell `$procdff$2563' with positive edge clock.
+Creating register for signal `\noc_interconnect.\mem_lock' using process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+  created $dff cell `$procdff$2564' with positive edge clock.
+Creating register for signal `\noc_interconnect.\mem_owner' using process `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+  created $dff cell `$procdff$2565' with positive edge clock.
+Creating register for signal `\shared_data_memory.\read_data' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2566' with positive edge clock.
+Creating register for signal `\shared_data_memory.\ready' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2567' with positive edge clock.
+Creating register for signal `\shared_data_memory.\init_done' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2568' with positive edge clock.
+Creating register for signal `\shared_data_memory.\pending' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2569' with positive edge clock.
+Creating register for signal `\shared_data_memory.\pending_write' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2570' with positive edge clock.
+Creating register for signal `\shared_data_memory.\pending_address' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2571' with positive edge clock.
+Creating register for signal `\shared_data_memory.\pending_write_data' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2572' with positive edge clock.
+Creating register for signal `\shared_data_memory.\pending_write_strobe' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2573' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_ADDR' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2574' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_DATA' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2575' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:41$130_EN' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2576' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_ADDR' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2577' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_DATA' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2578' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:43$131_EN' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2579' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_ADDR' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2580' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_DATA' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2581' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:45$132_EN' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2582' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_ADDR' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2583' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_DATA' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2584' with positive edge clock.
+Creating register for signal `\shared_data_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:47$133_EN' using process `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+  created $dff cell `$procdff$2585' with positive edge clock.
+Creating register for signal `\mailbox_reg.\message' using process `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120'.
+  created $dff cell `$procdff$2586' with positive edge clock.
+Creating register for signal `\mailbox_reg.\valid' using process `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120'.
+  created $dff cell `$procdff$2587' with positive edge clock.
+Creating register for signal `\program_counter.\pc' using process `\program_counter.$proc$/home/cl4/Desktop/training/asic/src/program_counter.v:9$119'.
+  created $dff cell `$procdff$2588' with positive edge clock.
+Creating register for signal `\register_file.$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_ADDR' using process `\register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+  created $dff cell `$procdff$2589' with positive edge clock.
+Creating register for signal `\register_file.$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_DATA' using process `\register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+  created $dff cell `$procdff$2590' with positive edge clock.
+Creating register for signal `\register_file.$memwr$\registers$/home/cl4/Desktop/training/asic/src/register_file.v:50$103_EN' using process `\register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+  created $dff cell `$procdff$2591' with positive edge clock.
+Creating register for signal `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_ADDR' using process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+  created $dff cell `$procdff$2592' with positive edge clock.
+Creating register for signal `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_DATA' using process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+  created $dff cell `$procdff$2593' with positive edge clock.
+Creating register for signal `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$74_EN' using process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+  created $dff cell `$procdff$2594' with positive edge clock.
+Creating register for signal `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.\instruction' using process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$75'.
+  created $dff cell `$procdff$2595' with positive edge clock.
+Creating register for signal `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_ADDR' using process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+  created $dff cell `$procdff$2596' with positive edge clock.
+Creating register for signal `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_DATA' using process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+  created $dff cell `$procdff$2597' with positive edge clock.
+Creating register for signal `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$memwr$\memory$/home/cl4/Desktop/training/asic/src/instruction_memory.v:69$62_EN' using process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+  created $dff cell `$procdff$2598' with positive edge clock.
+Creating register for signal `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.\instruction' using process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$63'.
+  created $dff cell `$procdff$2599' with positive edge clock.
+Creating register for signal `\rv32i_core.\execute_phase' using process `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:79$1'.
+  created $dff cell `$procdff$2600' with positive edge clock.
+
+22.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+22.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/baud_gen.v:16$315'.
+Removing empty process `$paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/baud_gen.v:16$315'.
+Found and cleaned up 8 empty switches in `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+Removing empty process `$paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_tx.v:33$307'.
+Found and cleaned up 9 empty switches in `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+Removing empty process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:48$284'.
+Found and cleaned up 1 empty switch in `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280'.
+Removing empty process `$paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/uart_rx.v:25$280'.
+Found and cleaned up 10 empty switches in `\axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+Removing empty process `axi_lite_master_bridge.$proc$/home/cl4/Desktop/training/asic/src/axi_lite_master_bridge.v:79$266'.
+Found and cleaned up 7 empty switches in `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+Removing empty process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:218$259'.
+Found and cleaned up 10 empty switches in `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+Removing empty process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:106$244'.
+Found and cleaned up 3 empty switches in `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:83$240'.
+Removing empty process `$paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.$proc$/home/cl4/Desktop/training/asic/src/axi_uart_slave.v:83$240'.
+Found and cleaned up 9 empty switches in `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+Removing empty process `noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:450$227'.
+Found and cleaned up 8 empty switches in `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+Removing empty process `noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:225$219'.
+Found and cleaned up 1 empty switch in `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+Removing empty process `noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:169$217'.
+Found and cleaned up 6 empty switches in `\noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:111$210'.
+Removing empty process `noc_interconnect.$proc$/home/cl4/Desktop/training/asic/src/noc_interconnect.v:111$210'.
+Found and cleaned up 8 empty switches in `\shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+Removing empty process `shared_data_memory.$proc$/home/cl4/Desktop/training/asic/src/shared_data_memory.v:25$134'.
+Found and cleaned up 2 empty switches in `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:33$125'.
+Removing empty process `mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:33$125'.
+Found and cleaned up 3 empty switches in `\mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120'.
+Removing empty process `mailbox_reg.$proc$/home/cl4/Desktop/training/asic/src/mailbox_reg.v:15$120'.
+Found and cleaned up 2 empty switches in `\program_counter.$proc$/home/cl4/Desktop/training/asic/src/program_counter.v:9$119'.
+Removing empty process `program_counter.$proc$/home/cl4/Desktop/training/asic/src/program_counter.v:9$119'.
+Found and cleaned up 1 empty switch in `\register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+Removing empty process `register_file.$proc$/home/cl4/Desktop/training/asic/src/register_file.v:47$110'.
+Found and cleaned up 1 empty switch in `\immediate_generator.$proc$/home/cl4/Desktop/training/asic/src/immediate_generator.v:6$102'.
+Removing empty process `immediate_generator.$proc$/home/cl4/Desktop/training/asic/src/immediate_generator.v:6$102'.
+Found and cleaned up 9 empty switches in `\control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+Removing empty process `control_unit.$proc$/home/cl4/Desktop/training/asic/src/control_unit.v:31$100'.
+Found and cleaned up 1 empty switch in `\alu.$proc$/home/cl4/Desktop/training/asic/src/alu.v:9$86'.
+Removing empty process `alu.$proc$/home/cl4/Desktop/training/asic/src/alu.v:9$86'.
+Found and cleaned up 1 empty switch in `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+Removing empty process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$77'.
+Removing empty process `$paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$75'.
+Found and cleaned up 1 empty switch in `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+Removing empty process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:67$65'.
+Removing empty process `$paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.$proc$/home/cl4/Desktop/training/asic/src/instruction_memory.v:59$63'.
+Found and cleaned up 3 empty switches in `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11'.
+Removing empty process `rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:299$11'.
+Found and cleaned up 3 empty switches in `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:233$10'.
+Removing empty process `rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:233$10'.
+Found and cleaned up 1 empty switch in `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9'.
+Removing empty process `rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:216$9'.
+Found and cleaned up 1 empty switch in `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8'.
+Removing empty process `rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:193$8'.
+Found and cleaned up 3 empty switches in `\rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:79$1'.
+Removing empty process `rv32i_core.$proc$/home/cl4/Desktop/training/asic/src/rv32i_core.v:79$1'.
+Cleaned up 114 empty switches.
+
+22.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module dual_core_soc.
+Optimizing module $paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Optimizing module $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+<suppressed ~6 debug messages>
+Optimizing module $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+<suppressed ~8 debug messages>
+Optimizing module axi_lite_master_bridge.
+<suppressed ~13 debug messages>
+Optimizing module $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+<suppressed ~4 debug messages>
+Optimizing module noc_interconnect.
+<suppressed ~29 debug messages>
+Optimizing module shared_data_memory.
+Optimizing module mailbox_reg.
+Optimizing module $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Optimizing module program_counter.
+Optimizing module register_file.
+<suppressed ~3 debug messages>
+Optimizing module immediate_generator.
+Optimizing module control_unit.
+<suppressed ~10 debug messages>
+Optimizing module alu.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.
+Optimizing module $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.
+Optimizing module rv32i_core.
+<suppressed ~17 debug messages>
+Optimizing module mailbox_system.
+
+23. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\baud_gen\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod\uart_tx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod\uart_rx\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Deleting now unused module axi_lite_master_bridge.
+Deleting now unused module $paramod\axi_uart_slave\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Deleting now unused module noc_interconnect.
+Deleting now unused module shared_data_memory.
+Deleting now unused module mailbox_reg.
+Deleting now unused module $paramod\axi_uart_system\CLKS_PER_BIT=s32'00000000000000000000000000001000.
+Deleting now unused module program_counter.
+Deleting now unused module register_file.
+Deleting now unused module immediate_generator.
+Deleting now unused module control_unit.
+Deleting now unused module alu.
+Deleting now unused module $paramod$432fe0c2d7061b334b663624822f282e564a593d\instruction_memory.
+Deleting now unused module $paramod$f0aa86d135e3ed9a629106f6394c18764b9cf41d\instruction_memory.
+Deleting now unused module rv32i_core.
+Deleting now unused module mailbox_system.
+<suppressed ~20 debug messages>
+
+24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \dual_core_soc..
+Removed 117 unused cells and 1463 unused wires.
+<suppressed ~395 debug messages>
