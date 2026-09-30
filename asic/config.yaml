@@ -1,0 +1,55 @@
+# RISC-V SoC ASIC LibreANE Configuration
+# Minimal configuration for OpenROAD flow
+
+design:
+  name: "riscv_soc"
+  description: "RISC-V SoC with Virtual Memory Support"
+  top_module: "riscv_soc_top"
+  
+# HDL files to use
+files:
+  rtl:
+    - ../rtl/include/riscv_defines.sv
+    - ../rtl/include/riscv_types.sv
+    - ../rtl/core/rv32i_core.sv
+    - ../rtl/mmu/mmu.sv
+    - ../rtl/mmu/tlb.sv
+    - ../rtl/memory/sram_sp.sv
+    - ../rtl/peripheral/csr_unit.sv
+    - ../rtl/peripheral/exception_handler.sv
+    - ../rtl/bus/axi4_arbiter.sv
+    - ../rtl/top/riscv_soc_top.sv
+
+# Platform/PDK selection
+platform:
+  name: "sky130"
+  family: "sky130"
+
+# Tool configurations
+tool:
+  openlane:
+    enabled: false
+  openroad:
+    enabled: true
+
+# Technology settings
+tech:
+  voltage: 1.8
+  frequency: 100    # MHz
+  process_node: 130  # nm
+
+# Placement & Routing 
+place_and_route:
+  density: 0.75
+  util: 0.75
+  
+# Power/Ground
+power:
+  supply: "VDD"
+  ground: "VSS"
+
+# Timing
+timing:
+  clock_period: 10.0  # ns (100MHz)
+  setup_margin: 0.3
+  hold_margin: 0.1

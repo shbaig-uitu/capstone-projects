@@ -1,0 +1,478 @@
+{
+  "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "riscv_soc_top": {
+      "attributes": {
+        "hdlname": "riscv_soc_top",
+        "top": "00000000000000000000000000000001",
+        "src": "riscv_soc_top_synth.sv:7.1-91.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "uart_rx": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "uart_tx": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "gpio_in": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13 ]
+        },
+        "gpio_out": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ]
+        },
+        "axi_awaddr": {
+          "direction": "input",
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ]
+        },
+        "axi_awvalid": {
+          "direction": "input",
+          "bits": [ 54 ]
+        },
+        "axi_awready": {
+          "direction": "output",
+          "bits": [ 54 ]
+        },
+        "axi_wdata": {
+          "direction": "input",
+          "bits": [ 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ]
+        },
+        "axi_wstrb": {
+          "direction": "input",
+          "bits": [ 87, 88, 89, 90 ]
+        },
+        "axi_wvalid": {
+          "direction": "input",
+          "bits": [ 91 ]
+        },
+        "axi_wready": {
+          "direction": "output",
+          "bits": [ 91 ]
+        },
+        "axi_bresp": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "axi_bvalid": {
+          "direction": "output",
+          "bits": [ "1" ]
+        },
+        "axi_bready": {
+          "direction": "input",
+          "bits": [ 92 ]
+        },
+        "axi_araddr": {
+          "direction": "input",
+          "bits": [ 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124 ]
+        },
+        "axi_arvalid": {
+          "direction": "input",
+          "bits": [ 125 ]
+        },
+        "axi_arready": {
+          "direction": "output",
+          "bits": [ 125 ]
+        },
+        "axi_rdata": {
+          "direction": "output",
+          "bits": [ 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ]
+        },
+        "axi_rresp": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "axi_rvalid": {
+          "direction": "output",
+          "bits": [ "1" ]
+        },
+        "axi_rready": {
+          "direction": "input",
+          "bits": [ 158 ]
+        },
+        "ext_interrupt": {
+          "direction": "input",
+          "bits": [ 159 ]
+        }
+      },
+      "cells": {
+        "$add$riscv_soc_top_synth.sv:63$3": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:63.18-63.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ],
+            "B": [ "1" ],
+            "Y": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223 ]
+          }
+        },
+        "$not$riscv_soc_top_synth.sv:68$5": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:68.24-68.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 224 ]
+          }
+        },
+        "$procdff$15": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "00000000000000000000000000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "riscv_soc_top_synth.sv:56.3-74.6"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223 ],
+            "Q": [ 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ]
+          }
+        },
+        "$procdff$25": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "riscv_soc_top_synth.sv:56.3-74.6"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 168, 169, 170, 171, 172, 173, 174, 175 ],
+            "Q": [ 14, 15, 16, 17, 18, 19, 20, 21 ]
+          }
+        },
+        "$procdff$30": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "riscv_soc_top_synth.sv:56.3-74.6"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 225 ],
+            "Q": [ 5 ]
+          }
+        },
+        "$procmux$7": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:66.11-66.18|riscv_soc_top_synth.sv:66.7-69.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 224 ],
+            "S": [ 4 ],
+            "Y": [ 225 ]
+          }
+        },
+        "$xor$riscv_soc_top_synth.sv:89$6": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:89.22-89.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124 ],
+            "B": [ 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ],
+            "Y": [ 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\counter[31:0]": {
+          "hide_name": 1,
+          "bits": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:56.3-74.6"
+          }
+        },
+        "$0\\uart_tx_reg[0:0]": {
+          "hide_name": 1,
+          "bits": [ 225 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:56.3-74.6"
+          }
+        },
+        "$not$riscv_soc_top_synth.sv:68$5_Y": {
+          "hide_name": 1,
+          "bits": [ 224 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:68.24-68.36"
+          }
+        },
+        "axi_araddr": {
+          "hide_name": 0,
+          "bits": [ 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:33.33-33.43"
+          }
+        },
+        "axi_arready": {
+          "hide_name": 0,
+          "bits": [ 125 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:35.33-35.44"
+          }
+        },
+        "axi_arvalid": {
+          "hide_name": 0,
+          "bits": [ 125 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:34.33-34.44"
+          }
+        },
+        "axi_awaddr": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:20.33-20.43"
+          }
+        },
+        "axi_awready": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:22.33-22.44"
+          }
+        },
+        "axi_awvalid": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:21.33-21.44"
+          }
+        },
+        "axi_bready": {
+          "hide_name": 0,
+          "bits": [ 92 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:31.33-31.43"
+          }
+        },
+        "axi_bresp": {
+          "hide_name": 0,
+          "bits": [ "0", "0" ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:29.33-29.42"
+          }
+        },
+        "axi_bvalid": {
+          "hide_name": 0,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:30.33-30.43"
+          }
+        },
+        "axi_rdata": {
+          "hide_name": 0,
+          "bits": [ 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:37.33-37.42"
+          }
+        },
+        "axi_rready": {
+          "hide_name": 0,
+          "bits": [ 158 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:40.33-40.43"
+          }
+        },
+        "axi_rresp": {
+          "hide_name": 0,
+          "bits": [ "0", "0" ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:38.33-38.42"
+          }
+        },
+        "axi_rvalid": {
+          "hide_name": 0,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:39.33-39.43"
+          }
+        },
+        "axi_wdata": {
+          "hide_name": 0,
+          "bits": [ 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:24.33-24.42"
+          }
+        },
+        "axi_wready": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:27.33-27.43"
+          }
+        },
+        "axi_wstrb": {
+          "hide_name": 0,
+          "bits": [ 87, 88, 89, 90 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:25.33-25.42"
+          }
+        },
+        "axi_wvalid": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:26.33-26.43"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:8.33-8.36"
+          }
+        },
+        "counter": {
+          "hide_name": 0,
+          "bits": [ 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:50.17-50.24"
+          }
+        },
+        "ext_interrupt": {
+          "hide_name": 0,
+          "bits": [ 159 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:43.33-43.46"
+          }
+        },
+        "gpio_in": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:16.33-16.40"
+          }
+        },
+        "gpio_out": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:17.33-17.41"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:9.33-9.38"
+          }
+        },
+        "uart_rx": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:12.33-12.40"
+          }
+        },
+        "uart_tx": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "riscv_soc_top_synth.sv:13.33-13.40"
+          }
+        }
+      }
+    }
+  }
+}

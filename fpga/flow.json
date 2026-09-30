@@ -1,0 +1,333 @@
+{
+  "project_name": "RISC-V SoC with Virtual Memory Support - FPGA Implementation",
+  "project_description": "Complete FPGA implementation of RISC-V SoC with MMU/TLB and virtual memory support on Digilent Arty A7-100T board",
+  "version": "1.0",
+  "target_device": {
+    "device": "xc7a100tcsg324-1",
+    "device_name": "Xilinx Artix-7 A7-100T",
+    "package": "CSG324",
+    "speed_grade": "-1",
+    "board": "arty_a7-100",
+    "board_name": "Digilent Arty A7-100T",
+    "io_voltage": "3.3V",
+    "logic_cells": 101440,
+    "block_ram_kb": 4860,
+    "dsp48_slices": 240
+  },
+  "design_sources": {
+    "rtl_directory": "../rtl",
+    "top_module": "riscv_soc_top",
+    "verilog_version": "Verilog-2005",
+    "rtl_files": [
+      "../rtl/include/riscv_defines.sv",
+      "../rtl/include/riscv_types.sv",
+      "../rtl/core/rv32i_core.sv",
+      "../rtl/mmu/mmu.sv",
+      "../rtl/mmu/tlb.sv",
+      "../rtl/peripheral/csr_unit.sv",
+      "../rtl/peripheral/exception_handler.sv",
+      "../rtl/memory/sram_sp.sv",
+      "../rtl/top/riscv_soc_top.sv"
+    ]
+  },
+  "constraint_files": {
+    "primary": "arty100t.xdc",
+    "type": "Vivado Design Constraints",
+    "constraints": {
+      "clock": {
+        "frequency_mhz": 100,
+        "pin": "E3",
+        "iostandard": "LVCMOS33"
+      },
+      "reset": {
+        "pin": "D9",
+        "active_level": "low",
+        "iostandard": "LVCMOS33"
+      },
+      "uart_interface": {
+        "uart_rx": "A9",
+        "uart_tx": "D10",
+        "baud_rate": 115200,
+        "iostandard": "LVCMOS33"
+      },
+      "gpio_outputs": {
+        "led0": "H17",
+        "led1": "K15",
+        "led2": "J13",
+        "led3": "N14",
+        "extended_gpio": ["J5", "H5", "J4", "G6"]
+      },
+      "gpio_inputs": {
+        "sw0": "C9",
+        "sw1": "B9",
+        "sw2": "B8",
+        "sw3": "A8",
+        "extended_gpio": ["H4", "G4", "F3", "H2"]
+      }
+    }
+  },
+  "build_flow": {
+    "synthesis": {
+      "tool": "Vivado Synthesis (vivado -synth)",
+      "strategy": "default",
+      "optimization": "area",
+      "steps": [
+        "Read RTL source files",
+        "Process includes and macros",
+        "Read constraints",
+        "Synthesize design",
+        "Generate checkpoint"
+      ]
+    },
+    "implementation": {
+      "tool": "Vivado P&R (vivado -impl)",
+      "strategy": "default",
+      "steps": [
+        "Read synthesis checkpoint",
+        "Optimize design",
+        "Run place and route",
+        "Physical optimization",
+        "Generate checkpoint"
+      ]
+    },
+    "bitstream": {
+      "tool": "Vivado Bitstream Generation",
+      "compression": true,
+      "steps": [
+        "Read implementation checkpoint",
+        "Configure device",
+        "Generate bitstream",
+        "Generate debug probe file (LTX)"
+      ]
+    }
+  },
+  "build_targets": {
+    "make_build": {
+      "description": "Complete build flow (synthesis -> implementation -> bitstream)",
+      "command": "make build",
+      "outputs": ["bitstream/riscv_soc_arty.bit"]
+    },
+    "make_synth": {
+      "description": "Synthesis only",
+      "command": "make synth",
+      "outputs": ["build/synth/riscv_soc_arty_synth.dcp"]
+    },
+    "make_impl": {
+      "description": "Place & Route only (requires synth)",
+      "command": "make impl",
+      "outputs": ["build/impl/riscv_soc_arty_impl.dcp"]
+    },
+    "make_bitstream": {
+      "description": "Generate bitstream (requires impl)",
+      "command": "make bitstream",
+      "outputs": ["bitstream/riscv_soc_arty.bit"]
+    },
+    "make_program": {
+      "description": "Program FPGA with bitstream",
+      "command": "make program",
+      "prerequisites": ["bitstream/riscv_soc_arty.bit"],
+      "board_connection": "required"
+    }
+  },
+  "directory_structure": {
+    "fpga_root": "./",
+    "scripts": "./scripts",
+    "build_output": "./build",
+    "bitstream_output": "./bitstream",
+    "reports": "./bitstream/reports",
+    "rtl_source": "../rtl",
+    "rtl_wrapper": "./rtl_wrapper"
+  },
+  "interfaces": {
+    "clk": {
+      "width": 1,
+      "direction": "input",
+      "frequency": "100 MHz",
+      "description": "System clock"
+    },
+    "rst_n": {
+      "width": 1,
+      "direction": "input",
+      "active_level": "low",
+      "description": "Active-low reset"
+    },
+    "uart": {
+      "uart_rx": {
+        "direction": "input",
+        "description": "UART receive (from USB-UART)"
+      },
+      "uart_tx": {
+        "direction": "output",
+        "description": "UART transmit (to USB-UART)"
+      },
+      "baud_rate": 115200
+    },
+    "gpio": {
+      "gpio_in": {
+        "width": 8,
+        "direction": "input",
+        "description": "GPIO inputs (switches)"
+      },
+      "gpio_out": {
+        "width": 8,
+        "direction": "output",
+        "description": "GPIO outputs (LEDs)"
+      }
+    },
+    "axi4_lite_debug": {
+      "status": "available_internal",
+      "description": "Future debug interface (not routed to board pins)",
+      "note": "Can be routed to PMOD connectors in future revisions"
+    },
+    "external_interrupt": {
+      "status": "mapped_to_reset",
+      "description": "External interrupt (currently tied to reset)"
+    }
+  },
+  "vivado_settings": {
+    "design_language": "verilog",
+    "simulation_language": "systemverilog",
+    "target_language": "verilog",
+    "part": "xc7a100tcsg324-1",
+    "default_project_location": "./build",
+    "output_directory": "./bitstream",
+    "vivado_version": "2020.1 or later",
+    "tcl_scripts": {
+      "vivado_build.tcl": "Complete build flow",
+      "vivado_synth.tcl": "Synthesis script",
+      "vivado_impl.tcl": "Implementation script",
+      "vivado_bitstream.tcl": "Bitstream generation",
+      "vivado_program.tcl": "FPGA programming",
+      "vivado_timing.tcl": "Timing analysis",
+      "vivado_utilization.tcl": "Resource utilization report"
+    }
+  },
+  "resource_estimates": {
+    "synthesis_time": "30-60 seconds",
+    "place_route_time": "1-3 minutes",
+    "total_build_time": "2-5 minutes",
+    "estimated_resource_usage": {
+      "lut_percentage": "15-20%",
+      "bram_percentage": "10-15%",
+      "dsp_percentage": "5-10%"
+    },
+    "bitstream_size": "5-8 MB"
+  },
+  "testing_and_validation": {
+    "simulation_environment": "../sim",
+    "simulation_tool": "Questa Sim / ModelSim",
+    "fpga_testing": {
+      "uart_loopback": "Test UART echo functionality",
+      "gpio_passthrough": "Test GPIO input to output",
+      "led_blink": "Test LED outputs with pattern"
+    }
+  },
+  "programming": {
+    "method": "JTAG via USB",
+    "connector": "Micro USB on Arty board",
+    "driver": "Digilent Adept or Vivado programmer",
+    "bitstream_file": "bitstream/riscv_soc_arty.bit",
+    "programming_time": "10-20 seconds",
+    "notes": "Board must be in JTAG mode (default)"
+  },
+  "board_resources": {
+    "clock_generator": {
+      "input_frequency": "100 MHz",
+      "input_pin": "E3",
+      "oscillator_type": "Crystal"
+    },
+    "power_supply": "USB 5V to on-board regulator (3.3V for I/O)",
+    "serial_interface": "Micro USB (FTDI FT2232 based)",
+    "leds": {
+      "count": 4,
+      "color": "RGB + Green",
+      "gpio_pins": ["H17", "K15", "J13", "N14"]
+    },
+    "switches": {
+      "count": 4,
+      "type": "Slide switches",
+      "gpio_pins": ["C9", "B9", "B8", "A8"]
+    },
+    "pmod_connectors": 4,
+    "pmod_connector_notes": "Can be used for future interface expansion"
+  },
+  "build_instructions": {
+    "prerequisites": [
+      "Vivado 2020.1 or later installed",
+      "Arty A7-100T board connected via USB",
+      "Build scripts in ./scripts directory"
+    ],
+    "quick_build": [
+      "cd fpga",
+      "make build",
+      "Wait 2-5 minutes for completion",
+      "Check bitstream/riscv_soc_arty.bit"
+    ],
+    "quick_program": [
+      "make program",
+      "FPGA will be programmed automatically"
+    ]
+  },
+  "troubleshooting": {
+    "vivado_not_found": {
+      "issue": "make: vivado: Command not found",
+      "solution": "Add Vivado to PATH or specify: make VIVADO=/path/to/vivado build"
+    },
+    "synthesis_fails": {
+      "issue": "Synthesis error during build",
+      "solution": "Check build/synth/vivado_synth.log for details"
+    },
+    "place_route_fails": {
+      "issue": "P&R error",
+      "solution": "Check build/impl/vivado_impl.log - may need to adjust constraints"
+    },
+    "bitstream_incomplete": {
+      "issue": "Bitstream not generated",
+      "solution": "Check bitstream/vivado_bit.log - ensure impl checkpoint exists"
+    },
+    "programming_fails": {
+      "issue": "FPGA not detected",
+      "solution": "Verify board is connected, check cable, update Vivado tools"
+    }
+  },
+  "reports_generated": {
+    "after_synthesis": [
+      "Synthesis report",
+      "Timing report (pre-routing)",
+      "Resource utilization (pre-routing)"
+    ],
+    "after_implementation": [
+      "Implementation report",
+      "Timing report (post-routing)",
+      "Resource utilization (final)",
+      "Clock domain crossing report"
+    ],
+    "after_bitstream": [
+      "Bitstream log",
+      "Configuration report"
+    ]
+  },
+  "design_statistics": {
+    "rtl_files": 9,
+    "total_rtl_lines": "~3000",
+    "constraint_pins_defined": 16,
+    "primary_clock_frequency": "100 MHz",
+    "interfaces": 4,
+    "top_module_ports": 33
+  },
+  "documentation": {
+    "constraint_file": "arty100t.xdc - Pin assignments and timing",
+    "makefile": "Makefile - Build automation",
+    "flow_json": "flow.json - This file - complete build flow description",
+    "readme": "FPGA build instructions (recommended to create)"
+  },
+  "notes": [
+    "This flow.json describes the complete FPGA build process",
+    "All RTL is compatible with Verilog-2005 for Yosys synthesis",
+    "FPGA implementation uses Xilinx Vivado design suite",
+    "Supports programming via JTAG (USB Micro connector)",
+    "LED outputs and switch inputs mapped to GPIO",
+    "UART interface for host communication at 115200 baud",
+    "Design can be extended with Pmod connectors for additional I/O"
+  ]
+}

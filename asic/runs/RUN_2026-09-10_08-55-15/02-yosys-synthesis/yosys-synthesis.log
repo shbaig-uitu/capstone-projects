@@ -1,0 +1,1040 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/02-yosys-synthesis/synthesis.abc.sdc' for ABC…wtaf
+
+2. Executing Verilog-2005 frontend: riscv_soc_top_synth.sv
+Parsing SystemVerilog input from `riscv_soc_top_synth.sv' to AST representation.
+Storing AST representation for module `$abstract\riscv_soc_top'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_soc_top'.
+Generating RTLIL representation for module `\riscv_soc_top'.
+
+4.1. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+
+4.2. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+Removing unused module `$abstract\riscv_soc_top'.
+Removed 1 unused modules.
+Renaming module riscv_soc_top to riscv_soc_top.
+
+5. Executing ATTRMAP pass (move or copy attributes).
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+
+7.2. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$riscv_soc_top_synth.sv:56$1 in module riscv_soc_top.
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 0 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+     1/4: $0\gpio_out_reg[7:0]
+     2/4: $0\counter[31:0]
+     3/4: $0\uart_tx_reg[0:0]
+     4/4: $0\state_reg[31:0]
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\riscv_soc_top.\counter' using process `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+  created $adff cell `$procdff$15' with positive edge clock and positive level reset.
+Creating register for signal `\riscv_soc_top.\state_reg' using process `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+  created $adff cell `$procdff$20' with positive edge clock and positive level reset.
+Creating register for signal `\riscv_soc_top.\gpio_out_reg' using process `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+  created $adff cell `$procdff$25' with positive edge clock and positive level reset.
+Creating register for signal `\riscv_soc_top.\uart_tx_reg' using process `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+  created $adff cell `$procdff$30' with positive edge clock and positive level reset.
+
+17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+18. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+Removing empty process `riscv_soc_top.$proc$riscv_soc_top_synth.sv:56$1'.
+Cleaned up 1 empty switch.
+
+19. Executing CHECK pass (checking for obvious problems).
+Checking module riscv_soc_top...
+Found and reported 0 problems.
+
+20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+<suppressed ~8 debug messages>
+
+21. Executing FLATTEN pass (flatten design).
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 8 unused cells and 19 unused wires.
+<suppressed ~10 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 7 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 7 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+29. Executing OPT_DFF pass (perform DFF optimizations).
+
+30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+32. Executing FSM pass (extract and optimize FSM).
+
+32.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+32.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+32.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+32.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+32.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+32.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+32.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+34. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 7 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 7 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+38. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$30 ($adff) from module riscv_soc_top (D = $not$riscv_soc_top_synth.sv:68$5_Y, Q = \uart_tx_reg).
+
+39. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+41. Rerunning OPT passes. (Maybe there is more to do…)
+
+42. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+43. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+45. Executing OPT_DFF pass (perform DFF optimizations).
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+48. Executing WREDUCE pass (reducing word size of cells).
+
+49. Executing PEEPOPT pass (run peephole optimizers).
+
+50. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+51. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module riscv_soc_top:
+  creating $macc model for $add$riscv_soc_top_synth.sv:63$3 ($add).
+  creating $alu model for $macc $add$riscv_soc_top_synth.sv:63$3.
+  creating $alu cell for $add$riscv_soc_top_synth.sv:63$3: $auto$alumacc.cc:512:replace_alu$32
+  created 1 $alu and 0 $macc cells.
+
+52. Executing SHARE pass (SAT-based resource sharing).
+
+53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+54. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+55. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+56. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+57. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+58. Executing OPT_DFF pass (perform DFF optimizations).
+
+59. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+60. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+61. Executing MEMORY pass.
+
+61.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+61.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+61.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+61.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+61.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+61.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+61.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+61.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+61.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+61.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+62. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+63. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+64. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+65. Executing OPT_DFF pass (perform DFF optimizations).
+
+66. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+67. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 6 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+73. Executing OPT_SHARE pass.
+
+74. Executing OPT_DFF pass (perform DFF optimizations).
+
+75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+77. Executing TECHMAP pass (map to technology primitives).
+
+77.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+77.2. Continuing TECHMAP pass.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $adff.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~406 debug messages>
+
+78. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+<suppressed ~279 debug messages>
+
+79. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 195 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Computing hashes of 194 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+80. Executing OPT_DFF pass (perform DFF optimizations).
+
+81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 36 unused cells and 128 unused wires.
+<suppressed ~37 debug messages>
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+83. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 158 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+84. Executing OPT_DFF pass (perform DFF optimizations).
+
+85. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+86. Executing ABC pass (technology mapping using ABC).
+
+86.1. Extracting gate netlist of module `\riscv_soc_top' to `<abc-temp-dir>/input.blif'..
+
+86.1.1. Executed ABC.
+Extracted 117 gates and 182 wires to a netlist network with 65 inputs and 65 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-xLGpOr/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+86.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        1
+ABC RESULTS:            ANDNOT cells:       14
+ABC RESULTS:              NAND cells:       15
+ABC RESULTS:               NOR cells:        1
+ABC RESULTS:               NOT cells:        2
+ABC RESULTS:                OR cells:       20
+ABC RESULTS:             ORNOT cells:        1
+ABC RESULTS:              XNOR cells:       14
+ABC RESULTS:               XOR cells:       49
+ABC RESULTS:        internal signals:       52
+ABC RESULTS:           input signals:       65
+ABC RESULTS:          output signals:       65
+Removing temp directory.
+Removing global temp directory.
+
+87. Executing OPT pass (performing simple optimizations).
+
+87.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+87.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 158 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+87.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+87.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 0 unused cells and 153 unused wires.
+<suppressed ~1 debug messages>
+
+87.5. Finished fast OPT passes.
+
+88. Executing HIERARCHY pass (managing design hierarchy).
+
+88.1. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+
+88.2. Analyzing design hierarchy..
+Top module:  \riscv_soc_top
+Removed 0 unused modules.
+
+89. Executing CHECK pass (checking for obvious problems).
+Checking module riscv_soc_top...
+Found and reported 0 problems.
+
+90. Printing statistics.
+
+=== riscv_soc_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       82 wires
+      325 wire bits
+       27 public wires
+      208 public wire bits
+       24 ports
+      167 port bits
+      158 cells
+       14   $_ANDNOT_
+        1   $_AND_
+        1   $_DFFE_PN0P_
+       40   $_DFF_PN0_
+       15   $_NAND_
+        1   $_NOR_
+        2   $_NOT_
+        1   $_ORNOT_
+       20   $_OR_
+       14   $_XNOR_
+       49   $_XOR_
+
+91. Executing OPT pass (performing simple optimizations).
+
+91.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+91.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 158 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+91.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_soc_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+91.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_soc_top.
+Performed a total of 0 changes.
+
+91.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_soc_top'.
+Computing hashes of 158 cells of `\riscv_soc_top'.
+Finding duplicate cells in `\riscv_soc_top'.
+Removed a total of 0 cells.
+
+91.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+91.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+
+91.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_soc_top.
+
+91.9. Finished fast OPT passes. (There is nothing left to do.)
+
+92. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~2 debug messages>
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/tmp/bc65062b25a440aa8ab83daa276a7313.lib ",
+   "modules": {
+      "\\riscv_soc_top": {
+         "num_wires":         80,
+         "num_wire_bits":     316,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         158,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 14,
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 1,
+            "$_DFF_PN0_": 40,
+            "$_NAND_": 15,
+            "$_NOR_": 1,
+            "$_NOT_": 2,
+            "$_ORNOT_": 1,
+            "$_OR_": 20,
+            "$_XNOR_": 14,
+            "$_XOR_": 49
+         }
+      }
+   },
+      "design": {
+         "num_wires":         80,
+         "num_wire_bits":     316,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         158,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 14,
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 1,
+            "$_DFF_PN0_": 40,
+            "$_NAND_": 15,
+            "$_NOR_": 1,
+            "$_NOT_": 2,
+            "$_ORNOT_": 1,
+            "$_OR_": 20,
+            "$_XNOR_": 14,
+            "$_XOR_": 49
+         }
+      }
+}
+
+93. Printing statistics.
+
+=== riscv_soc_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       80 wires
+      316 wire bits
+       25 public wires
+      199 public wire bits
+       24 ports
+      167 port bits
+      158 cells
+       14   $_ANDNOT_
+        1   $_AND_
+        1   $_DFFE_PN0P_
+       40   $_DFF_PN0_
+       15   $_NAND_
+        1   $_NOR_
+        2   $_NOT_
+        1   $_ORNOT_
+       20   $_OR_
+       14   $_XNOR_
+       49   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+94. Executing TECHMAP pass (map to technology primitives).
+
+94.1. Executing Verilog-2005 frontend: /home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+94.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+95. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+96. Executing TECHMAP pass (map to technology primitives).
+
+96.1. Executing Verilog-2005 frontend: /home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/cl4/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+96.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+97. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+98. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+98.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\riscv_soc_top':
+  mapped 41 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/tmp/bc65062b25a440aa8ab83daa276a7313.lib ",
+   "modules": {
+      "\\riscv_soc_top": {
+         "num_wires":         81,
+         "num_wire_bits":     317,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         159,
+         "num_submodules":       0,
+         "area":              1077.283200,
+         "sequential_area":    1077.283200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 14,
+            "$_AND_": 1,
+            "$_MUX_": 1,
+            "$_NAND_": 15,
+            "$_NOR_": 1,
+            "$_NOT_": 2,
+            "$_ORNOT_": 1,
+            "$_OR_": 20,
+            "$_XNOR_": 14,
+            "$_XOR_": 49,
+            "sky130_fd_sc_hd__dfrtp_2": 41
+         }
+      }
+   },
+      "design": {
+         "num_wires":         81,
+         "num_wire_bits":     317,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         159,
+         "num_submodules":       0,
+         "area":              1077.283200,
+         "sequential_area":    1077.283200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 14,
+            "$_AND_": 1,
+            "$_MUX_": 1,
+            "$_NAND_": 15,
+            "$_NOR_": 1,
+            "$_NOT_": 2,
+            "$_ORNOT_": 1,
+            "$_OR_": 20,
+            "$_XNOR_": 14,
+            "$_XOR_": 49,
+            "sky130_fd_sc_hd__dfrtp_2": 41
+         }
+      }
+}
+
+99. Printing statistics.
+
+=== riscv_soc_top ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       81        - wires
+      317        - wire bits
+       25        - public wires
+      199        - public wire bits
+       24        - ports
+      167        - port bits
+      159 1.08E+03 cells
+       14        -   $_ANDNOT_
+        1        -   $_AND_
+        1        -   $_MUX_
+       15        -   $_NAND_
+        1        -   $_NOR_
+        2        -   $_NOT_
+        1        -   $_ORNOT_
+       20        -   $_OR_
+       14        -   $_XNOR_
+       49        -   $_XOR_
+       41 1.08E+03   sky130_fd_sc_hd__dfrtp_2
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\riscv_soc_top': 1077.283200
+     of which used for sequential elements: 1077.283200 (100.00%)
+
+[INFO] Using generated ABC script '/home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/02-yosys-synthesis/AREA_0.abc'…
+
+100. Executing ABC pass (technology mapping using ABC).
+
+100.1. Extracting gate netlist of module `\riscv_soc_top' to `/tmp/yosys-abc-H6Dd2q/input.blif'..
+
+100.1.1. Executed ABC.
+Extracted 118 gates and 184 wires to a netlist network with 66 inputs and 65 outputs.
+Running ABC script: /tmp/yosys-abc-H6Dd2q/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-H6Dd2q/abc.script"
+ABC: + read_blif /tmp/yosys-abc-H6Dd2q/input.blif 
+ABC: + read_lib -w /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/tmp/bc65062b25a440aa8ab83daa276a7313.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.06 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/tmp/bc65062b25a440aa8ab83daa276a7313.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.11 sec
+ABC: Memory =    9.54 MB. Time =     0.11 sec
+ABC: Warning: Detected 2 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/02-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/02-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =    109 (  0.9 %)   Cap = 19.4 ff (  0.1 %)   Area =     1268.72 ( 99.1 %)   Delay =  1561.57 ps  (  4.6 %)               
+ABC: Path  0 --       7 : 0    3 pi                      A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  13.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     169 : 4    8 sky130_fd_sc_hd__and4_2 A =  10.01  Df = 308.3  -37.8 ps  S = 166.8 ps  Cin =  1.5 ff  Cout =  27.4 ff  Cmax = 300.3 ff  G = 1734  
+ABC: Path  2 --     186 : 4    7 sky130_fd_sc_hd__and4_2 A =  10.01  Df = 611.6  -80.2 ps  S = 119.9 ps  Cin =  1.5 ff  Cout =  17.1 ff  Cmax = 300.3 ff  G = 1078  
+ABC: Path  3 --     219 : 4    7 sky130_fd_sc_hd__and4_2 A =  10.01  Df = 931.2 -131.9 ps  S = 153.5 ps  Cin =  1.5 ff  Cout =  24.5 ff  Cmax = 300.3 ff  G = 1549  
+ABC: Path  4 --     237 : 4    1 sky130_fd_sc_hd__and4_2 A =  10.01  Df =1191.7 -156.9 ps  S =  79.9 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 300.3 ff  G =  537  
+ABC: Path  5 --     239 : 2    1 sky130_fd_sc_hd__xor2_2 A =  16.27  Df =1561.6 -317.4 ps  S = 428.7 ps  Cin =  8.6 ff  Cout =  33.4 ff  Cmax = 130.0 ff  G =  390  
+ABC: Start-point = pi6 (\counter [3]).  End-point = po63 ($auto$alumacc.cc:512:replace_alu$32.Y [31]).
+ABC: netlist                       : i/o =   66/   65  lat =    0  nd =   109  edge =    279  area =1269.03  delay = 5.00  lev = 5
+ABC: + write_blif /tmp/yosys-abc-H6Dd2q/output.blif 
+
+100.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       41
+ABC RESULTS:        internal signals:       53
+ABC RESULTS:           input signals:       66
+ABC RESULTS:          output signals:       65
+Removing temp directory.
+Removing global temp directory.
+
+101. Executing SETUNDEF pass (replace undef values with defined constants).
+
+102. Executing HILOMAP pass (mapping to constant drivers).
+
+103. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+104. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_soc_top..
+Removed 0 unused cells and 222 unused wires.
+<suppressed ~1 debug messages>
+
+105. Executing INSBUF pass (insert buffer cells for connected wires).
+Add riscv_soc_top/$auto$insbuf.cc:97:execute$1010: \axi_arvalid -> \axi_arready
+Add riscv_soc_top/$auto$insbuf.cc:97:execute$1011: \axi_awvalid -> \axi_awready
+Add riscv_soc_top/$auto$insbuf.cc:97:execute$1012: \axi_wvalid -> \axi_wready
+
+106. Executing CHECK pass (checking for obvious problems).
+Checking module riscv_soc_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/cl4/Desktop/training/RISC-V/asic/runs/RUN_2026-09-10_08-55-15/tmp/bc65062b25a440aa8ab83daa276a7313.lib ",
+   "modules": {
+      "\\riscv_soc_top": {
+         "num_wires":         133,
+         "num_wire_bits":     276,
+         "num_pub_wires":     56,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         159,
+         "num_submodules":       0,
+         "area":              2383.536000,
+         "sequential_area":    1077.283200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21oi_2": 6,
+            "sky130_fd_sc_hd__a31o_2": 3,
+            "sky130_fd_sc_hd__a31oi_2": 1,
+            "sky130_fd_sc_hd__and2_2": 5,
+            "sky130_fd_sc_hd__and2b_2": 2,
+            "sky130_fd_sc_hd__and3_2": 8,
+            "sky130_fd_sc_hd__and4_2": 15,
+            "sky130_fd_sc_hd__buf_2": 3,
+            "sky130_fd_sc_hd__conb_1": 6,
+            "sky130_fd_sc_hd__dfrtp_2": 41,
+            "sky130_fd_sc_hd__inv_2": 1,
+            "sky130_fd_sc_hd__nand2_2": 5,
+            "sky130_fd_sc_hd__nor2_2": 8,
+            "sky130_fd_sc_hd__o21a_2": 2,
+            "sky130_fd_sc_hd__o21ba_2": 6,
+            "sky130_fd_sc_hd__o2bb2a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 1,
+            "sky130_fd_sc_hd__xnor2_2": 4,
+            "sky130_fd_sc_hd__xor2_2": 41
+         }
+      }
+   },
+      "design": {
+         "num_wires":         133,
+         "num_wire_bits":     276,
+         "num_pub_wires":     56,
+         "num_pub_wire_bits": 199,
+         "num_ports":         24,
+         "num_port_bits":     167,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         159,
+         "num_submodules":       0,
+         "area":              2383.536000,
+         "sequential_area":    1077.283200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21oi_2": 6,
+            "sky130_fd_sc_hd__a31o_2": 3,
+            "sky130_fd_sc_hd__a31oi_2": 1,
+            "sky130_fd_sc_hd__and2_2": 5,
+            "sky130_fd_sc_hd__and2b_2": 2,
+            "sky130_fd_sc_hd__and3_2": 8,
+            "sky130_fd_sc_hd__and4_2": 15,
+            "sky130_fd_sc_hd__buf_2": 3,
+            "sky130_fd_sc_hd__conb_1": 6,
+            "sky130_fd_sc_hd__dfrtp_2": 41,
+            "sky130_fd_sc_hd__inv_2": 1,
+            "sky130_fd_sc_hd__nand2_2": 5,
+            "sky130_fd_sc_hd__nor2_2": 8,
+            "sky130_fd_sc_hd__o21a_2": 2,
+            "sky130_fd_sc_hd__o21ba_2": 6,
+            "sky130_fd_sc_hd__o2bb2a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 1,
+            "sky130_fd_sc_hd__xnor2_2": 4,
+            "sky130_fd_sc_hd__xor2_2": 41
+         }
+      }
+}
+
+107. Printing statistics.
+
+=== riscv_soc_top ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      133        - wires
+      276        - wire bits
+       56        - public wires
+      199        - public wire bits
+       24        - ports
+      167        - port bits
+      159 2.38E+03 cells
+        6    52.55   sky130_fd_sc_hd__a21oi_2
+        3   26.275   sky130_fd_sc_hd__a31o_2
+        1   12.512   sky130_fd_sc_hd__a31oi_2
+        5   37.536   sky130_fd_sc_hd__and2_2
+        2   17.517   sky130_fd_sc_hd__and2b_2
+        8   60.058   sky130_fd_sc_hd__and3_2
+       15  150.144   sky130_fd_sc_hd__and4_2
+        3   15.014   sky130_fd_sc_hd__buf_2
+        6   22.522   sky130_fd_sc_hd__conb_1
+       41 1.08E+03   sky130_fd_sc_hd__dfrtp_2
+        1    3.754   sky130_fd_sc_hd__inv_2
+        5    31.28   sky130_fd_sc_hd__nand2_2
+        8   50.048   sky130_fd_sc_hd__nor2_2
+        2   17.517   sky130_fd_sc_hd__o21a_2
+        6   60.058   sky130_fd_sc_hd__o21ba_2
+        1   11.261   sky130_fd_sc_hd__o2bb2a_2
+        1    6.256   sky130_fd_sc_hd__or2_2
+        4   65.062   sky130_fd_sc_hd__xnor2_2
+       41   666.89   sky130_fd_sc_hd__xor2_2
+
+   Chip area for module '\riscv_soc_top': 2383.536000
+     of which used for sequential elements: 1077.283200 (45.20%)
+
+108. Executing Verilog backend.
+Dumping module `\riscv_soc_top'.
+
+109. Executing JSON backend.

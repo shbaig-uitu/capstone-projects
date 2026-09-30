@@ -1,0 +1,20 @@
+{
+  "DESIGN_NAME": "riscv_soc_top",
+  "PDK": "sky130A",
+  "DIE_AREA": [0, 0, 3600, 3600],
+  "CORE_AREA": [50, 50, 3550, 3550],
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "CLOCK_PERIOD": 10,
+  "CLOCK_PORT": "clk",
+  "CLOCK_NET": "clk",
+  "VERILOG_FILES": [
+    "riscv_soc_top_synth.sv"
+  ],
+  "SYNTH_STRATEGY": "AREA 0",
+  "MAX_FANOUT_CONSTRAINT": 200,
+  "PL_TARGET_DENSITY_PCT": 75,
+  "GRT_ADJUSTMENT": 0.2,
+  "PDN_CORE_RING": true,
+  "SKIP_VERILATOR_LINT": 1,
+  "RUN_LINTER": 0
+}

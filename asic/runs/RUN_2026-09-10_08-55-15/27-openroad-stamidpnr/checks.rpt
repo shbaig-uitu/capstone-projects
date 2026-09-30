@@ -1,0 +1,235 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: rst_n (input port clocked by clk)
+Endpoint: _203_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 ^ input external delay
+    41    0.171492    0.768465    0.531208    2.531208 ^ rst_n (in)
+                                                         rst_n (net)
+                      0.768479    0.000000    2.531208 ^ _203_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                              2.531208   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock source latency
+    41    0.100319    0.453384    0.312527   10.312527 ^ clk (in)
+                                                         clk (net)
+                      0.453385    0.000000   10.312527 ^ _203_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                                 -0.250000   10.062527   clock uncertainty
+                                  0.000000   10.062527   clock reconvergence pessimism
+                                  0.133203   10.195730   library recovery time
+                                             10.195730   data required time
+---------------------------------------------------------------------------------------------
+                                             10.195730   data required time
+                                             -2.531208   data arrival time
+---------------------------------------------------------------------------------------------
+                                              7.664522   slack (MET)
+
+
+Startpoint: axi_araddr[11] (input port clocked by clk)
+Endpoint: axi_rdata[11] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.011460    0.057925    0.038735    2.038735 ^ axi_araddr[11] (in)
+                                                         axi_araddr[11] (net)
+                      0.057926    0.000000    2.038735 ^ _089_/B (sky130_fd_sc_hd__xor2_2)
+     1    0.036451    0.451396    0.385729    2.424464 ^ _089_/X (sky130_fd_sc_hd__xor2_2)
+                                                         axi_rdata[11] (net)
+                      0.451397    0.000702    2.425166 ^ axi_rdata[11] (out)
+                                              2.425166   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock network delay (propagated)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.425166   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.324834   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+_203_/RESET_B                           0.750000    0.768479   -0.018479 (VIOLATED)
+_204_/RESET_B                           0.750000    0.768479   -0.018479 (VIOLATED)
+_205_/RESET_B                           0.750000    0.768478   -0.018478 (VIOLATED)
+_206_/RESET_B                           0.750000    0.768478   -0.018478 (VIOLATED)
+_198_/RESET_B                           0.750000    0.768478   -0.018478 (VIOLATED)
+_222_/RESET_B                           0.750000    0.768478   -0.018478 (VIOLATED)
+_225_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_226_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_201_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_207_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_208_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_200_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_202_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_209_/RESET_B                           0.750000    0.768477   -0.018477 (VIOLATED)
+_199_/RESET_B                           0.750000    0.768476   -0.018476 (VIOLATED)
+_221_/RESET_B                           0.750000    0.768476   -0.018476 (VIOLATED)
+_223_/RESET_B                           0.750000    0.768476   -0.018476 (VIOLATED)
+_224_/RESET_B                           0.750000    0.768476   -0.018476 (VIOLATED)
+_210_/RESET_B                           0.750000    0.768476   -0.018476 (VIOLATED)
+_211_/RESET_B                           0.750000    0.768474   -0.018474 (VIOLATED)
+_212_/RESET_B                           0.750000    0.768474   -0.018474 (VIOLATED)
+_213_/RESET_B                           0.750000    0.768474   -0.018474 (VIOLATED)
+_197_/RESET_B                           0.750000    0.768474   -0.018474 (VIOLATED)
+_214_/RESET_B                           0.750000    0.768473   -0.018473 (VIOLATED)
+_196_/RESET_B                           0.750000    0.768472   -0.018473 (VIOLATED)
+_195_/RESET_B                           0.750000    0.768471   -0.018472 (VIOLATED)
+_220_/RESET_B                           0.750000    0.768471   -0.018471 (VIOLATED)
+_215_/RESET_B                           0.750000    0.768471   -0.018471 (VIOLATED)
+_216_/RESET_B                           0.750000    0.768470   -0.018470 (VIOLATED)
+_217_/RESET_B                           0.750000    0.768469   -0.018469 (VIOLATED)
+_218_/RESET_B                           0.750000    0.768468   -0.018468 (VIOLATED)
+_191_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_192_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_193_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_194_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_187_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_190_/RESET_B                           0.750000    0.768467   -0.018467 (VIOLATED)
+_188_/RESET_B                           0.750000    0.768466   -0.018467 (VIOLATED)
+_189_/RESET_B                           0.750000    0.768466   -0.018466 (VIOLATED)
+_219_/RESET_B                           0.750000    0.768466   -0.018466 (VIOLATED)
+rst_n                                   0.750000    0.768465   -0.018465 (VIOLATED)
+_186_/RESET_B                           0.750000    0.768465   -0.018465 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 85 unannotated drivers.
+ axi_awaddr[0]
+ axi_awaddr[10]
+ axi_awaddr[11]
+ axi_awaddr[12]
+ axi_awaddr[13]
+ axi_awaddr[14]
+ axi_awaddr[15]
+ axi_awaddr[16]
+ axi_awaddr[17]
+ axi_awaddr[18]
+ axi_awaddr[19]
+ axi_awaddr[1]
+ axi_awaddr[20]
+ axi_awaddr[21]
+ axi_awaddr[22]
+ axi_awaddr[23]
+ axi_awaddr[24]
+ axi_awaddr[25]
+ axi_awaddr[26]
+ axi_awaddr[27]
+ axi_awaddr[28]
+ axi_awaddr[29]
+ axi_awaddr[2]
+ axi_awaddr[30]
+ axi_awaddr[31]
+ axi_awaddr[3]
+ axi_awaddr[4]
+ axi_awaddr[5]
+ axi_awaddr[6]
+ axi_awaddr[7]
+ axi_awaddr[8]
+ axi_awaddr[9]
+ axi_bready
+ axi_rready
+ axi_wdata[0]
+ axi_wdata[10]
+ axi_wdata[11]
+ axi_wdata[12]
+ axi_wdata[13]
+ axi_wdata[14]
+ axi_wdata[15]
+ axi_wdata[16]
+ axi_wdata[17]
+ axi_wdata[18]
+ axi_wdata[19]
+ axi_wdata[1]
+ axi_wdata[20]
+ axi_wdata[21]
+ axi_wdata[22]
+ axi_wdata[23]
+ axi_wdata[24]
+ axi_wdata[25]
+ axi_wdata[26]
+ axi_wdata[27]
+ axi_wdata[28]
+ axi_wdata[29]
+ axi_wdata[2]
+ axi_wdata[30]
+ axi_wdata[31]
+ axi_wdata[3]
+ axi_wdata[4]
+ axi_wdata[5]
+ axi_wdata[6]
+ axi_wdata[7]
+ axi_wdata[8]
+ axi_wdata[9]
+ axi_wstrb[0]
+ axi_wstrb[1]
+ axi_wstrb[2]
+ axi_wstrb[3]
+ ext_interrupt
+ gpio_in[0]
+ gpio_in[1]
+ gpio_in[2]
+ gpio_in[3]
+ gpio_in[4]
+ gpio_in[5]
+ gpio_in[6]
+ gpio_in[7]
+ _227_/LO
+ _228_/LO
+ _229_/HI
+ _230_/HI
+ _231_/HI
+ _232_/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 42
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_1v80: 42
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_1v80: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_1v80: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
