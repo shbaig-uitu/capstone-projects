@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#2f2f2f"/>
+  </marker>
+  <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#6f8a3c"/>
+  </marker>
+  <style>
+    .title { font: 700 31px Arial, Helvetica, sans-serif; fill:#242424; }
+    .subtitle { font: 18px Arial, Helvetica, sans-serif; fill:#606060; }
+    .h1 { font: 700 20px Arial, Helvetica, sans-serif; fill:#292929; }
+    .h2 { font: 700 17px Arial, Helvetica, sans-serif; fill:#292929; }
+    .body { font: 15px Arial, Helvetica, sans-serif; fill:#3d3d3d; }
+    .small { font: 13px Arial, Helvetica, sans-serif; fill:#5d5d5d; }
+    .addr { font: 13px 'Courier New', monospace; fill:#5a5a5a; }
+    .box { stroke:#5d5a52; stroke-width:1.6; rx:7; ry:7; }
+    .edge { fill:none; stroke:#323232; stroke-width:2.6; marker-end:url(#arrow); }
+    .irq { fill:none; stroke:#738845; stroke-width:2.2; stroke-dasharray:9 7; marker-end:url(#arrowGreen); }
+  </style>
+</defs>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+
+<text x="800" y="54" text-anchor="middle" class="title">Dual Core RV32I AXI4 Lite SoC Architecture</text>
+<text x="800" y="84" text-anchor="middle" class="subtitle">Two independent processors sharing memory and peripherals through a structured interconnect</text>
+<rect x="665" y="120" width="455" height="665" fill="none" stroke="#89946a" stroke-width="1.7" stroke-dasharray="8 7" rx="8"/>
+<text x="892" y="145" text-anchor="middle" class="small">AXI4 Lite interconnect</text>
+<rect x="55" y="145" width="250" height="120" fill="#eef2f6" class="box"/>
+<text x="180.0" y="179" text-anchor="middle" class="h1">RV32I Core 0</text>
+<text x="180.0" y="209" text-anchor="middle" class="body">Instruction execution</text>
+<text x="180.0" y="233" text-anchor="middle" class="body">Load and store requests</text>
+<rect x="55" y="305" width="250" height="82" fill="#f5f3ee" class="box"/>
+<text x="180.0" y="339" text-anchor="middle" class="h1">Instruction SRAM 0</text>
+<text x="180.0" y="369" text-anchor="middle" class="body">Private program memory</text>
+<rect x="370" y="160" width="250" height="105" fill="#eef3e7" class="box"/>
+<text x="495.0" y="194" text-anchor="middle" class="h1">AXI4 Lite Adapter 0</text>
+<text x="495.0" y="224" text-anchor="middle" class="body">Core request conversion</text>
+<rect x="55" y="530" width="250" height="120" fill="#eef2f6" class="box"/>
+<text x="180.0" y="564" text-anchor="middle" class="h1">RV32I Core 1</text>
+<text x="180.0" y="594" text-anchor="middle" class="body">Instruction execution</text>
+<text x="180.0" y="618" text-anchor="middle" class="body">Load and store requests</text>
+<rect x="55" y="690" width="250" height="82" fill="#f5f3ee" class="box"/>
+<text x="180.0" y="724" text-anchor="middle" class="h1">Instruction SRAM 1</text>
+<text x="180.0" y="754" text-anchor="middle" class="body">Private program memory</text>
+<rect x="370" y="550" width="250" height="105" fill="#eef3e7" class="box"/>
+<text x="495.0" y="584" text-anchor="middle" class="h1">AXI4 Lite Adapter 1</text>
+<text x="495.0" y="614" text-anchor="middle" class="body">Core request conversion</text>
+<rect x="710" y="240" width="365" height="350" fill="#efeee8" class="box"/>
+<text x="892.5" y="280" text-anchor="middle" class="h1">NoC Inspired AXI4 Lite Fabric</text>
+<line x1="748" y1="298" x2="1037" y2="298" stroke="#9a988e" stroke-width="1.2"/>
+<text x="892.5" y="340" text-anchor="middle" class="body">Address decoder and request routing</text>
+<text x="892.5" y="383" text-anchor="middle" class="body">Independent read and write arbiters</text>
+<text x="892.5" y="426" text-anchor="middle" class="body">Two-master contention handling</text>
+<text x="892.5" y="469" text-anchor="middle" class="body">Response selection and return path</text>
+<text x="892.5" y="512" text-anchor="middle" class="body">Routes each transaction to one destination</text>
+<rect x="1195" y="125" width="340" height="120" fill="#f4ecd9" class="box"/>
+<text x="1365.0" y="159" text-anchor="middle" class="h1">Shared Data SRAM</text>
+<text x="1365.0" y="189" text-anchor="middle" class="body">Common program data</text>
+<text x="1365.0" y="227" text-anchor="middle" class="addr">0x1000_0000 - 0x1000_FFFF</text>
+<rect x="1195" y="300" width="340" height="120" fill="#f4ecd9" class="box"/>
+<text x="1365.0" y="334" text-anchor="middle" class="h1">Inter Core Mailbox</text>
+<text x="1365.0" y="364" text-anchor="middle" class="body">Messages, pending flags and IRQ</text>
+<text x="1365.0" y="402" text-anchor="middle" class="addr">0x2000_0000 - 0x2000_00FF</text>
+<rect x="1195" y="475" width="340" height="120" fill="#f4ecd9" class="box"/>
+<text x="1365.0" y="509" text-anchor="middle" class="h1">UART Peripheral</text>
+<text x="1365.0" y="539" text-anchor="middle" class="body">Transmit, receive and status</text>
+<text x="1365.0" y="577" text-anchor="middle" class="addr">0x3000_0000 - 0x3000_00FF</text>
+<rect x="1195" y="650" width="340" height="120" fill="#f2e7e2" class="box"/>
+<text x="1365.0" y="684" text-anchor="middle" class="h1">Error Response Slave</text>
+<text x="1365.0" y="714" text-anchor="middle" class="body">Completes invalid accesses</text>
+<text x="1365.0" y="738" text-anchor="middle" class="body">All unmapped addresses</text>
+<polyline points="180,305 180,266" class="edge"/>
+<text x="195" y="287" class="small">instruction fetch</text>
+<polyline points="180,690 180,651" class="edge"/>
+<text x="195" y="673" class="small">instruction fetch</text>
+<polyline points="305,205 370,205" class="edge"/>
+<polyline points="305,590 370,590" class="edge"/>
+<polyline points="620,212 665,212 665,335 710,335" class="edge"/>
+<text x="642" y="194" class="small">read / write</text>
+<polyline points="620,603 665,603 665,500 710,500" class="edge"/>
+<text x="642" y="624" class="small">read / write</text>
+<polyline points="1075,305 1130,305 1130,185 1195,185" class="edge"/>
+<polyline points="1075,385 1195,385" class="edge"/>
+<polyline points="1075,465 1130,465 1130,535 1195,535" class="edge"/>
+<polyline points="1075,545 1095,545 1095,710 1195,710" class="edge"/>
+<polyline points="1535,535 1580,535" class="edge"/>
+<text x="1547" y="515" class="small">TX/RX</text>
+<polyline points="1195,340 1120,340 1120,112 330,112 330,175 305,175" class="irq"/>
+<text x="805" y="105" text-anchor="middle" class="small">mailbox interrupt to core 0</text>
+<polyline points="1195,400 1095,400 1095,820 330,820 330,605 305,605" class="irq"/>
+<text x="805" y="843" text-anchor="middle" class="small">mailbox interrupt to core 1</text>
+<rect x="420" y="880" width="760" height="48" fill="#f7f6f2" stroke="#bbb8af" stroke-width="1.1" rx="6"/>
+<line x1="470" y1="904" x2="555" y2="904" stroke="#323232" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="570" y="910" class="small">AXI4-Lite request and response</text>
+<line x1="850" y1="904" x2="935" y2="904" stroke="#738845" stroke-width="2.2" stroke-dasharray="9 7" marker-end="url(#arrowGreen)"/>
+<text x="950" y="910" class="small">Mailbox interrupt</text>
+</svg>
