@@ -1,0 +1,59 @@
+`ifndef SYSTOLIC_COVERAGE_SV
+`define SYSTOLIC_COVERAGE_SV
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+class systolic_coverage extends uvm_subscriber #(systolic_seq_item);
+  `uvm_component_utils(systolic_coverage)
+
+  systolic_seq_item item;
+
+  covergroup cg_axi_systolic;
+    option.per_instance = 1;
+
+    // Operation Coverage
+    cp_op: coverpoint item.op {
+      bins write_op = {systolic_seq_item::WRITE};
+      bins read_op  = {systolic_seq_item::READ};
+    }
+
+    // Write Address Space
+    cp_wr_addr: coverpoint item.addr iff (item.op == systolic_seq_item::WRITE) {
+      bins ctrl_reg     = {32'h00};
+      bins mat_a_rows[] = {[32'h10 : 32'h1C]};
+      bins mat_b_cols[] = {[32'h20 : 32'h2C]};
+    }
+
+    // Read Address Space
+    cp_rd_addr: coverpoint item.addr iff (item.op == systolic_seq_item::READ) {
+      bins status_reg   = {32'h04};
+      bins mat_c_outs[] = {[32'h40 : 32'h7C]};
+    }
+
+    // Input Byte Data Range Coverage
+    cp_data_b0: coverpoint item.data[7:0] iff (item.op == systolic_seq_item::WRITE) {
+      bins min_val = {8'h00};
+      bins mid_val = {[8'h01 : 8'hFE]};
+      bins max_val = {8'hFF};
+    }
+  endgroup
+
+  function new(string name = "systolic_coverage", uvm_component parent = null);
+    super.new(name, parent);
+    cg_axi_systolic = new();
+  endfunction
+
+  function void write(systolic_seq_item t);
+    this.item = t;
+    cg_axi_systolic.sample();
+  endfunction
+
+  function void report_phase(uvm_phase phase);
+    super.report_phase(phase);
+    `uvm_info("COV_REPORT", $sformatf("Achieved Functional Coverage = %0.2f %%", cg_axi_systolic.get_coverage()), UVM_NONE)
+  endfunction
+
+endclass
+
+`endif

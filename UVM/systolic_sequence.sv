@@ -1,0 +1,82 @@
+`ifndef SYSTOLIC_SEQUENCE_SV
+`define SYSTOLIC_SEQUENCE_SV
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+class systolic_random_seq extends uvm_sequence #(systolic_seq_item);
+  `uvm_object_utils(systolic_random_seq)
+
+  function new(string name = "systolic_random_seq");
+    super.new(name);
+  endfunction
+
+  // Task to send a full 4x4 transaction bundle
+  task run_single_matrix_test(bit [7:0] a_val, bit [7:0] b_val, bit is_random);
+    systolic_seq_item item = systolic_seq_item::type_id::create("item");
+
+    // 1. Matrix A Writes
+    for (int i = 0; i < 4; i++) begin
+      start_item(item);
+      item.op   = systolic_seq_item::WRITE;
+      item.addr = 32'h10 + (i * 4);
+      if (is_random)
+        item.data = {$urandom_range(0, 255), $urandom_range(0, 255), $urandom_range(0, 255), $urandom_range(0, 255)};
+      else
+        item.data = {a_val, a_val, a_val, a_val};
+      finish_item(item);
+    end
+
+    // 2. Matrix B Writes
+    for (int i = 0; i < 4; i++) begin
+      start_item(item);
+      item.op   = systolic_seq_item::WRITE;
+      item.addr = 32'h20 + (i * 4);
+      if (is_random)
+        item.data = {$urandom_range(0, 255), $urandom_range(0, 255), $urandom_range(0, 255), $urandom_range(0, 255)};
+      else
+        item.data = {b_val, b_val, b_val, b_val};
+      finish_item(item);
+    end
+
+    // 3. Trigger Compute (0x00)
+    start_item(item);
+    item.op   = systolic_seq_item::WRITE;
+    item.addr = 32'h00;
+    item.data = 32'h01;
+    finish_item(item);
+
+    // Read Status Register (0x04)
+    start_item(item);
+    item.op   = systolic_seq_item::READ;
+    item.addr = 32'h04;
+    finish_item(item);
+
+    // 4. Wait Execution Latency
+    #320ns;
+
+    // 5. Read back all 16 results
+    for (int i = 0; i < 16; i++) begin
+      start_item(item);
+      item.op   = systolic_seq_item::READ;
+      item.addr = 32'h40 + (i * 4);
+      finish_item(item);
+    end
+  endtask
+
+  task body();
+    `uvm_info("SEQ", ">>> CORNER CASE 1: All Zeros Matrix (0 x 0) <<<", UVM_LOW)
+    run_single_matrix_test(8'h00, 8'h00, 1'b0);
+
+    `uvm_info("SEQ", ">>> CORNER CASE 2: Maximum Saturation (255 x 255) <<<", UVM_LOW)
+    run_single_matrix_test(8'hFF, 8'hFF, 1'b0);
+
+    `uvm_info("SEQ", ">>> STRESS TEST: Running 50 Randomized Consecutive Multiplications <<<", UVM_LOW)
+    for (int iter = 1; iter <= 50; iter++) begin
+      run_single_matrix_test(8'h00, 8'h00, 1'b1);
+    end
+  endtask
+
+endclass
+
+`endif

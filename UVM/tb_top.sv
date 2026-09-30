@@ -1,0 +1,74 @@
+`timescale 1ns / 1ps
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+import systolic_pkg::*;
+
+module tb_top;
+
+  logic ACLK;
+  logic ARESETN;
+
+  // 50 MHz Clock (20ns period)
+  initial begin
+    ACLK = 0;
+    forever #10 ACLK = ~ACLK;
+  end
+
+  // Reset Generation
+  initial begin
+    ARESETN = 0;
+    #40 ARESETN = 1;
+  end
+
+  // Instantiate Interface
+  systolic_if s_if (ACLK, ARESETN);
+
+  // Instantiate DUT (axi_systolic_top)
+  axi_systolic_top dut (
+    .ACLK    (s_if.ACLK),
+    .ARESETN (s_if.ARESETN),
+    
+    // Write Address
+    .AWADDR  (s_if.AWADDR),
+    .AWVALID (s_if.AWVALID),
+    .AWREADY (s_if.AWREADY),
+
+    // Write Data
+    .WDATA   (s_if.WDATA),
+    .WSTRB   (s_if.WSTRB),
+    .WVALID  (s_if.WVALID),
+    .WREADY  (s_if.WREADY),
+
+    // Write Response
+    .BRESP   (s_if.BRESP),
+    .BVALID  (s_if.BVALID),
+    .BREADY  (s_if.BREADY),
+
+    // Read Address
+    .ARADDR  (s_if.ARADDR),
+    .ARVALID (s_if.ARVALID),
+    .ARREADY (s_if.ARREADY),
+
+    // Read Data
+    .RDATA   (s_if.RDATA),
+    .RRESP   (s_if.RRESP),
+    .RVALID  (s_if.RVALID),
+    .RREADY  (s_if.RREADY)
+  );
+
+  // Set Virtual Interface in config_db and start UVM
+  initial begin
+    uvm_config_db#(virtual systolic_if.master_mp)::set(null, "*", "vif", s_if.master_mp);
+    uvm_config_db#(virtual systolic_if.monitor_mp)::set(null, "*", "vif", s_if.monitor_mp);
+
+    run_test("systolic_base_test");
+  end
+
+  // Dump waveforms if needed
+  initial begin
+    $dumpfile("systolic_uvm.vcd");
+    $dumpvars(0, tb_top);
+  end
+
+endmodule

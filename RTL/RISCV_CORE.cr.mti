@@ -1,0 +1,150 @@
+/home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv(10): (vlog-2730) Undefined variable: 'systolic_seq_item'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv(30): (vlog-2400) Identifier ('systolic_seq_item') found where a type or type identifier is required.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_scoreboard.sv(31): (vlog-2164) Class or package 'systolic_seq_item' not found.
+
+} {4.0 7.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/AXI_Systolic_top.v {1 {vlog -work work -vopt -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/AXI_Systolic_top.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module axi_systolic_top
+
+Top level modules:
+	axi_systolic_top
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/Systolic_array_4x4.v {1 {vlog -work work -vopt -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/Systolic_array_4x4.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module systolic_array_4x4
+
+Top level modules:
+	systolic_array_4x4
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(10): Invalid type 'systolic_env'. Please check the type of the variable 'env'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(18): (vlog-2730) Undefined variable: 'env'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(18): (vlog-2164) Class or package 'systolic_env' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(18): (vlog-2730) Undefined variable: 'systolic_env'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(18): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(22): near ";": syntax error, unexpected ';', expecting '('.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(23): (vlog-2730) Undefined variable: 'seq'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(23): (vlog-2164) Class or package 'systolic_random_seq' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(23): (vlog-2730) Undefined variable: 'systolic_random_seq'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_test.sv(23): near "::": syntax error, unexpected ::, expecting ';'.
+
+} {4.0 14.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_pkg.sv {1 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_pkg.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling package systolic_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_pkg.sv(6): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv(7): (vlog-2730) Undefined variable: 'systolic_seq_item'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv(48): (vlog-2400) Identifier ('systolic_seq_item') found where a type or type identifier is required.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_driver.sv(49): (vlog-2164) Class or package 'systolic_seq_item' not found.
+
+} {4.0 7.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv {0 vlog\ -work\ work\ -vopt\ -sv\ -stats=none\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv\nQuestaSim-64\ vlog\ 2021.2_1\ Compiler\ 2021.05\ May\ 15\ 2021\n**\ Note:\ (vlog-2286)\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv(5):\ Using\ implicit\ +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src\ from\ import\ uvm_pkg\n**\ Error:\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv(7):\ (vlog-2730)\ Undefined\ variable:\ 'systolic_seq_item'.\n**\ Error:\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv(10):\ Invalid\ type\ 'systolic_seq_item'.\ Please\ check\ the\ type\ of\ the\ variable\ 'item'.\n**\ Error:\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv(17):\ (vlog-2164)\ Class\ or\ package\ 'systolic_seq_item'\ not\ found.\n**\ Error:\ (vlog-13069)\ /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_coverage.sv(17):\ near\ \"::\":\ syntax\ error,\ unexpected\ ::,\ expecting\ ','\ or\ '\}'.\n\n {4.0 8.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/PE.v {1 {vlog -work work -vopt -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/PE.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module pe
+
+Top level modules:
+	pe
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/tb_top.sv {1 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/tb_top.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/tb_top.sv(4): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package tb_top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package systolic_pkg
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_seq_item.sv {1 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_seq_item.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_seq_item.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package systolic_seq_item_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_if.sv {1 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_if.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling interface systolic_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(11): (vlog-2730) Undefined variable: 'systolic_seq_item'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(12): Invalid type 'systolic_driver'. Please check the type of the variable 'driver'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(13): Invalid type 'systolic_monitor'. Please check the type of the variable 'monitor'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(21): (vlog-2730) Undefined variable: 'monitor'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(21): (vlog-2164) Class or package 'systolic_monitor' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(21): (vlog-2730) Undefined variable: 'systolic_monitor'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(21): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(24): (vlog-2730) Undefined variable: 'driver'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(24): (vlog-2164) Class or package 'systolic_driver' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(24): (vlog-2730) Undefined variable: 'systolic_driver'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_agent.sv(24): near "::": syntax error, unexpected ::, expecting ';'.
+
+} {4.0 15.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(14): (vlog-2730) Undefined variable: 'systolic_seq_item'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(41): near "=": syntax error, unexpected '=', expecting '('.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(41): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(42): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(42): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(56): near "=": syntax error, unexpected '=', expecting '('.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(56): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(57): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_monitor.sv(57): near "::": syntax error, unexpected ::, expecting ';'.
+
+} {4.0 13.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(10): Invalid type 'systolic_agent'. Please check the type of the variable 'agent'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(11): Invalid type 'systolic_scoreboard'. Please check the type of the variable 'scoreboard'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(12): Invalid type 'systolic_coverage'. Please check the type of the variable 'cov'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(20): (vlog-2730) Undefined variable: 'agent'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(20): (vlog-2164) Class or package 'systolic_agent' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(20): (vlog-2730) Undefined variable: 'systolic_agent'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(20): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(21): (vlog-2730) Undefined variable: 'scoreboard'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(21): (vlog-2164) Class or package 'systolic_scoreboard' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(21): (vlog-2730) Undefined variable: 'systolic_scoreboard'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(21): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(22): (vlog-2730) Undefined variable: 'cov'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(22): (vlog-2164) Class or package 'systolic_coverage' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(22): (vlog-2730) Undefined variable: 'systolic_coverage'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_env.sv(22): near "::": syntax error, unexpected ::, expecting ';'.
+
+} {4.0 19.0} {}} /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv {0 {vlog -work work -vopt -sv -stats=none /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(5): Using implicit +incdir+/home/hassan/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(7): (vlog-2730) Undefined variable: 'systolic_seq_item'.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(16): near "=": syntax error, unexpected '=', expecting '('.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(16): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(21): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(21): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(33): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(33): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(44): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(44): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(51): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(51): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(61): (vlog-2164) Class or package 'systolic_seq_item' not found.
+** Error: (vlog-13069) /home/hassan/Documents/RISC_V_SYSTOLIC_ARRAY/uvm_tb/systolic_sequence.sv(61): near "::": syntax error, unexpected ::, expecting ';'.
+
+} {4.0 17.0} {}}

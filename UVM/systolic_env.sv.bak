@@ -1,0 +1,31 @@
+`ifndef SYSTOLIC_ENV_SV
+`define SYSTOLIC_ENV_SV
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+class systolic_env extends uvm_env;
+  `uvm_component_utils(systolic_env)
+
+  systolic_agent      agent;
+  systolic_scoreboard scoreboard;
+
+  function new(string name = "systolic_env", uvm_component parent = null);
+    super.new(name, parent);
+  endfunction
+
+  function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    agent      = systolic_agent::type_id::create("agent", this);
+    scoreboard = systolic_scoreboard::type_id::create("scoreboard", this);
+  endfunction
+
+  function void connect_phase(uvm_phase phase);
+    super.connect_phase(phase);
+    // Monitor ke CCTV loudspeaker ko Scoreboard ke kaan se jodna
+    agent.monitor.item_collected_port.connect(scoreboard.item_collected_export);
+  endfunction
+
+endclass
+
+`endif

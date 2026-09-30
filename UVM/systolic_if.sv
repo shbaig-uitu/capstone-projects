@@ -1,0 +1,49 @@
+`timescale 1ns / 1ps
+
+interface systolic_if (input logic ACLK, input logic ARESETN);
+
+  // AXI4-Lite Write Address Channel
+  logic [31:0] AWADDR;
+  logic        AWVALID;
+  logic        AWREADY;
+
+  // AXI4-Lite Write Data Channel
+  logic [31:0] WDATA;
+  logic [3:0]  WSTRB;
+  logic        WVALID;
+  logic        WREADY;
+
+  // AXI4-Lite Write Response Channel
+  logic [1:0]  BRESP;
+  logic        BVALID;
+  logic        BREADY;
+
+  // AXI4-Lite Read Address Channel
+  logic [31:0] ARADDR;
+  logic        ARVALID;
+  logic        ARREADY;
+
+  // AXI4-Lite Read Data Channel
+  logic [31:0] RDATA;
+  logic [1:0]  RRESP;
+  logic        RVALID;
+  logic        RREADY;
+
+  // Modport for Driver
+  modport master_mp (
+    input  ACLK, ARESETN,
+    input  AWREADY, WREADY, BRESP, BVALID, ARREADY, RDATA, RRESP, RVALID,
+    output AWADDR, AWVALID, WDATA, WSTRB, WVALID, BREADY, ARADDR, ARVALID, RREADY
+  );
+
+  // Modport for Monitor
+  modport monitor_mp (
+    input ACLK, ARESETN,
+    input AWADDR, AWVALID, AWREADY,
+    input WDATA, WSTRB, WVALID, WREADY,
+    input BRESP, BVALID, BREADY,
+    input ARADDR, ARVALID, ARREADY,
+    input RDATA, RRESP, RVALID, RREADY
+  );
+
+endinterface

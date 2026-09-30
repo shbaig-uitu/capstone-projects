@@ -1,0 +1,42 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/hassan/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading OpenROAD database at '/home/hassan/risc_v_systolic_array/runs/RUN_2026-09-13_15-59-45/38-openroad-globalrouting/soc_top.odb'…
+Reading design constraints file at '/home/hassan/risc_v_systolic_array/src/impl.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 4.0
+[INFO] Setting input delay to: 4.0
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5.0%
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_antennas sky130_fd_sc_hd__diode_2 -iterations 3 -ratio_margin 10 -allow_congestion
+[INFO GRT-0012] Found 175 antenna violations.
+[INFO GRT-0302] Inserted 190 jumpers for 159 nets.
+[INFO GRT-0012] Found 22 antenna violations.
+[INFO GRT-0015] Inserted 108 diodes.
+[INFO GRT-0012] Found 54 antenna violations.
+[INFO GRT-0302] Inserted 60 jumpers for 52 nets.
+[INFO GRT-0012] Found 3 antenna violations.
+[INFO GRT-0015] Inserted 7 diodes.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0302] Inserted 1 jumpers for 1 nets.
+[INFO GRT-0012] Found 1 antenna violations.
+[INFO GRT-0015] Inserted 1 diodes.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 464 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               476    1786.71
+  Tap cell                               6000    7507.20
+  Antenna cell                            116     290.28
+  Clock buffer                            366    4718.28
+  Timing Repair Buffer                   1225    6890.36
+  Inverter                                234     878.34
+  Clock inverter                           56     758.23
+  Sequential cell                        1780   46129.24
+  Multi-Input combinational cell        11520  113491.35
+  Total                                 21773  182449.98
+Writing OpenROAD database to '/home/hassan/risc_v_systolic_array/runs/RUN_2026-09-13_15-59-45/41-openroad-repairantennas/1-openroad-diodeinsertion/soc_top.odb'…
+Writing layout to '/home/hassan/risc_v_systolic_array/runs/RUN_2026-09-13_15-59-45/41-openroad-repairantennas/1-openroad-diodeinsertion/soc_top.def'…

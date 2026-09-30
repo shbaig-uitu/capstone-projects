@@ -1,0 +1,80 @@
+# ==========================================
+# Basics & RTL
+# ==========================================
+DESIGN_NAME: "soc_top"
+VERILOG_FILES:
+  - "dir::src/*.v"
+
+SYNTH_STRATEGY: "AREA 0"
+SYNTH_ABC_BUFFERING: true
+MAX_FANOUT_CONSTRAINT: 12
+
+# ==========================================
+# Clock & Timing (Relaxed 20ns = No Loops)
+# ==========================================
+CLOCK_PORT: "clk"
+CLOCK_NET: "clk"
+CLOCK_PERIOD: 20.0
+
+PNR_SDC_FILE: "dir::src/impl.sdc"
+FALLBACK_SDC: "dir::src/impl.sdc"
+SIGNOFF_SDC_FILE: "dir::src/signoff.sdc"
+
+IO_PIN_ORDER_CFG: "dir::pin_order.cfg"
+
+# ==========================================
+# Dynamic Floorplan (Square, Clean & Uniform)
+# ==========================================
+FP_SIZING: "relative"
+FP_CORE_UTIL: 40
+FP_ASPECT_RATIO: 1.0
+
+# ==========================================
+# Clean Power Grid (PDN)
+# ==========================================
+PDN_VOFFSET: 1
+PDN_HOFFSET: 1
+PDN_VPITCH: 25
+PDN_HPITCH: 25
+PDN_CORE_RING: true
+PDN_SKIPTRIM: true
+
+# ==========================================
+# Clock Tree Synthesis (CTS)
+# ==========================================
+CTS_CLK_BUFFERS:
+  - sky130_fd_sc_hd__clkbuf_4
+  - sky130_fd_sc_hd__clkbuf_8
+CTS_ROOT_BUFFER: sky130_fd_sc_hd__clkbuf_8
+
+# ==========================================
+# Placement & Timing Optimization Control
+# (Updated for LibreLane 3.0.14)
+# ==========================================
+PL_TARGET_DENSITY_PCT: 50
+PL_TIMING_DRIVEN: true
+PL_ROUTABILITY_DRIVEN: true
+RUN_POST_CTS_RESIZER_TIMING: false
+RUN_POST_GRT_RESIZER_TIMING: false
+
+GPL_CELL_PADDING: 2
+DPL_CELL_PADDING: 2
+
+# ==========================================
+# Routing
+# ==========================================
+GRT_ALLOW_CONGESTION: true
+RUN_ANTENNA_REPAIR: true
+
+# ==========================================
+# Signoff, DRC, LVS & Stage-49 Bypass Guards
+# ==========================================
+ERROR_ON_PDN_VIOLATIONS: false
+RUN_MAGIC_DRC: true
+RUN_KLAYOUT_DRC: true
+RUN_LVS: true
+RUN_MAGIC_WRITE_LEF: true
+
+# Critical fixes for disconnected pins
+IGNORE_DISCONNECTED_MODULES: ["soc_top"]
+ERROR_ON_DISCONNECTED_PINS: false

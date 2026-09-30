@@ -1,0 +1,8 @@
+module control_unit(
+	input[6:0] opcode,
+	output reg_write_en
+);
+
+assign reg_write_en = (opcode == 7'b0110011) ? 1'b1 : 1'b0;
+
+endmodule
