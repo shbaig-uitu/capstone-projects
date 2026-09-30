@@ -1,0 +1,63 @@
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project counter-tuesday
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+project close
+# reading /home/cl4/questasim/linux_x86_64/../modelsim.ini
+cd ~/Desktop/rv32i_mmu_soc
+pwd
+# /home/cl4/Desktop/rv32i_mmu_soc
+vls
+# invalid command name "vls"
+ls
+# docs
+# README.md
+# rtl
+# tb
+# transcript
+# uvm
+vlib work
+vlog -sv rtl/soc_pkg.sv rtl/uart_tx.sv rtl/tlb.sv rtl/page_table_ctrl.sv rtl/mmu.sv rtl/memories.sv rtl/rv32i_core.sv rtl/axi_lite_regs.sv rtl/debug_io.sv rtl/soc_top.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:41:03 on Sep 09,2026
+# vlog -reportprogress 300 -sv rtl/soc_pkg.sv rtl/uart_tx.sv rtl/tlb.sv rtl/page_table_ctrl.sv rtl/mmu.sv rtl/memories.sv rtl/rv32i_core.sv rtl/axi_lite_regs.sv rtl/debug_io.sv rtl/soc_top.sv 
+# -- Compiling package soc_pkg
+# -- Compiling module uart_tx
+# -- Compiling package tlb_sv_unit
+# -- Importing package soc_pkg
+# -- Compiling module tlb
+# -- Compiling package page_table_ctrl_sv_unit
+# -- Compiling module page_table_ctrl
+# -- Compiling package mmu_sv_unit
+# -- Compiling module mmu
+# -- Compiling package memories_sv_unit
+# -- Compiling module instr_mem
+# -- Compiling module data_mem
+# ** Error (suppressible): rtl/memories.sv(47): (vlog-7061) Variable 'mem' driven in an always_ff block, may not be driven by any other process. See rtl/memories.sv(41).
+# End time: 11:41:03 on Sep 09,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/cl4/questasim/linux_x86_64/vlog failed.
+vlog -sv +incdir+uvm +incdir+uvm/sequences +incdir+uvm/tests +incdir+uvm/assertions -L mtiUvm uvm/tb_uvm_top.sv
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 11:41:11 on Sep 09,2026
+# vlog -reportprogress 300 -sv "+incdir+uvm" "+incdir+uvm/sequences" "+incdir+uvm/tests" "+incdir+uvm/assertions" -L mtiUvm uvm/tb_uvm_top.sv 
+# ** Note: (vlog-2286) uvm/tb_uvm_top.sv(3): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Error: (vlog-13069) ** while parsing file included at uvm/tb_uvm_top.sv(13)
+# ** at uvm/scoreboard.sv(31): near "else": syntax error, unexpected else.
+# End time: 11:41:11 on Sep 09,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/cl4/questasim/linux_x86_64/vlog failed.

@@ -1,0 +1,28 @@
+VCD info: dumpfile sim.vcd opened for output.
+[INFO] Programmed page table: VPN0 -> PPN3 (valid)
+[INFO] VPN4 intentionally left unmapped (expect page fault there)
+[INFO] Core released, running test program...
+
+===== Register file checks =====
+[PASS] x2  (LW hit, expect 100)     = 0x00000064
+[PASS] x4  (LW hit, expect 55)      = 0x00000037
+[PASS] x8  (LW fault pattern)       = 0xdeaddead
+
+===== Physical memory checks (PPN3 = phys 0x300) =====
+[PASS] dmem[word 192] (VA0  data)   = 0x00000064
+[PASS] dmem[word 193] (VA4  data)   = 0x00000037
+
+===== MMU / AXI status checks =====
+[PASS] FAULT_STATUS (sticky)        = 0x00000001
+[PASS] led_fault                    = 0x00000001
+[INFO] hit_count  = 3
+[PASS] hit_count >= 3
+[INFO] miss_count = 3
+[PASS] miss_count >= 3
+[PASS] FAULT_STATUS after clear     = 0x00000000
+
+=====================================
+RESULT: ALL CHECKS PASSED
+=====================================
+
+tb_soc_top.sv:194: $finish called at 925000 (1ps)

@@ -1,0 +1,34 @@
+{
+    "default_part": "XC7A100TCSG324-1",
+
+    "values": {
+        "top": "fpga_top"
+    },
+
+    "dependencies": {
+        "sources": [
+            "fpga_top.sv",
+            "soc_pkg.sv",
+            "tlb.sv",
+            "page_table_ctrl.sv",
+            "mmu.sv",
+            "memories.sv",
+            "rv32i_core.sv",
+            "axi_lite_regs.sv",
+            "debug_io.sv",
+            "uart_tx.sv",
+            "soc_top.sv"
+        ],
+        "synth_log": "synth.log",
+        "pack_log": "pack.log"
+    },
+
+    "XC7A100TCSG324-1": {
+        "default_target": "bitstream",
+
+        "dependencies": {
+            "build_dir": "build/xc7a100t_rv32i_mmu_soc",
+            "xdc": "arty.xdc"
+        }
+    }
+}
