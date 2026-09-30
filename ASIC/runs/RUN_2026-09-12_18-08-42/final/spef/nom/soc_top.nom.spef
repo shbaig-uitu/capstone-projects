@@ -1,0 +1,2335 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "soc_top"
+*DATE "18:10:56 Saturday September 12, 2026"
+*VENDOR "The OpenROAD Project"
+*PROGRAM "OpenROAD"
+*VERSION "dcf36133a369abc8f3c5e5738cd4d82e4903c0e0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*3 clk
+*4 instruct_en0
+*5 instruct_en1
+*6 result0[0]
+*7 net28
+*8 net27
+*9 net26
+*10 net25
+*11 net24
+*12 net23
+*13 net22
+*14 net21
+*15 net20
+*16 net19
+*17 net65
+*18 net18
+*19 net17
+*20 net16
+*21 net15
+*22 net14
+*23 net13
+*24 net12
+*25 net11
+*26 net10
+*27 net9
+*28 result0[2]
+*29 net8
+*30 net
+*31 net64
+*32 net62
+*33 net60
+*34 net32
+*35 net31
+*36 net30
+*37 net29
+*38 result1[0]
+*39 net54
+*40 net53
+*41 net52
+*42 net51
+*43 net50
+*44 net49
+*45 net48
+*46 net47
+*47 net46
+*48 net45
+*49 net66
+*50 net44
+*51 net43
+*52 net42
+*53 net41
+*54 net40
+*55 net39
+*56 net38
+*57 net37
+*58 net36
+*59 net35
+*60 result1[2]
+*61 net34
+*62 net33
+*63 net63
+*64 net61
+*65 net59
+*66 net58
+*67 net57
+*68 net56
+*69 net55
+*70 rst
+*71 _00_
+*72 _01_
+*73 _02_
+*74 _03_
+*75 _04_
+*76 _05_
+*77 _06_
+*78 _07_
+*79 _08_
+*80 _09_
+*81 _10_
+*82 clknet_0_clk
+*83 clknet_1_0__leaf_clk
+*84 clknet_1_1__leaf_clk
+*85 core0\.pc\[2\]
+*86 core0\.pc\[3\]
+*87 core0\.pc\[4\]
+*88 core1\.pc\[2\]
+*89 core1\.pc\[3\]
+*90 core1\.pc\[4\]
+*91 net1
+*92 net2
+*93 net3
+*94 net4
+*95 net5
+*96 net6
+*97 net67
+*98 net68
+*99 net69
+*100 net7
+*101 net70
+*102 net71
+*103 net72
+*104 net73
+*105 net74
+*106 net75
+*107 FILLER_0_16
+*108 FILLER_0_22
+*109 FILLER_0_29
+*110 FILLER_0_34
+*111 FILLER_0_40
+*112 FILLER_0_46
+*113 FILLER_0_52
+*114 FILLER_0_57
+*115 FILLER_0_6
+*116 FILLER_0_70
+*117 FILLER_10_19
+*118 FILLER_10_54
+*119 FILLER_10_57
+*120 FILLER_11_11
+*121 FILLER_11_49
+*122 FILLER_11_52
+*123 FILLER_11_57
+*124 FILLER_11_70
+*125 FILLER_12_29
+*126 FILLER_12_3
+*127 FILLER_12_40
+*128 FILLER_12_54
+*129 FILLER_12_65
+*130 FILLER_1_11
+*131 FILLER_1_14
+*132 FILLER_1_17
+*133 FILLER_1_20
+*134 FILLER_1_23
+*135 FILLER_1_26
+*136 FILLER_1_29
+*137 FILLER_1_32
+*138 FILLER_1_35
+*139 FILLER_1_38
+*140 FILLER_1_41
+*141 FILLER_1_44
+*142 FILLER_1_47
+*143 FILLER_1_50
+*144 FILLER_1_53
+*145 FILLER_2_12
+*146 FILLER_2_15
+*147 FILLER_2_18
+*148 FILLER_2_21
+*149 FILLER_2_24
+*150 FILLER_2_27
+*151 FILLER_2_29
+*152 FILLER_2_3
+*153 FILLER_2_32
+*154 FILLER_2_35
+*155 FILLER_2_38
+*156 FILLER_2_41
+*157 FILLER_2_44
+*158 FILLER_2_47
+*159 FILLER_2_50
+*160 FILLER_2_53
+*161 FILLER_2_56
+*162 FILLER_2_59
+*163 FILLER_2_6
+*164 FILLER_2_62
+*165 FILLER_2_9
+*166 FILLER_3_12
+*167 FILLER_3_15
+*168 FILLER_3_18
+*169 FILLER_3_21
+*170 FILLER_3_24
+*171 FILLER_3_27
+*172 FILLER_3_3
+*173 FILLER_3_30
+*174 FILLER_3_33
+*175 FILLER_3_36
+*176 FILLER_3_51
+*177 FILLER_3_54
+*178 FILLER_3_57
+*179 FILLER_3_6
+*180 FILLER_3_60
+*181 FILLER_3_63
+*182 FILLER_3_9
+*183 FILLER_4_13
+*184 FILLER_4_16
+*185 FILLER_4_19
+*186 FILLER_4_22
+*187 FILLER_4_25
+*188 FILLER_4_29
+*189 FILLER_4_3
+*190 FILLER_4_32
+*191 FILLER_4_35
+*192 FILLER_4_38
+*193 FILLER_4_6
+*194 FILLER_4_73
+*195 FILLER_5_34
+*196 FILLER_5_37
+*197 FILLER_5_40
+*198 FILLER_5_43
+*199 FILLER_5_57
+*200 FILLER_5_60
+*201 FILLER_5_63
+*202 FILLER_5_66
+*203 FILLER_6_29
+*204 FILLER_6_3
+*205 FILLER_6_32
+*206 FILLER_6_47
+*207 FILLER_6_50
+*208 FILLER_6_57
+*209 FILLER_6_6
+*210 FILLER_6_60
+*211 FILLER_6_63
+*212 FILLER_6_66
+*213 FILLER_7_10
+*214 FILLER_7_13
+*215 FILLER_7_57
+*216 FILLER_7_60
+*217 FILLER_7_63
+*218 FILLER_7_66
+*219 FILLER_8_22
+*220 FILLER_8_25
+*221 FILLER_8_29
+*222 FILLER_8_3
+*223 FILLER_8_32
+*224 FILLER_8_35
+*225 FILLER_8_62
+*226 FILLER_8_65
+*227 FILLER_9_11
+*228 FILLER_9_46
+*229 FILLER_9_53
+*230 FILLER_9_57
+*231 FILLER_9_60
+*232 FILLER_9_63
+*233 PHY_EDGE_ROW_0_Left_13
+*234 PHY_EDGE_ROW_0_Right_0
+*235 PHY_EDGE_ROW_10_Left_23
+*236 PHY_EDGE_ROW_10_Right_10
+*237 PHY_EDGE_ROW_11_Left_24
+*238 PHY_EDGE_ROW_11_Right_11
+*239 PHY_EDGE_ROW_12_Left_25
+*240 PHY_EDGE_ROW_12_Right_12
+*241 PHY_EDGE_ROW_1_Left_14
+*242 PHY_EDGE_ROW_1_Right_1
+*243 PHY_EDGE_ROW_2_Left_15
+*244 PHY_EDGE_ROW_2_Right_2
+*245 PHY_EDGE_ROW_3_Left_16
+*246 PHY_EDGE_ROW_3_Right_3
+*247 PHY_EDGE_ROW_4_Left_17
+*248 PHY_EDGE_ROW_4_Right_4
+*249 PHY_EDGE_ROW_5_Left_18
+*250 PHY_EDGE_ROW_5_Right_5
+*251 PHY_EDGE_ROW_6_Left_19
+*252 PHY_EDGE_ROW_6_Right_6
+*253 PHY_EDGE_ROW_7_Left_20
+*254 PHY_EDGE_ROW_7_Right_7
+*255 PHY_EDGE_ROW_8_Left_21
+*256 PHY_EDGE_ROW_8_Right_8
+*257 PHY_EDGE_ROW_9_Left_22
+*258 PHY_EDGE_ROW_9_Right_9
+*259 TAP_TAPCELL_ROW_0_26
+*260 TAP_TAPCELL_ROW_0_27
+*261 TAP_TAPCELL_ROW_10_37
+*262 TAP_TAPCELL_ROW_11_38
+*263 TAP_TAPCELL_ROW_12_39
+*264 TAP_TAPCELL_ROW_12_40
+*265 TAP_TAPCELL_ROW_1_28
+*266 TAP_TAPCELL_ROW_2_29
+*267 TAP_TAPCELL_ROW_3_30
+*268 TAP_TAPCELL_ROW_4_31
+*269 TAP_TAPCELL_ROW_5_32
+*270 TAP_TAPCELL_ROW_6_33
+*271 TAP_TAPCELL_ROW_7_34
+*272 TAP_TAPCELL_ROW_8_35
+*273 TAP_TAPCELL_ROW_9_36
+*274 _11_
+*275 _12_
+*276 _13_
+*277 _14_
+*278 _15_
+*279 _16_
+*280 _17_
+*281 _18_
+*282 _19_
+*283 _20_
+*284 _21_
+*285 _22_
+*286 _23_
+*287 _24_
+*288 _25_
+*289 _26_
+*290 _27_
+*291 _28_
+*292 _29_
+*293 _30_
+*294 _31_
+*295 clkbuf_0_clk
+*296 clkbuf_1_0__f_clk
+*297 clkbuf_1_1__f_clk
+*298 hold67
+*299 hold68
+*300 hold69
+*301 hold70
+*302 hold71
+*303 hold72
+*304 hold73
+*305 hold74
+*306 hold75
+*307 input1
+*308 input2
+*309 input3
+*310 output4
+*311 output5
+*312 output6
+*313 output7
+*314 soc_top
+*315 soc_top_10
+*316 soc_top_11
+*317 soc_top_12
+*318 soc_top_13
+*319 soc_top_14
+*320 soc_top_15
+*321 soc_top_16
+*322 soc_top_17
+*323 soc_top_18
+*324 soc_top_19
+*325 soc_top_20
+*326 soc_top_21
+*327 soc_top_22
+*328 soc_top_23
+*329 soc_top_24
+*330 soc_top_25
+*331 soc_top_26
+*332 soc_top_27
+*333 soc_top_28
+*334 soc_top_29
+*335 soc_top_30
+*336 soc_top_31
+*337 soc_top_32
+*338 soc_top_33
+*339 soc_top_34
+*340 soc_top_35
+*341 soc_top_36
+*342 soc_top_37
+*343 soc_top_38
+*344 soc_top_39
+*345 soc_top_40
+*346 soc_top_41
+*347 soc_top_42
+*348 soc_top_43
+*349 soc_top_44
+*350 soc_top_45
+*351 soc_top_46
+*352 soc_top_47
+*353 soc_top_48
+*354 soc_top_49
+*355 soc_top_50
+*356 soc_top_51
+*357 soc_top_52
+*358 soc_top_53
+*359 soc_top_54
+*360 soc_top_55
+*361 soc_top_56
+*362 soc_top_57
+*363 soc_top_58
+*364 soc_top_59
+*365 soc_top_60
+*366 soc_top_61
+*367 soc_top_62
+*368 soc_top_63
+*369 soc_top_64
+*370 soc_top_65
+*371 soc_top_66
+*372 soc_top_8
+*373 soc_top_9
+
+*PORTS
+clk I
+instruct_en0 I
+instruct_en1 I
+result0[0] O
+result0[10] O
+result0[11] O
+result0[12] O
+result0[13] O
+result0[14] O
+result0[15] O
+result0[16] O
+result0[17] O
+result0[18] O
+result0[19] O
+result0[1] O
+result0[20] O
+result0[21] O
+result0[22] O
+result0[23] O
+result0[24] O
+result0[25] O
+result0[26] O
+result0[27] O
+result0[28] O
+result0[29] O
+result0[2] O
+result0[30] O
+result0[31] O
+result0[3] O
+result0[4] O
+result0[5] O
+result0[6] O
+result0[7] O
+result0[8] O
+result0[9] O
+result1[0] O
+result1[10] O
+result1[11] O
+result1[12] O
+result1[13] O
+result1[14] O
+result1[15] O
+result1[16] O
+result1[17] O
+result1[18] O
+result1[19] O
+result1[1] O
+result1[20] O
+result1[21] O
+result1[22] O
+result1[23] O
+result1[24] O
+result1[25] O
+result1[26] O
+result1[27] O
+result1[28] O
+result1[29] O
+result1[2] O
+result1[30] O
+result1[31] O
+result1[3] O
+result1[4] O
+result1[5] O
+result1[6] O
+result1[7] O
+result1[8] O
+result1[9] O
+rst I
+
+*D_NET *3 0.00442208
+*CONN
+*P clk I
+*I *295:A I *D sky130_fd_sc_hd__clkbuf_8
+*CAP
+1 clk 0.00181796
+2 *295:A 0.00010576
+3 *3:34 0.00192372
+4 *295:A *276:B 1.99204e-05
+5 *295:A *78:8 3.73361e-05
+6 *3:34 result1[19] 5.93878e-05
+7 *3:34 result1[21] 0.000103646
+8 *3:34 result1[23] 0
+9 *3:34 result1[24] 0
+10 *3:34 result1[28] 0
+11 *3:34 result1[29] 0.00010511
+12 *3:34 result1[30] 0
+13 *3:34 result1[31] 2.78644e-05
+14 *3:34 *276:B 6.36635e-05
+15 *3:34 *305:A 0.000132617
+16 *3:34 *309:A 2.50916e-05
+*RES
+1 clk *3:34 40.2278 
+2 *3:34 *295:A 11.4964 
+*END
+
+*D_NET *4 0.000877454
+*CONN
+*P instruct_en0 I
+*I *307:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 instruct_en0 0.000438727
+2 *307:A 0.000438727
+3 *307:A result0[8] 0
+*RES
+1 instruct_en0 *307:A 22.6639 
+*END
+
+*D_NET *5 0.00125397
+*CONN
+*P instruct_en1 I
+*I *308:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 instruct_en1 0.000626983
+2 *308:A 0.000626983
+*RES
+1 instruct_en1 *308:A 27.2876 
+*END
+
+*D_NET *6 0.00179498
+*CONN
+*P result0[0] O
+*I *310:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 result0[0] 0.000897489
+2 *310:X 0.000897489
+3 result0[0] result0[1] 0
+*RES
+1 *310:X result0[0] 30.9875 
+*END
+
+*D_NET *7 0.00122125
+*CONN
+*P result0[10] O
+*I *333:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[10] 0.000583149
+2 *333:LO 0.000583149
+3 result0[10] result0[8] 5.49544e-05
+*RES
+1 *333:LO result0[10] 25.05 
+*END
+
+*D_NET *8 0.00115995
+*CONN
+*P result0[11] O
+*I *332:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[11] 0.000579977
+2 *332:LO 0.000579977
+3 result0[11] result0[12] 0
+*RES
+1 *332:LO result0[11] 25.05 
+*END
+
+*D_NET *9 0.001136
+*CONN
+*P result0[12] O
+*I *331:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[12] 0.000567998
+2 *331:LO 0.000567998
+3 result0[12] result0[13] 0
+4 result0[11] result0[12] 0
+*RES
+1 *331:LO result0[12] 25.05 
+*END
+
+*D_NET *10 0.001136
+*CONN
+*P result0[13] O
+*I *330:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[13] 0.000567998
+2 *330:LO 0.000567998
+3 result0[13] result0[14] 0
+4 result0[12] result0[13] 0
+*RES
+1 *330:LO result0[13] 25.05 
+*END
+
+*D_NET *11 0.001136
+*CONN
+*P result0[14] O
+*I *329:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[14] 0.000567998
+2 *329:LO 0.000567998
+3 result0[14] result0[15] 0
+4 result0[13] result0[14] 0
+*RES
+1 *329:LO result0[14] 25.05 
+*END
+
+*D_NET *12 0.00116093
+*CONN
+*P result0[15] O
+*I *328:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[15] 0.000580463
+2 *328:LO 0.000580463
+3 result0[14] result0[15] 0
+*RES
+1 *328:LO result0[15] 25.05 
+*END
+
+*D_NET *13 0.0028901
+*CONN
+*P result0[16] O
+*I *327:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[16] 0.00102624
+2 *327:LO 0.00102624
+3 result0[16] result0[17] 0.000242137
+4 result0[16] result0[18] 8.83197e-05
+5 result0[16] result0[19] 0
+6 result0[16] result1[11] 0.000459225
+7 result0[16] result1[12] 0
+8 result0[16] result1[14] 4.79282e-05
+*RES
+1 *327:LO result0[16] 26.7951 
+*END
+
+*D_NET *14 0.00283956
+*CONN
+*P result0[17] O
+*I *326:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[17] 0.000719579
+2 *326:LO 0.000719579
+3 result0[17] result0[18] 0.000269272
+4 result0[17] result0[20] 0.000234436
+5 result0[17] result0[21] 0.000114515
+6 result0[17] result0[24] 0.000468019
+7 result0[17] result1[13] 0
+8 result0[17] result1[15] 7.2029e-05
+9 result0[16] result0[17] 0.000242137
+*RES
+1 *326:LO result0[17] 32.3729 
+*END
+
+*D_NET *15 0.00264517
+*CONN
+*P result0[18] O
+*I *325:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[18] 0.000706743
+2 *325:LO 0.000706743
+3 result0[18] result0[19] 0.000498307
+4 result0[18] result0[20] 9.78911e-05
+5 result0[18] result0[22] 2.02794e-05
+6 result0[18] result1[12] 0
+7 result0[18] result1[13] 0.000257613
+8 result0[16] result0[18] 8.83197e-05
+9 result0[17] result0[18] 0.000269272
+*RES
+1 *325:LO result0[18] 25.9685 
+*END
+
+*D_NET *16 0.00259226
+*CONN
+*P result0[19] O
+*I *324:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[19] 0.000730154
+2 *324:LO 0.000730154
+3 result0[19] result0[20] 0.000291764
+4 result0[19] result0[21] 1.36077e-05
+5 result0[19] result0[22] 0
+6 result0[19] result1[11] 0.000163112
+7 result0[19] result1[14] 0.000165164
+8 result0[16] result0[19] 0
+9 result0[18] result0[19] 0.000498307
+*RES
+1 *324:LO result0[19] 21.4749 
+*END
+
+*D_NET *17 0.00211139
+*CONN
+*P result0[1] O
+*I *370:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[1] 0.000737184
+2 *370:LO 0.000737184
+3 result0[1] result0[2] 0.000485722
+4 result0[1] *310:A 0.000151304
+5 result0[0] result0[1] 0
+*RES
+1 *370:LO result0[1] 33.0768 
+*END
+
+*D_NET *18 0.0020417
+*CONN
+*P result0[20] O
+*I *323:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[20] 0.000471858
+2 *323:LO 0.000471858
+3 result0[20] result0[21] 0.000398151
+4 result0[20] result0[25] 7.57394e-05
+5 result0[17] result0[20] 0.000234436
+6 result0[18] result0[20] 9.78911e-05
+7 result0[19] result0[20] 0.000291764
+*RES
+1 *323:LO result0[20] 25.6592 
+*END
+
+*D_NET *19 0.00252168
+*CONN
+*P result0[21] O
+*I *322:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[21] 0.000702969
+2 *322:LO 0.000702969
+3 result0[21] result0[22] 0.000282807
+4 result0[21] result0[23] 0
+5 result0[21] result0[24] 5.27703e-06
+6 result0[21] result0[25] 0.000202441
+7 result0[21] result0[27] 0
+8 result0[21] result0[29] 9.69399e-05
+9 result0[21] result1[15] 2.00138e-06
+10 result0[17] result0[21] 0.000114515
+11 result0[19] result0[21] 1.36077e-05
+12 result0[20] result0[21] 0.000398151
+*RES
+1 *322:LO result0[21] 28.9634 
+*END
+
+*D_NET *20 0.00157971
+*CONN
+*P result0[22] O
+*I *321:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[22] 0.000457627
+2 *321:LO 0.000457627
+3 result0[22] result0[23] 0.000361374
+4 result0[22] result0[26] 0
+5 result0[18] result0[22] 2.02794e-05
+6 result0[19] result0[22] 0
+7 result0[21] result0[22] 0.000282807
+*RES
+1 *321:LO result0[22] 18.8608 
+*END
+
+*D_NET *21 0.0015144
+*CONN
+*P result0[23] O
+*I *320:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[23] 0.000449274
+2 *320:LO 0.000449274
+3 result0[23] result0[24] 0.000217664
+4 result0[23] result0[25] 3.68153e-05
+5 result0[21] result0[23] 0
+6 result0[22] result0[23] 0.000361374
+*RES
+1 *320:LO result0[23] 20.466 
+*END
+
+*D_NET *22 0.0018333
+*CONN
+*P result0[24] O
+*I *319:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[24] 0.000225756
+2 *319:LO 0.000225756
+3 result0[24] result0[25] 0.000217664
+4 result0[24] result1[15] 0.000473163
+5 result0[17] result0[24] 0.000468019
+6 result0[21] result0[24] 5.27703e-06
+7 result0[23] result0[24] 0.000217664
+*RES
+1 *319:LO result0[24] 23.2829 
+*END
+
+*D_NET *23 0.00170106
+*CONN
+*P result0[25] O
+*I *318:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[25] 0.000417453
+2 *318:LO 0.000417453
+3 result0[25] result0[26] 0.000333494
+4 result0[20] result0[25] 7.57394e-05
+5 result0[21] result0[25] 0.000202441
+6 result0[23] result0[25] 3.68153e-05
+7 result0[24] result0[25] 0.000217664
+*RES
+1 *318:LO result0[25] 22.2141 
+*END
+
+*D_NET *24 0.0015996
+*CONN
+*P result0[26] O
+*I *317:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[26] 0.000429653
+2 *317:LO 0.000429653
+3 result0[26] result0[27] 0.000406798
+4 result0[26] result0[30] 0
+5 result0[22] result0[26] 0
+6 result0[25] result0[26] 0.000333494
+*RES
+1 *317:LO result0[26] 18.8608 
+*END
+
+*D_NET *25 0.00147404
+*CONN
+*P result0[27] O
+*I *316:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[27] 0.000398204
+2 *316:LO 0.000398204
+3 result0[27] result0[28] 0.000246781
+4 result0[27] result0[29] 2.40537e-05
+5 result0[27] result0[30] 0
+6 result0[21] result0[27] 0
+7 result0[26] result0[27] 0.000406798
+*RES
+1 *316:LO result0[27] 20.466 
+*END
+
+*D_NET *26 0.00119679
+*CONN
+*P result0[28] O
+*I *315:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[28] 0.000332235
+2 *315:LO 0.000332235
+3 result0[28] result0[29] 0.000285539
+4 result0[27] result0[28] 0.000246781
+*RES
+1 *315:LO result0[28] 22.5687 
+*END
+
+*D_NET *27 0.0013979
+*CONN
+*P result0[29] O
+*I *373:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[29] 0.000347023
+2 *373:LO 0.000347023
+3 result0[29] result0[30] 0.00029732
+4 result0[29] result1[15] 0
+5 result0[21] result0[29] 9.69399e-05
+6 result0[27] result0[29] 2.40537e-05
+7 result0[28] result0[29] 0.000285539
+*RES
+1 *373:LO result0[29] 22.8914 
+*END
+
+*D_NET *28 0.0015477
+*CONN
+*P result0[2] O
+*I *311:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 result0[2] 0.000502689
+2 *311:X 0.000502689
+3 result0[2] result0[3] 0
+4 result0[2] result0[4] 5.65955e-05
+5 result0[1] result0[2] 0.000485722
+*RES
+1 *311:X result0[2] 26.0946 
+*END
+
+*D_NET *29 0.00142043
+*CONN
+*P result0[30] O
+*I *372:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[30] 0.000374863
+2 *372:LO 0.000374863
+3 result0[30] result0[31] 0.000373389
+4 result0[30] result1[18] 0
+5 result0[26] result0[30] 0
+6 result0[27] result0[30] 0
+7 result0[29] result0[30] 0.00029732
+*RES
+1 *372:LO result0[30] 18.8608 
+*END
+
+*D_NET *30 0.00114292
+*CONN
+*P result0[31] O
+*I *314:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[31] 0.000277568
+2 *314:LO 0.000277568
+3 result0[31] result1[16] 0.000123959
+4 result0[31] result1[17] 9.0438e-05
+5 result0[30] result0[31] 0.000373389
+*RES
+1 *314:LO result0[31] 18.6446 
+*END
+
+*D_NET *31 0.00279201
+*CONN
+*P result0[3] O
+*I *369:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[3] 0.00125873
+2 *369:LO 0.00125873
+3 result0[3] result0[4] 0
+4 result0[3] result0[7] 0.000198692
+5 result0[3] result1[0] 0
+6 result0[3] *312:A 7.58623e-05
+7 result0[2] result0[3] 0
+*RES
+1 *369:LO result0[3] 46.7375 
+*END
+
+*D_NET *32 0.00178209
+*CONN
+*P result0[4] O
+*I *367:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[4] 0.00082463
+2 *367:LO 0.00082463
+3 result0[4] result0[5] 0
+4 result0[4] *311:A 7.62323e-05
+5 result0[2] result0[4] 5.65955e-05
+6 result0[3] result0[4] 0
+*RES
+1 *367:LO result0[4] 29.2732 
+*END
+
+*D_NET *33 0.00118603
+*CONN
+*P result0[5] O
+*I *365:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[5] 0.000590193
+2 *365:LO 0.000590193
+3 result0[5] result0[6] 0
+4 result0[5] *291:D 5.64835e-06
+5 result0[4] result0[5] 0
+*RES
+1 *365:LO result0[5] 25.2732 
+*END
+
+*D_NET *34 0.00119731
+*CONN
+*P result0[6] O
+*I *337:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[6] 0.000598186
+2 *337:LO 0.000598186
+3 result0[6] result0[7] 0
+4 result0[6] *291:D 9.33978e-07
+5 result0[5] result0[6] 0
+*RES
+1 *337:LO result0[6] 25.2732 
+*END
+
+*D_NET *35 0.00128768
+*CONN
+*P result0[7] O
+*I *336:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[7] 0.000544492
+2 *336:LO 0.000544492
+3 result0[7] result1[0] 0
+4 result0[3] result0[7] 0.000198692
+5 result0[6] result0[7] 0
+*RES
+1 *336:LO result0[7] 25.3982 
+*END
+
+*D_NET *36 0.00198765
+*CONN
+*P result0[8] O
+*I *335:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[8] 0.000895479
+2 *335:LO 0.000895479
+3 result0[8] result0[9] 0.000141734
+4 result0[10] result0[8] 5.49544e-05
+5 *307:A result0[8] 0
+*RES
+1 *335:LO result0[8] 31.5143 
+*END
+
+*D_NET *37 0.00132457
+*CONN
+*P result0[9] O
+*I *334:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result0[9] 0.00059142
+2 *334:LO 0.00059142
+3 result0[8] result0[9] 0.000141734
+*RES
+1 *334:LO result0[9] 25.8714 
+*END
+
+*D_NET *38 0.00166895
+*CONN
+*P result1[0] O
+*I *312:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 result1[0] 0.000756631
+2 *312:X 0.000756631
+3 result1[0] result1[1] 0.000100165
+4 result1[0] *312:A 3.08664e-05
+5 result1[0] *93:18 2.46518e-05
+6 result0[3] result1[0] 0
+7 result0[7] result1[0] 0
+*RES
+1 *312:X result1[0] 28.4518 
+*END
+
+*D_NET *39 0.00113604
+*CONN
+*P result1[10] O
+*I *359:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[10] 0.000568018
+2 *359:LO 0.000568018
+3 result1[10] result1[14] 0
+4 result1[10] result1[9] 0
+*RES
+1 *359:LO result1[10] 25.05 
+*END
+
+*D_NET *40 0.00170093
+*CONN
+*P result1[11] O
+*I *358:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[11] 0.000301116
+2 *358:LO 0.000301116
+3 result1[11] result1[14] 0.000476366
+4 result0[16] result1[11] 0.000459225
+5 result0[19] result1[11] 0.000163112
+*RES
+1 *358:LO result1[11] 25.175 
+*END
+
+*D_NET *41 0.00128007
+*CONN
+*P result1[12] O
+*I *357:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[12] 0.000625829
+2 *357:LO 0.000625829
+3 result1[12] result1[13] 2.84109e-05
+4 result0[16] result1[12] 0
+5 result0[18] result1[12] 0
+*RES
+1 *357:LO result1[12] 25.6571 
+*END
+
+*D_NET *42 0.00165198
+*CONN
+*P result1[13] O
+*I *356:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[13] 0.000682978
+2 *356:LO 0.000682978
+3 result0[17] result1[13] 0
+4 result0[18] result1[13] 0.000257613
+5 result1[12] result1[13] 2.84109e-05
+*RES
+1 *356:LO result1[13] 27.3536 
+*END
+
+*D_NET *43 0.00251371
+*CONN
+*P result1[14] O
+*I *355:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[14] 0.000912128
+2 *355:LO 0.000912128
+3 result0[16] result1[14] 4.79282e-05
+4 result0[19] result1[14] 0.000165164
+5 result1[10] result1[14] 0
+6 result1[11] result1[14] 0.000476366
+*RES
+1 *355:LO result1[14] 43.3893 
+*END
+
+*D_NET *44 0.00305354
+*CONN
+*P result1[15] O
+*I *354:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[15] 0.00125317
+2 *354:LO 0.00125317
+3 result0[17] result1[15] 7.2029e-05
+4 result0[21] result1[15] 2.00138e-06
+5 result0[24] result1[15] 0.000473163
+6 result0[29] result1[15] 0
+*RES
+1 *354:LO result1[15] 37.9071 
+*END
+
+*D_NET *45 0.00114157
+*CONN
+*P result1[16] O
+*I *353:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[16] 0.000446825
+2 *353:LO 0.000446825
+3 result1[16] result1[17] 0.000123959
+4 result0[31] result1[16] 0.000123959
+*RES
+1 *353:LO result1[16] 24.334 
+*END
+
+*D_NET *46 0.00131512
+*CONN
+*P result1[17] O
+*I *352:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[17] 0.000360972
+2 *352:LO 0.000360972
+3 result1[17] result1[18] 0.000378778
+4 result0[31] result1[17] 9.0438e-05
+5 result1[16] result1[17] 0.000123959
+*RES
+1 *352:LO result1[17] 18.6446 
+*END
+
+*D_NET *47 0.00146472
+*CONN
+*P result1[18] O
+*I *351:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[18] 0.000326803
+2 *351:LO 0.000326803
+3 result1[18] result1[19] 0.00043234
+4 result0[30] result1[18] 0
+5 result1[17] result1[18] 0.000378778
+*RES
+1 *351:LO result1[18] 18.8608 
+*END
+
+*D_NET *48 0.00190822
+*CONN
+*P result1[19] O
+*I *350:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[19] 0.000535011
+2 *350:LO 0.000535011
+3 result1[19] result1[20] 0.000314028
+4 result1[19] result1[21] 3.24432e-05
+5 result1[18] result1[19] 0.00043234
+6 *3:34 result1[19] 5.93878e-05
+*RES
+1 *350:LO result1[19] 21.7007 
+*END
+
+*D_NET *49 0.00139882
+*CONN
+*P result1[1] O
+*I *371:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[1] 0.000647163
+2 *371:LO 0.000647163
+3 result1[1] result1[2] 0
+4 result1[1] *93:18 4.3304e-06
+5 result1[0] result1[1] 0.000100165
+*RES
+1 *371:LO result1[1] 26.0946 
+*END
+
+*D_NET *50 0.00129414
+*CONN
+*P result1[20] O
+*I *349:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[20] 0.000333162
+2 *349:LO 0.000333162
+3 result1[20] result1[21] 0.000313786
+4 result1[19] result1[20] 0.000314028
+*RES
+1 *349:LO result1[20] 20.9998 
+*END
+
+*D_NET *51 0.00178581
+*CONN
+*P result1[21] O
+*I *348:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[21] 0.000431281
+2 *348:LO 0.000431281
+3 result1[21] result1[22] 0.000473377
+4 result1[21] result1[29] 0
+5 result1[19] result1[21] 3.24432e-05
+6 result1[20] result1[21] 0.000313786
+7 *3:34 result1[21] 0.000103646
+*RES
+1 *348:LO result1[21] 19.1643 
+*END
+
+*D_NET *52 0.0014594
+*CONN
+*P result1[22] O
+*I *347:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[22] 0.000370187
+2 *347:LO 0.000370187
+3 result1[22] result1[23] 0.000245647
+4 result1[22] result1[25] 0
+5 result1[22] result1[27] 0
+6 result1[21] result1[22] 0.000473377
+*RES
+1 *347:LO result1[22] 18.8608 
+*END
+
+*D_NET *53 0.0019071
+*CONN
+*P result1[23] O
+*I *346:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[23] 0.000273178
+2 *346:LO 0.000273178
+3 result1[23] result1[24] 0.000599859
+4 result1[23] result1[25] 1.36077e-05
+5 result1[23] result1[28] 0.000104326
+6 result1[23] result1[30] 0.000397304
+7 result1[22] result1[23] 0.000245647
+8 *3:34 result1[23] 0
+*RES
+1 *346:LO result1[23] 24.4972 
+*END
+
+*D_NET *54 0.00134815
+*CONN
+*P result1[24] O
+*I *345:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[24] 0.000266885
+2 *345:LO 0.000266885
+3 result1[24] result1[25] 0.000214517
+4 result1[23] result1[24] 0.000599859
+5 *3:34 result1[24] 0
+*RES
+1 *345:LO result1[24] 22.0859 
+*END
+
+*D_NET *55 0.00154899
+*CONN
+*P result1[25] O
+*I *344:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[25] 0.000425311
+2 *344:LO 0.000425311
+3 result1[25] result1[26] 0.00044016
+4 result1[25] result1[29] 0
+5 result1[25] result1[5] 3.00801e-05
+6 result1[22] result1[25] 0
+7 result1[23] result1[25] 1.36077e-05
+8 result1[24] result1[25] 0.000214517
+*RES
+1 *344:LO result1[25] 20.1624 
+*END
+
+*D_NET *56 0.00207336
+*CONN
+*P result1[26] O
+*I *343:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[26] 0.000461171
+2 *343:LO 0.000461171
+3 result1[26] result1[27] 0.000377742
+4 result1[26] result1[5] 2.28776e-05
+5 result1[26] result1[6] 0.000310243
+6 result1[25] result1[26] 0.00044016
+*RES
+1 *343:LO result1[26] 22.0202 
+*END
+
+*D_NET *57 0.00216237
+*CONN
+*P result1[27] O
+*I *342:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[27] 0.000628641
+2 *342:LO 0.000628641
+3 result1[27] result1[28] 0.000262254
+4 result1[27] result1[29] 7.4445e-06
+5 result1[27] result1[30] 0.000100262
+6 result1[27] result1[31] 0
+7 result1[27] result1[5] 0.000157388
+8 result1[27] result1[7] 0
+9 result1[22] result1[27] 0
+10 result1[26] result1[27] 0.000377742
+*RES
+1 *342:LO result1[27] 21.7007 
+*END
+
+*D_NET *58 0.00260459
+*CONN
+*P result1[28] O
+*I *341:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[28] 0.000555494
+2 *341:LO 0.000555494
+3 result1[28] result1[29] 0.000786842
+4 result1[28] result1[30] 0.000283312
+5 result1[28] result1[5] 5.68713e-05
+6 result1[23] result1[28] 0.000104326
+7 result1[27] result1[28] 0.000262254
+8 *3:34 result1[28] 0
+*RES
+1 *341:LO result1[28] 29.3021 
+*END
+
+*D_NET *59 0.00285672
+*CONN
+*P result1[29] O
+*I *340:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[29] 0.00070671
+2 *340:LO 0.00070671
+3 result1[29] result1[30] 0.000292999
+4 result1[29] result1[31] 1.79373e-05
+5 result1[29] result1[5] 0
+6 result1[29] result1[6] 0.000232969
+7 result1[21] result1[29] 0
+8 result1[25] result1[29] 0
+9 result1[27] result1[29] 7.4445e-06
+10 result1[28] result1[29] 0.000786842
+11 *3:34 result1[29] 0.00010511
+*RES
+1 *340:LO result1[29] 30.8741 
+*END
+
+*D_NET *60 0.0018722
+*CONN
+*P result1[2] O
+*I *313:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 result1[2] 0.000910961
+2 *313:X 0.000910961
+3 result1[2] result1[3] 0
+4 result1[2] *93:18 5.02737e-05
+5 result1[1] result1[2] 0
+*RES
+1 *313:X result1[2] 28.9696 
+*END
+
+*D_NET *61 0.00269622
+*CONN
+*P result1[30] O
+*I *339:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[30] 0.000675997
+2 *339:LO 0.000675997
+3 result1[30] result1[31] 0.00024187
+4 result1[30] result1[6] 2.84749e-05
+5 result1[23] result1[30] 0.000397304
+6 result1[27] result1[30] 0.000100262
+7 result1[28] result1[30] 0.000283312
+8 result1[29] result1[30] 0.000292999
+9 *3:34 result1[30] 0
+*RES
+1 *339:LO result1[30] 30.2657 
+*END
+
+*D_NET *62 0.00322361
+*CONN
+*P result1[31] O
+*I *338:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[31] 0.000929767
+2 *338:LO 0.000929767
+3 result1[31] result1[3] 0.000399342
+4 result1[31] result1[6] 5.49995e-05
+5 result1[31] result1[7] 0.000441769
+6 result1[31] *309:A 0.000180298
+7 result1[27] result1[31] 0
+8 result1[29] result1[31] 1.79373e-05
+9 result1[30] result1[31] 0.00024187
+10 *3:34 result1[31] 2.78644e-05
+*RES
+1 *338:LO result1[31] 25.5814 
+*END
+
+*D_NET *63 0.00187914
+*CONN
+*P result1[3] O
+*I *368:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[3] 0.000514415
+2 *368:LO 0.000514415
+3 result1[3] result1[4] 0
+4 result1[3] result1[6] 5.49995e-05
+5 result1[3] result1[7] 0.00034912
+6 result1[3] *313:A 4.68532e-05
+7 result1[2] result1[3] 0
+8 result1[31] result1[3] 0.000399342
+*RES
+1 *368:LO result1[3] 28.3089 
+*END
+
+*D_NET *64 0.00205575
+*CONN
+*P result1[4] O
+*I *366:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[4] 0.00068066
+2 *366:LO 0.00068066
+3 result1[4] result1[5] 0
+4 result1[4] result1[6] 0.000143375
+5 result1[4] result1[7] 0.00055105
+6 result1[3] result1[4] 0
+*RES
+1 *366:LO result1[4] 31.2554 
+*END
+
+*D_NET *65 0.00238245
+*CONN
+*P result1[5] O
+*I *364:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[5] 0.000960854
+2 *364:LO 0.000960854
+3 result1[5] result1[6] 0
+4 result1[5] *309:A 0.000193527
+5 result1[25] result1[5] 3.00801e-05
+6 result1[26] result1[5] 2.28776e-05
+7 result1[27] result1[5] 0.000157388
+8 result1[28] result1[5] 5.68713e-05
+9 result1[29] result1[5] 0
+10 result1[4] result1[5] 0
+*RES
+1 *364:LO result1[5] 33.8268 
+*END
+
+*D_NET *66 0.00322226
+*CONN
+*P result1[6] O
+*I *363:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[6] 0.00110806
+2 *363:LO 0.00110806
+3 result1[6] result1[7] 0
+4 result1[6] *309:A 0.000126128
+5 result1[6] *313:A 5.4959e-05
+6 result1[26] result1[6] 0.000310243
+7 result1[29] result1[6] 0.000232969
+8 result1[30] result1[6] 2.84749e-05
+9 result1[31] result1[6] 5.49995e-05
+10 result1[3] result1[6] 5.49995e-05
+11 result1[4] result1[6] 0.000143375
+12 result1[5] result1[6] 0
+*RES
+1 *363:LO result1[6] 37.8982 
+*END
+
+*D_NET *67 0.00325109
+*CONN
+*P result1[7] O
+*I *362:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[7] 0.000954577
+2 *362:LO 0.000954577
+3 result1[27] result1[7] 0
+4 result1[31] result1[7] 0.000441769
+5 result1[3] result1[7] 0.00034912
+6 result1[4] result1[7] 0.00055105
+7 result1[6] result1[7] 0
+*RES
+1 *362:LO result1[7] 47.8804 
+*END
+
+*D_NET *68 0.00127548
+*CONN
+*P result1[8] O
+*I *361:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[8] 0.00063774
+2 *361:LO 0.00063774
+3 result1[8] result1[9] 0
+*RES
+1 *361:LO result1[8] 26.7286 
+*END
+
+*D_NET *69 0.001136
+*CONN
+*P result1[9] O
+*I *360:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 result1[9] 0.000567998
+2 *360:LO 0.000567998
+3 result1[10] result1[9] 0
+4 result1[8] result1[9] 0
+*RES
+1 *360:LO result1[9] 25.05 
+*END
+
+*D_NET *70 0.00155425
+*CONN
+*P rst I
+*I *309:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 rst 0.000514603
+2 *309:A 0.000514603
+3 result1[31] *309:A 0.000180298
+4 result1[5] *309:A 0.000193527
+5 result1[6] *309:A 0.000126128
+6 *3:34 *309:A 2.50916e-05
+*RES
+1 rst *309:A 23.8053 
+*END
+
+*D_NET *71 0.000291904
+*CONN
+*I *301:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *285:Y O *D sky130_fd_sc_hd__a31oi_2
+*CAP
+1 *301:A 5.39016e-05
+2 *285:Y 5.39016e-05
+3 *301:A *278:A 1.25366e-05
+4 *301:A *279:A 5.54817e-06
+5 *301:A *85:19 4.54426e-05
+6 *301:A *91:21 0.000120574
+*RES
+1 *285:Y *301:A 29.2429 
+*END
+
+*D_NET *72 0.00104558
+*CONN
+*I *290:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *287:X O *D sky130_fd_sc_hd__and2b_2
+*CAP
+1 *290:D 0.000464944
+2 *287:X 0.000464944
+3 *290:D *82:15 0.000115692
+*RES
+1 *287:X *290:D 33.5821 
+*END
+
+*D_NET *73 0.000537193
+*CONN
+*I *304:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *288:Y O *D sky130_fd_sc_hd__xnor2_2
+*CAP
+1 *304:A 0.000268596
+2 *288:Y 0.000268596
+3 *304:A *311:A 0
+*RES
+1 *288:Y *304:A 32.2786 
+*END
+
+*D_NET *74 0.00053033
+*CONN
+*I *299:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *281:Y O *D sky130_fd_sc_hd__a31oi_2
+*CAP
+1 *299:A 0.000179781
+2 *281:Y 0.000179781
+3 *299:A *281:A1 5.49489e-05
+4 *299:A *78:29 0.000115819
+*RES
+1 *281:Y *299:A 22.0107 
+*END
+
+*D_NET *75 0.000730809
+*CONN
+*I *306:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *283:Y O *D sky130_fd_sc_hd__nor2_2
+*CAP
+1 *306:A 5.25003e-05
+2 *283:Y 5.25003e-05
+3 *306:A *283:A 0.000312904
+4 *306:A *283:B 0.000312904
+*RES
+1 *283:Y *306:A 21.6 
+*END
+
+*D_NET *76 0.000457291
+*CONN
+*I *294:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *284:X O *D sky130_fd_sc_hd__xor2_2
+*CAP
+1 *294:D 0.000210792
+2 *284:X 0.000210792
+3 *294:D *284:B 3.5707e-05
+*RES
+1 *284:X *294:D 30.725 
+*END
+
+*D_NET *77 0.000325654
+*CONN
+*I *275:B I *D sky130_fd_sc_hd__nor2_2
+*I *274:Y O *D sky130_fd_sc_hd__nand2b_2
+*CAP
+1 *275:B 5.81704e-05
+2 *274:Y 5.81704e-05
+3 *275:B *274:A_N 1.31516e-05
+4 *275:B *276:A 2.49484e-05
+5 *275:B *282:A 1.02504e-05
+6 *275:B *90:22 5.84171e-05
+7 *275:B *100:10 0.000102545
+*RES
+1 *274:Y *275:B 29.5464 
+*END
+
+*D_NET *78 0.0041156
+*CONN
+*I *281:A3 I *D sky130_fd_sc_hd__a31oi_2
+*I *277:A3 I *D sky130_fd_sc_hd__a31o_2
+*I *283:A I *D sky130_fd_sc_hd__nor2_2
+*I *276:Y O *D sky130_fd_sc_hd__nor2_2
+*CAP
+1 *281:A3 0
+2 *277:A3 0.000126437
+3 *283:A 0.000448641
+4 *276:Y 0.000106074
+5 *78:29 0.000428082
+6 *78:8 0.00085636
+7 *277:A3 *277:A2 0.000163917
+8 *277:A3 *291:CLK 0.000249022
+9 *277:A3 *291:RESET_B 1.98839e-05
+10 *277:A3 *90:30 5.80706e-06
+11 *283:A *283:B 7.03831e-05
+12 *283:A *293:RESET_B 3.82216e-05
+13 *283:A *294:RESET_B 6.74651e-05
+14 *283:A *80:8 6.05161e-06
+15 *283:A *82:39 6.15739e-06
+16 *78:29 *274:B 1.38323e-05
+17 *78:29 *276:A 0.000337321
+18 *78:29 *281:A1 9.58126e-05
+19 *78:29 *281:B1 5.33005e-05
+20 *78:29 *293:RESET_B 6.63268e-05
+21 *78:29 *90:30 0.000304921
+22 *78:29 *92:10 3.90513e-05
+23 *78:29 *93:28 0.000146474
+24 *295:A *78:8 3.73361e-05
+25 *299:A *78:29 0.000115819
+26 *306:A *283:A 0.000312904
+*RES
+1 *276:Y *78:8 15.1571 
+2 *78:8 *283:A 23.3536 
+3 *78:8 *78:29 14.0357 
+4 *78:29 *277:A3 22.1036 
+5 *78:29 *281:A3 9.3 
+*END
+
+*D_NET *79 0.00244205
+*CONN
+*I *287:A_N I *D sky130_fd_sc_hd__and2b_2
+*I *280:A3 I *D sky130_fd_sc_hd__a31o_2
+*I *285:A3 I *D sky130_fd_sc_hd__a31oi_2
+*I *279:Y O *D sky130_fd_sc_hd__nor2_2
+*CAP
+1 *287:A_N 0.000244125
+2 *280:A3 0
+3 *285:A3 0
+4 *279:Y 0.000197437
+5 *79:23 0.000464983
+6 *79:10 0.000418295
+7 *287:A_N *278:A 0.00015078
+8 *287:A_N *280:A1 4.73286e-05
+9 *287:A_N *280:A2 2.84109e-05
+10 *287:A_N *280:B1 0.000181771
+11 *287:A_N *86:10 0.00010297
+12 *79:10 *279:B 0.000198676
+13 *79:10 *285:A2 1.00887e-05
+14 *79:23 *280:A2 6.05161e-06
+15 *79:23 *285:A2 0.000391129
+*RES
+1 *279:Y *79:10 18.1214 
+2 *79:10 *285:A3 13.8 
+3 *79:10 *79:23 10.0179 
+4 *79:23 *280:A3 9.3 
+5 *79:23 *287:A_N 24.4786 
+*END
+
+*D_NET *80 0.00226014
+*CONN
+*I *284:B I *D sky130_fd_sc_hd__xor2_2
+*I *283:B I *D sky130_fd_sc_hd__nor2_2
+*I *282:X O *D sky130_fd_sc_hd__and2_2
+*CAP
+1 *284:B 0.000293158
+2 *283:B 0.000253188
+3 *282:X 0.000234482
+4 *80:8 0.000780828
+5 *284:B *294:RESET_B 0.00013455
+6 *284:B *82:39 3.87228e-05
+7 *80:8 *282:B 0.000100165
+8 *283:A *283:B 7.03831e-05
+9 *283:A *80:8 6.05161e-06
+10 *294:D *284:B 3.5707e-05
+11 *306:A *283:B 0.000312904
+*RES
+1 *282:X *80:8 13.1393 
+2 *80:8 *283:B 13.9607 
+3 *80:8 *284:B 15.8036 
+*END
+
+*D_NET *81 0.00242417
+*CONN
+*I *288:B I *D sky130_fd_sc_hd__xnor2_2
+*I *287:B I *D sky130_fd_sc_hd__and2b_2
+*I *286:Y O *D sky130_fd_sc_hd__nand2_2
+*CAP
+1 *288:B 0.00011563
+2 *287:B 0.00018939
+3 *286:Y 0.000228215
+4 *81:12 0.000533234
+5 *288:B *311:A 0.000364967
+6 *288:B *87:10 7.77586e-05
+7 *288:B *87:20 0.000275824
+8 *81:12 *278:A 9.44415e-05
+9 *81:12 *278:C_N 9.54141e-05
+10 *81:12 *280:B1 0.000101777
+11 *81:12 *286:A 2.59355e-05
+12 *81:12 *310:A 0
+13 *81:12 *311:A 9.69609e-05
+14 *81:12 *87:20 9.11048e-06
+15 *81:12 *91:21 0.000215508
+*RES
+1 *286:Y *81:12 19.7464 
+2 *81:12 *287:B 16.3893 
+3 *81:12 *288:B 18.4786 
+*END
+
+*D_NET *82 0.00253086
+*CONN
+*I *297:A I *D sky130_fd_sc_hd__clkbuf_8
+*I *296:A I *D sky130_fd_sc_hd__clkbuf_8
+*I *295:X O *D sky130_fd_sc_hd__clkbuf_8
+*CAP
+1 *297:A 3.22653e-05
+2 *296:A 0
+3 *295:X 0
+4 *82:39 0.000586212
+5 *82:26 0.000553947
+6 *82:15 0.000386674
+7 *82:6 0.000499916
+8 *82:4 0.000113242
+9 *297:A *84:8 2.41276e-05
+10 *82:39 *289:CLK 9.19332e-05
+11 *82:39 *293:D 6.44649e-05
+12 *82:39 *293:RESET_B 4.71591e-06
+13 *82:39 *84:20 1.27905e-05
+14 *283:A *82:39 6.15739e-06
+15 *284:B *82:39 3.87228e-05
+16 *290:D *82:15 0.000115692
+*RES
+1 *295:X *82:4 9.3 
+2 *82:4 *82:6 1.73661 
+3 *82:6 *82:15 11.7277 
+4 *82:15 *296:A 13.8 
+5 *82:4 *82:26 4.5 
+6 *82:26 *82:39 9.66071 
+7 *82:39 *297:A 14.4116 
+*END
+
+*D_NET *83 0.00440378
+*CONN
+*I *291:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *289:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *292:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *296:X O *D sky130_fd_sc_hd__clkbuf_8
+*CAP
+1 *291:CLK 0.000262532
+2 *289:CLK 0.000679711
+3 *292:CLK 4.53384e-05
+4 *296:X 0.000329224
+5 *83:25 0.00132351
+6 *83:10 0.000755828
+7 *289:CLK *292:D 0
+8 *289:CLK *293:D 2.51992e-05
+9 *289:CLK *84:20 0.00030964
+10 *291:CLK *291:RESET_B 0.000185118
+11 *291:CLK *90:30 1.69252e-05
+12 *292:CLK *92:10 1.72894e-05
+13 *83:10 *92:10 6.32265e-05
+14 *83:25 *92:10 4.92784e-05
+15 *277:A3 *291:CLK 0.000249022
+16 *82:39 *289:CLK 9.19332e-05
+*RES
+1 *296:X *83:10 14.0857 
+2 *83:10 *292:CLK 10.6929 
+3 *83:10 *83:25 9.14286 
+4 *83:25 *289:CLK 26.0143 
+5 *83:25 *291:CLK 19.6393 
+*END
+
+*D_NET *84 0.0023451
+*CONN
+*I *294:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *293:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *290:CLK I *D sky130_fd_sc_hd__dfrtp_2
+*I *297:X O *D sky130_fd_sc_hd__clkbuf_8
+*CAP
+1 *294:CLK 0.000112388
+2 *293:CLK 0
+3 *290:CLK 2.28757e-05
+4 *297:X 0.000360212
+5 *84:20 0.000456954
+6 *84:8 0.00090668
+7 *290:CLK *290:RESET_B 3.08664e-05
+8 *84:20 *290:RESET_B 2.51075e-05
+9 *84:20 *293:D 8.34584e-05
+10 *289:CLK *84:20 0.00030964
+11 *297:A *84:8 2.41276e-05
+12 *82:39 *84:20 1.27905e-05
+*RES
+1 *297:X *84:8 14.7821 
+2 *84:8 *84:20 17.125 
+3 *84:20 *290:CLK 9.83571 
+4 *84:20 *293:CLK 9.3 
+5 *84:8 *294:CLK 20.2464 
+*END
+
+*D_NET *85 0.00264294
+*CONN
+*I *278:A I *D sky130_fd_sc_hd__nor3b_2
+*I *300:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *286:A I *D sky130_fd_sc_hd__nand2_2
+*I *279:A I *D sky130_fd_sc_hd__nor2_2
+*I *289:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *278:A 0.000198644
+2 *300:A 0.000245091
+3 *286:A 0.000142252
+4 *279:A 0.000216122
+5 *289:Q 0
+6 *85:21 0.000387343
+7 *85:19 0.000263945
+8 *85:6 0.000281423
+9 *278:A *280:B1 0.000101777
+10 *278:A *311:A 5.90911e-05
+11 *278:A *91:21 1.07319e-05
+12 *279:A *91:10 7.23651e-05
+13 *279:A *91:21 1.45648e-05
+14 *300:A *289:D 0.000314907
+15 *287:A_N *278:A 0.00015078
+16 *301:A *278:A 1.25366e-05
+17 *301:A *279:A 5.54817e-06
+18 *301:A *85:19 4.54426e-05
+19 *81:12 *278:A 9.44415e-05
+20 *81:12 *286:A 2.59355e-05
+*RES
+1 *289:Q *85:6 13.8 
+2 *85:6 *279:A 18.2107 
+3 *85:6 *85:19 1.33929 
+4 *85:19 *85:21 4.5 
+5 *85:21 *286:A 11.4964 
+6 *85:21 *300:A 14.7821 
+7 *85:19 *278:A 19.0857 
+*END
+
+*D_NET *86 0.00184676
+*CONN
+*I *286:B I *D sky130_fd_sc_hd__nand2_2
+*I *279:B I *D sky130_fd_sc_hd__nor2_2
+*I *290:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *286:B 0
+2 *279:B 0.000325925
+3 *290:Q 0.000310724
+4 *86:10 0.00063665
+5 *279:B *285:A2 0.00016915
+6 *279:B *91:21 7.7159e-06
+7 *86:10 *285:A2 4.79282e-05
+8 *86:10 *91:21 4.70193e-05
+9 *287:A_N *86:10 0.00010297
+10 *79:10 *279:B 0.000198676
+*RES
+1 *290:Q *86:10 18.7464 
+2 *86:10 *279:B 21.2107 
+3 *86:10 *286:B 13.8 
+*END
+
+*D_NET *87 0.00428801
+*CONN
+*I *303:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *278:B I *D sky130_fd_sc_hd__nor3b_2
+*I *280:A2 I *D sky130_fd_sc_hd__a31o_2
+*I *285:A2 I *D sky130_fd_sc_hd__a31oi_2
+*I *291:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *303:A 0.000393388
+2 *278:B 0
+3 *280:A2 4.49826e-05
+4 *285:A2 0.000153978
+5 *291:Q 0.000231638
+6 *87:30 0.000361347
+7 *87:20 0.000413653
+8 *87:10 0.000876293
+9 *285:A2 *310:A 1.00887e-05
+10 *303:A *288:A 0.000399835
+11 *87:10 *310:A 0
+12 *87:10 *311:A 7.0061e-05
+13 *87:20 *278:C_N 5.68447e-05
+14 *87:20 *310:A 0
+15 *87:30 *278:C_N 0.000143375
+16 *87:30 *310:A 0.000117074
+17 *279:B *285:A2 0.00016915
+18 *287:A_N *280:A2 2.84109e-05
+19 *288:B *87:10 7.77586e-05
+20 *288:B *87:20 0.000275824
+21 *79:10 *285:A2 1.00887e-05
+22 *79:23 *280:A2 6.05161e-06
+23 *79:23 *285:A2 0.000391129
+24 *81:12 *87:20 9.11048e-06
+25 *86:10 *285:A2 4.79282e-05
+*RES
+1 *291:Q *87:10 18.0143 
+2 *87:10 *87:20 10.0714 
+3 *87:20 *87:30 8.16071 
+4 *87:30 *285:A2 19.3893 
+5 *87:30 *280:A2 14.3357 
+6 *87:20 *278:B 9.3 
+7 *87:10 *303:A 20.9429 
+*END
+
+*D_NET *88 0.00285958
+*CONN
+*I *298:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *275:A I *D sky130_fd_sc_hd__nor2_2
+*I *282:A I *D sky130_fd_sc_hd__and2_2
+*I *292:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *298:A 0.000219846
+2 *275:A 0
+3 *282:A 0.000213996
+4 *292:Q 0
+5 *88:10 0.000471381
+6 *88:4 0.000477231
+7 *282:A *276:A 0.000116696
+8 *282:A *294:RESET_B 0.000201442
+9 *282:A *90:22 0.000582554
+10 *298:A *277:A1 0.000185886
+11 *298:A *277:B1 5.20669e-05
+12 *298:A *291:RESET_B 9.83388e-05
+13 *298:A *90:30 0
+14 *298:A *92:10 0.000123288
+15 *88:10 *292:RESET_B 1.24368e-05
+16 *88:10 *93:28 9.41642e-05
+17 *275:B *282:A 1.02504e-05
+*RES
+1 *292:Q *88:4 9.3 
+2 *88:4 *88:10 3.85714 
+3 *88:10 *282:A 25.7107 
+4 *88:10 *275:A 9.3 
+5 *88:4 *298:A 23.3179 
+*END
+
+*D_NET *89 0.00120374
+*CONN
+*I *305:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *282:B I *D sky130_fd_sc_hd__and2_2
+*I *293:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *305:A 0.000197104
+2 *282:B 0.000176003
+3 *293:Q 5.02207e-05
+4 *89:8 0.000423328
+5 *282:B *90:22 9.61992e-05
+6 *305:A *90:22 2.81056e-05
+7 *3:34 *305:A 0.000132617
+8 *80:8 *282:B 0.000100165
+*RES
+1 *293:Q *89:8 14.3357 
+2 *89:8 *282:B 18.2107 
+3 *89:8 *305:A 17.7464 
+*END
+
+*D_NET *90 0.00503279
+*CONN
+*I *274:A_N I *D sky130_fd_sc_hd__nand2b_2
+*I *277:A2 I *D sky130_fd_sc_hd__a31o_2
+*I *281:A2 I *D sky130_fd_sc_hd__a31oi_2
+*I *302:A I *D sky130_fd_sc_hd__dlygate4sd3_1
+*I *294:Q O *D sky130_fd_sc_hd__dfrtp_2
+*CAP
+1 *274:A_N 2.68585e-05
+2 *277:A2 0.00024486
+3 *281:A2 0
+4 *302:A 0.000204777
+5 *294:Q 0.00100639
+6 *90:30 0.000707302
+7 *90:22 0.00129091
+8 *274:A_N *100:10 1.00375e-05
+9 *277:A2 *277:A1 5.49995e-05
+10 *277:A2 *291:RESET_B 1.4796e-05
+11 *90:22 *294:RESET_B 0.000169855
+12 *90:30 *274:B 1.21258e-05
+13 *90:30 *281:B1 1.98839e-05
+14 *275:B *274:A_N 1.31516e-05
+15 *275:B *90:22 5.84171e-05
+16 *277:A3 *277:A2 0.000163917
+17 *277:A3 *90:30 5.80706e-06
+18 *282:A *90:22 0.000582554
+19 *282:B *90:22 9.61992e-05
+20 *291:CLK *90:30 1.69252e-05
+21 *298:A *90:30 0
+22 *305:A *90:22 2.81056e-05
+23 *78:29 *90:30 0.000304921
+*RES
+1 *294:Q *302:A 22.0107 
+2 *294:Q *90:22 30.3893 
+3 *90:22 *90:30 14.7857 
+4 *90:30 *281:A2 13.8 
+5 *90:30 *277:A2 18.9964 
+6 *90:22 *274:A_N 14.5321 
+*END
+
+*D_NET *91 0.00344247
+*CONN
+*I *278:C_N I *D sky130_fd_sc_hd__nor3b_2
+*I *280:A1 I *D sky130_fd_sc_hd__a31o_2
+*I *285:A1 I *D sky130_fd_sc_hd__a31oi_2
+*I *307:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 *278:C_N 0.000244762
+2 *280:A1 0.000125086
+3 *285:A1 6.18314e-05
+4 *307:X 0.000570136
+5 *91:21 0.000624378
+6 *91:10 0.000886497
+7 *280:A1 *280:B1 9.83388e-05
+8 *278:A *91:21 1.07319e-05
+9 *279:A *91:10 7.23651e-05
+10 *279:A *91:21 1.45648e-05
+11 *279:B *91:21 7.7159e-06
+12 *287:A_N *280:A1 4.73286e-05
+13 *301:A *91:21 0.000120574
+14 *81:12 *278:C_N 9.54141e-05
+15 *81:12 *91:21 0.000215508
+16 *86:10 *91:21 4.70193e-05
+17 *87:20 *278:C_N 5.68447e-05
+18 *87:30 *278:C_N 0.000143375
+*RES
+1 *307:X *91:10 23.5679 
+2 *91:10 *285:A1 14.7464 
+3 *91:10 *91:21 5.58929 
+4 *91:21 *280:A1 15.5679 
+5 *91:21 *278:C_N 18.1571 
+*END
+
+*D_NET *92 0.00511403
+*CONN
+*I *277:A1 I *D sky130_fd_sc_hd__a31o_2
+*I *274:B I *D sky130_fd_sc_hd__nand2b_2
+*I *281:A1 I *D sky130_fd_sc_hd__a31oi_2
+*I *308:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 *277:A1 0.000337052
+2 *274:B 0.000119902
+3 *281:A1 3.07408e-05
+4 *308:X 0.00130981
+5 *92:12 0.000150643
+6 *92:10 0.00164686
+7 *274:B *281:B1 9.71197e-05
+8 *277:A1 *277:B1 0.000226946
+9 *277:A1 *291:RESET_B 6.92966e-06
+10 *277:A1 *93:18 4.12938e-05
+11 *277:A1 *93:28 0.000110731
+12 *92:10 *292:RESET_B 6.36921e-05
+13 *92:10 *293:RESET_B 8.15095e-05
+14 *92:10 *93:28 0.000181065
+15 *277:A2 *277:A1 5.49995e-05
+16 *292:CLK *92:10 1.72894e-05
+17 *298:A *277:A1 0.000185886
+18 *298:A *92:10 0.000123288
+19 *299:A *281:A1 5.49489e-05
+20 *78:29 *274:B 1.38323e-05
+21 *78:29 *281:A1 9.58126e-05
+22 *78:29 *92:10 3.90513e-05
+23 *83:10 *92:10 6.32265e-05
+24 *83:25 *92:10 4.92784e-05
+25 *90:30 *274:B 1.21258e-05
+*RES
+1 *308:X *92:10 31.4607 
+2 *92:10 *92:12 4.5 
+3 *92:12 *281:A1 10.2464 
+4 *92:12 *274:B 11.4964 
+5 *92:10 *277:A1 20.2643 
+*END
+
+*D_NET *93 0.00837081
+*CONN
+*I *289:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *294:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *291:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *290:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *293:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *292:RESET_B I *D sky130_fd_sc_hd__dfrtp_2
+*I *309:X O *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*CAP
+1 *289:RESET_B 0.000278584
+2 *294:RESET_B 0.000252022
+3 *291:RESET_B 0.000737018
+4 *290:RESET_B 0.00078462
+5 *293:RESET_B 0.000998993
+6 *292:RESET_B 7.79145e-05
+7 *309:X 0.000789512
+8 *93:28 0.000526489
+9 *93:18 0.00173417
+10 *290:RESET_B *293:D 2.85234e-05
+11 *291:RESET_B *277:B1 6.98688e-05
+12 *93:18 *97:8 9.15842e-06
+13 *93:18 *100:10 4.78721e-05
+14 *93:28 *276:A 1.08359e-05
+15 *93:28 *97:8 0.000150989
+16 result1[0] *93:18 2.46518e-05
+17 result1[1] *93:18 4.3304e-06
+18 result1[2] *93:18 5.02737e-05
+19 *277:A1 *291:RESET_B 6.92966e-06
+20 *277:A1 *93:18 4.12938e-05
+21 *277:A1 *93:28 0.000110731
+22 *277:A2 *291:RESET_B 1.4796e-05
+23 *277:A3 *291:RESET_B 1.98839e-05
+24 *282:A *294:RESET_B 0.000201442
+25 *283:A *293:RESET_B 3.82216e-05
+26 *283:A *294:RESET_B 6.74651e-05
+27 *284:B *294:RESET_B 0.00013455
+28 *290:CLK *290:RESET_B 3.08664e-05
+29 *291:CLK *291:RESET_B 0.000185118
+30 *298:A *291:RESET_B 9.83388e-05
+31 *78:29 *293:RESET_B 6.63268e-05
+32 *78:29 *93:28 0.000146474
+33 *82:39 *293:RESET_B 4.71591e-06
+34 *84:20 *290:RESET_B 2.51075e-05
+35 *88:10 *292:RESET_B 1.24368e-05
+36 *88:10 *93:28 9.41642e-05
+37 *90:22 *294:RESET_B 0.000169855
+38 *92:10 *292:RESET_B 6.36921e-05
+39 *92:10 *293:RESET_B 8.15095e-05
+40 *92:10 *93:28 0.000181065
+*RES
+1 *309:X *93:18 25.1929 
+2 *93:18 *93:28 10.4821 
+3 *93:28 *292:RESET_B 1.70536 
+4 *93:28 *293:RESET_B 14.6429 
+5 *293:RESET_B *290:RESET_B 8.08929 
+6 *93:18 *291:RESET_B 17.4554 
+7 *293:RESET_B *294:RESET_B 17.0179 
+8 *290:RESET_B *289:RESET_B 13.9821 
+*END
+
+*D_NET *94 0.00148456
+*CONN
+*I *310:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*I *280:X O *D sky130_fd_sc_hd__a31o_2
+*CAP
+1 *310:A 0.000603047
+2 *280:X 0.000603047
+3 result0[1] *310:A 0.000151304
+4 *285:A2 *310:A 1.00887e-05
+5 *81:12 *310:A 0
+6 *87:10 *310:A 0
+7 *87:20 *310:A 0
+8 *87:30 *310:A 0.000117074
+*RES
+1 *280:X *310:A 39.6714 
+*END
+
+*D_NET *95 0.00237115
+*CONN
+*I *311:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*I *280:B1 I *D sky130_fd_sc_hd__a31o_2
+*I *278:Y O *D sky130_fd_sc_hd__nor3b_2
+*CAP
+1 *311:A 0.000510042
+2 *280:B1 0.000100044
+3 *278:Y 0
+4 *95:6 0.000610086
+5 result0[4] *311:A 7.62323e-05
+6 *278:A *280:B1 0.000101777
+7 *278:A *311:A 5.90911e-05
+8 *280:A1 *280:B1 9.83388e-05
+9 *287:A_N *280:B1 0.000181771
+10 *288:B *311:A 0.000364967
+11 *304:A *311:A 0
+12 *81:12 *280:B1 0.000101777
+13 *81:12 *311:A 9.69609e-05
+14 *87:10 *311:A 7.0061e-05
+*RES
+1 *278:Y *95:6 13.8 
+2 *95:6 *280:B1 16.9071 
+3 *95:6 *311:A 25.6036 
+*END
+
+*D_NET *96 0.000690337
+*CONN
+*I *312:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*I *277:X O *D sky130_fd_sc_hd__a31o_2
+*CAP
+1 *312:A 0.000291804
+2 *277:X 0.000291804
+3 result0[3] *312:A 7.58623e-05
+4 result1[0] *312:A 3.08664e-05
+*RES
+1 *277:X *312:A 32.6536 
+*END
+
+*D_NET *97 0.00167381
+*CONN
+*I *281:B1 I *D sky130_fd_sc_hd__a31oi_2
+*I *276:A I *D sky130_fd_sc_hd__nor2_2
+*I *298:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *281:B1 2.85312e-05
+2 *276:A 0.0001938
+3 *298:X 5.43027e-05
+4 *97:8 0.000276634
+5 *276:A *100:10 0.000125724
+6 *97:8 *100:10 0.000174561
+7 *274:B *281:B1 9.71197e-05
+8 *275:B *276:A 2.49484e-05
+9 *282:A *276:A 0.000116696
+10 *78:29 *276:A 0.000337321
+11 *78:29 *281:B1 5.33005e-05
+12 *90:30 *281:B1 1.98839e-05
+13 *93:18 *97:8 9.15842e-06
+14 *93:28 *276:A 1.08359e-05
+15 *93:28 *97:8 0.000150989
+*RES
+1 *298:X *97:8 16.05 
+2 *97:8 *276:A 19.8536 
+3 *97:8 *281:B1 14.7464 
+*END
+
+*D_NET *98 0.000279982
+*CONN
+*I *292:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *299:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *292:D 0.000139991
+2 *299:X 0.000139991
+3 *289:CLK *292:D 0
+*RES
+1 *299:X *292:D 29.475 
+*END
+
+*D_NET *99 0.000657443
+*CONN
+*I *285:B1 I *D sky130_fd_sc_hd__a31oi_2
+*I *300:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *285:B1 0.000328722
+2 *300:X 0.000328722
+*RES
+1 *300:X *285:B1 33.2071 
+*END
+
+*D_NET *100 0.00218637
+*CONN
+*I *313:A I *D sky130_fd_sc_hd__clkdlybuf4s25_1
+*I *277:B1 I *D sky130_fd_sc_hd__a31o_2
+*I *275:Y O *D sky130_fd_sc_hd__nor2_2
+*CAP
+1 *313:A 0.000300715
+2 *277:B1 0.000176321
+3 *275:Y 0.00016043
+4 *100:10 0.000637466
+5 result1[3] *313:A 4.68532e-05
+6 result1[6] *313:A 5.4959e-05
+7 *274:A_N *100:10 1.00375e-05
+8 *275:B *100:10 0.000102545
+9 *276:A *100:10 0.000125724
+10 *277:A1 *277:B1 0.000226946
+11 *291:RESET_B *277:B1 6.98688e-05
+12 *298:A *277:B1 5.20669e-05
+13 *93:18 *100:10 4.78721e-05
+14 *97:8 *100:10 0.000174561
+*RES
+1 *275:Y *100:10 22.9786 
+2 *100:10 *277:B1 13.1214 
+3 *100:10 *313:A 23.6571 
+*END
+
+*D_NET *101 0.00101266
+*CONN
+*I *289:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *301:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *289:D 0.000348876
+2 *301:X 0.000348876
+3 *300:A *289:D 0.000314907
+*RES
+1 *301:X *289:D 33.8857 
+*END
+
+*D_NET *102 0.000850936
+*CONN
+*I *284:A I *D sky130_fd_sc_hd__xor2_2
+*I *302:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *284:A 0.000425468
+2 *302:X 0.000425468
+*RES
+1 *302:X *284:A 34.7071 
+*END
+
+*D_NET *103 0.000703738
+*CONN
+*I *288:A I *D sky130_fd_sc_hd__xnor2_2
+*I *303:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *288:A 0.000151951
+2 *303:X 0.000151951
+3 *303:A *288:A 0.000399835
+*RES
+1 *303:X *288:A 22.4214 
+*END
+
+*D_NET *104 0.000608833
+*CONN
+*I *291:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *304:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *291:D 0.000301125
+2 *304:X 0.000301125
+3 result0[5] *291:D 5.64835e-06
+4 result0[6] *291:D 9.33978e-07
+*RES
+1 *304:X *291:D 31.5286 
+*END
+
+*D_NET *105 0.00027857
+*CONN
+*I *276:B I *D sky130_fd_sc_hd__nor2_2
+*I *305:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *276:B 9.74931e-05
+2 *305:X 9.74931e-05
+3 *295:A *276:B 1.99204e-05
+4 *3:34 *276:B 6.36635e-05
+*RES
+1 *305:X *276:B 20.3857 
+*END
+
+*D_NET *106 0.000354231
+*CONN
+*I *293:D I *D sky130_fd_sc_hd__dfrtp_2
+*I *306:X O *D sky130_fd_sc_hd__dlygate4sd3_1
+*CAP
+1 *293:D 7.62927e-05
+2 *306:X 7.62927e-05
+3 *289:CLK *293:D 2.51992e-05
+4 *290:RESET_B *293:D 2.85234e-05
+5 *82:39 *293:D 6.44649e-05
+6 *84:20 *293:D 8.34584e-05
+*RES
+1 *306:X *293:D 29.7786 
+*END

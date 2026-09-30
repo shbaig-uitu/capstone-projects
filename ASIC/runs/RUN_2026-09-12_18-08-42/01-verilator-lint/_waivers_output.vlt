@@ -1,0 +1,39 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule WIDTHTRUNC -file "*/home/hassan/project/src/CONTROL_UNIT.v" -match "Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's COND generates 40 bits.*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/TOP_MODULE.v" -match "Signal is not used: 'store_op'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/TOP_MODULE.v" -match "Signal is not used: 'wrapper_mem_o_for_cache_i'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/shared_mem.v" -match "Signal is not used: 'read0'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/shared_mem.v" -match "Signal is not used: 'read1'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/INSTR_MEM.v" -match "Signal is not used: 'clk'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/PC.v" -match "Bits of signal are not used: 'result'[31:1]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Bits of signal are not used: 'instruction'[31:15,11:0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Bits of signal are not used: 'mem_addr'[13:6]*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/hassan/project/src/WRAPPER_MEM.v" -match "Case values incompletely covered (example pattern 0x3)*"
+

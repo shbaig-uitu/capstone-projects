@@ -1,0 +1,1097 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/hassan/project/runs/RUN_2026-09-12_18-08-42/tmp/0ecb823e84304fc79bb5c207ef352817.bb.v
+Parsing SystemVerilog input from `/home/hassan/project/runs/RUN_2026-09-12_18-08-42/tmp/0ecb823e84304fc79bb5c207ef352817.bb.v' to AST representation.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_20_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_40_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_60_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_80_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a222oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__conb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__diode_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd1_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fah_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcin_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcon_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__macro_sparecell'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probe_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probec_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/hassan/project/src/ALU.v
+Parsing SystemVerilog input from `/home/hassan/project/src/ALU.v' to AST representation.
+Storing AST representation for module `$abstract\alu'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/hassan/project/src/CONTROL_UNIT.v
+Parsing SystemVerilog input from `/home/hassan/project/src/CONTROL_UNIT.v' to AST representation.
+Storing AST representation for module `$abstract\control_unit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/hassan/project/src/INSTR_MEM.v
+Parsing SystemVerilog input from `/home/hassan/project/src/INSTR_MEM.v' to AST representation.
+Storing AST representation for module `$abstract\instruct_mem'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/hassan/project/src/PC.v
+Parsing SystemVerilog input from `/home/hassan/project/src/PC.v' to AST representation.
+Storing AST representation for module `$abstract\program_counter'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/hassan/project/src/REGISTER_FILE.v
+Parsing SystemVerilog input from `/home/hassan/project/src/REGISTER_FILE.v' to AST representation.
+Storing AST representation for module `$abstract\registerfile'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/hassan/project/src/TOP_MODULE.v
+Parsing SystemVerilog input from `/home/hassan/project/src/TOP_MODULE.v' to AST representation.
+Storing AST representation for module `$abstract\topmodule'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/hassan/project/src/WRAPPER_MEM.v
+Parsing SystemVerilog input from `/home/hassan/project/src/WRAPPER_MEM.v' to AST representation.
+Storing AST representation for module `$abstract\wrapper_mem'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/hassan/project/src/data_cache.v
+Parsing SystemVerilog input from `/home/hassan/project/src/data_cache.v' to AST representation.
+Storing AST representation for module `$abstract\data_cache'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/hassan/project/src/shared_mem.v
+Parsing SystemVerilog input from `/home/hassan/project/src/shared_mem.v' to AST representation.
+Storing AST representation for module `$abstract\shared_mem'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/hassan/project/src/soc_top.v
+Parsing SystemVerilog input from `/home/hassan/project/src/soc_top.v' to AST representation.
+Storing AST representation for module `$abstract\soc_top'.
+Successfully finished Verilog frontend.
+
+12. Executing HIERARCHY pass (managing design hierarchy).
+
+13. Executing AST frontend in derive mode using pre-parsed AST for module `\soc_top'.
+Generating RTLIL representation for module `\soc_top'.
+
+13.1. Analyzing design hierarchy..
+Top module:  \soc_top
+
+13.2. Executing AST frontend in derive mode using pre-parsed AST for module `\shared_mem'.
+Generating RTLIL representation for module `\shared_mem'.
+
+13.3. Executing AST frontend in derive mode using pre-parsed AST for module `\topmodule'.
+Generating RTLIL representation for module `\topmodule'.
+
+13.4. Analyzing design hierarchy..
+Top module:  \soc_top
+Used module:     \shared_mem
+Used module:     \topmodule
+
+13.5. Executing AST frontend in derive mode using pre-parsed AST for module `\wrapper_mem'.
+Generating RTLIL representation for module `\wrapper_mem'.
+
+13.6. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit'.
+Generating RTLIL representation for module `\control_unit'.
+
+13.7. Executing AST frontend in derive mode using pre-parsed AST for module `\instruct_mem'.
+Generating RTLIL representation for module `\instruct_mem'.
+
+13.8. Executing AST frontend in derive mode using pre-parsed AST for module `\program_counter'.
+Generating RTLIL representation for module `\program_counter'.
+
+13.9. Executing AST frontend in derive mode using pre-parsed AST for module `\alu'.
+Generating RTLIL representation for module `\alu'.
+
+13.10. Executing AST frontend in derive mode using pre-parsed AST for module `\registerfile'.
+Generating RTLIL representation for module `\registerfile'.
+Warning: Replacing memory \rd with list of registers. See /home/hassan/project/src/REGISTER_FILE.v:28
+
+13.11. Analyzing design hierarchy..
+Top module:  \soc_top
+Used module:     \shared_mem
+Used module:     \topmodule
+Used module:         \wrapper_mem
+Used module:         \control_unit
+Used module:         \instruct_mem
+Used module:         \program_counter
+Used module:         \alu
+Used module:         \registerfile
+
+13.12. Executing AST frontend in derive mode using pre-parsed AST for module `\data_cache'.
+Generating RTLIL representation for module `\data_cache'.
+
+13.13. Analyzing design hierarchy..
+Top module:  \soc_top
+Used module:     \shared_mem
+Used module:     \topmodule
+Used module:         \wrapper_mem
+Used module:             \data_cache
+Used module:         \control_unit
+Used module:         \instruct_mem
+Used module:         \program_counter
+Used module:         \alu
+Used module:         \registerfile
+
+13.14. Analyzing design hierarchy..
+Top module:  \soc_top
+Used module:     \shared_mem
+Used module:     \topmodule
+Used module:         \wrapper_mem
+Used module:             \data_cache
+Used module:         \control_unit
+Used module:         \instruct_mem
+Used module:         \program_counter
+Used module:         \alu
+Used module:         \registerfile
+Removing unused module `$abstract\soc_top'.
+Removing unused module `$abstract\shared_mem'.
+Removing unused module `$abstract\data_cache'.
+Removing unused module `$abstract\wrapper_mem'.
+Removing unused module `$abstract\topmodule'.
+Removing unused module `$abstract\registerfile'.
+Removing unused module `$abstract\program_counter'.
+Removing unused module `$abstract\instruct_mem'.
+Removing unused module `$abstract\control_unit'.
+Removing unused module `$abstract\alu'.
+Removed 10 unused modules.
+Renaming module soc_top to soc_top.
+
+14. Executing PROC pass (convert processes to netlists).
+
+14.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `instruct_mem.$proc$/home/hassan/project/src/INSTR_MEM.v:12$127'.
+Cleaned up 0 empty switches.
+
+14.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$/home/hassan/project/src/REGISTER_FILE.v:36$180 in module registerfile.
+Marked 1 switch rules as full_case in process $proc$/home/hassan/project/src/REGISTER_FILE.v:36$180 in module registerfile.
+Removed 1 dead cases from process $proc$/home/hassan/project/src/REGISTER_FILE.v:35$177 in module registerfile.
+Marked 1 switch rules as full_case in process $proc$/home/hassan/project/src/REGISTER_FILE.v:35$177 in module registerfile.
+Marked 2 switch rules as full_case in process $proc$/home/hassan/project/src/REGISTER_FILE.v:25$166 in module registerfile.
+Marked 1 switch rules as full_case in process $proc$/home/hassan/project/src/ALU.v:11$138 in module alu.
+Marked 3 switch rules as full_case in process $proc$/home/hassan/project/src/PC.v:24$128 in module program_counter.
+Marked 1 switch rules as full_case in process $proc$/home/hassan/project/src/INSTR_MEM.v:16$124 in module instruct_mem.
+Removed 2 dead cases from process $proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105 in module control_unit.
+Marked 12 switch rules as full_case in process $proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105 in module control_unit.
+Removed 3 dead cases from process $proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96 in module wrapper_mem.
+Marked 14 switch rules as full_case in process $proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96 in module wrapper_mem.
+Marked 10 switch rules as full_case in process $proc$/home/hassan/project/src/shared_mem.v:24$16 in module shared_mem.
+Marked 2 switch rules as full_case in process $proc$/home/hassan/project/src/data_cache.v:46$194 in module data_cache.
+Removed a total of 7 dead cases.
+
+14.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 62 assignments to connections.
+
+14.4. Executing PROC_INIT pass (extract init attributes).
+
+14.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+Found async reset \rst in `\program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+
+14.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~45 debug messages>
+
+14.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:36$180'.
+     1/1: $1$mem2reg_rd$\rd$/home/hassan/project/src/REGISTER_FILE.v:36$165_DATA[31:0]$182
+Creating decoders for process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:35$177'.
+     1/1: $1$mem2reg_rd$\rd$/home/hassan/project/src/REGISTER_FILE.v:35$164_DATA[31:0]$179
+Creating decoders for process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+     1/35: $1$mem2reg_wr$\rd$/home/hassan/project/src/REGISTER_FILE.v:31$163_ADDR[4:0]$170
+     2/35: $1$mem2reg_wr$\rd$/home/hassan/project/src/REGISTER_FILE.v:31$163_DATA[31:0]$171
+     3/35: $1\i[31:0]
+     4/35: $0\rd[31][31:0]
+     5/35: $0\rd[30][31:0]
+     6/35: $0\rd[29][31:0]
+     7/35: $0\rd[28][31:0]
+     8/35: $0\rd[27][31:0]
+     9/35: $0\rd[26][31:0]
+    10/35: $0\rd[25][31:0]
+    11/35: $0\rd[24][31:0]
+    12/35: $0\rd[23][31:0]
+    13/35: $0\rd[22][31:0]
+    14/35: $0\rd[21][31:0]
+    15/35: $0\rd[20][31:0]
+    16/35: $0\rd[19][31:0]
+    17/35: $0\rd[18][31:0]
+    18/35: $0\rd[17][31:0]
+    19/35: $0\rd[16][31:0]
+    20/35: $0\rd[15][31:0]
+    21/35: $0\rd[14][31:0]
+    22/35: $0\rd[13][31:0]
+    23/35: $0\rd[12][31:0]
+    24/35: $0\rd[11][31:0]
+    25/35: $0\rd[10][31:0]
+    26/35: $0\rd[9][31:0]
+    27/35: $0\rd[8][31:0]
+    28/35: $0\rd[7][31:0]
+    29/35: $0\rd[6][31:0]
+    30/35: $0\rd[5][31:0]
+    31/35: $0\rd[4][31:0]
+    32/35: $0\rd[3][31:0]
+    33/35: $0\rd[2][31:0]
+    34/35: $0\rd[1][31:0]
+    35/35: $0\rd[0][31:0]
+Creating decoders for process `\alu.$proc$/home/hassan/project/src/ALU.v:11$138'.
+     1/1: $1\result[31:0]
+Creating decoders for process `\program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+     1/2: $0\pc_plus4[31:0]
+     2/2: $0\pc[31:0]
+Creating decoders for process `\instruct_mem.$proc$/home/hassan/project/src/INSTR_MEM.v:16$124'.
+     1/1: $1\instruction[31:0]
+Creating decoders for process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+     1/105: $9\rs1_addr[4:0]
+     2/105: $9\reg_write[0:0]
+     3/105: $9\op_b_sel[0:0]
+     4/105: $9\rd_sel[0:0]
+     5/105: $9\auipc[0:0]
+     6/105: $12\alu_op[4:0]
+     7/105: $9\imm[31:0]
+     8/105: $9\rd_addr[4:0]
+     9/105: $8\reg_write[0:0]
+    10/105: $8\rd_sel[0:0]
+    11/105: $8\op_b_sel[0:0]
+    12/105: $8\rs1_addr[4:0]
+    13/105: $11\alu_op[4:0]
+    14/105: $8\imm[31:0]
+    15/105: $8\rd_addr[4:0]
+    16/105: $8\auipc[0:0]
+    17/105: $7\reg_write[0:0]
+    18/105: $7\jalr[0:0]
+    19/105: $7\op_b_sel[0:0]
+    20/105: $10\alu_op[4:0]
+    21/105: $7\rd_addr[4:0]
+    22/105: $7\rs1_addr[4:0]
+    23/105: $7\imm[31:0]
+    24/105: $7\auipc[0:0]
+    25/105: $7\rd_sel[0:0]
+    26/105: $6\reg_write[0:0]
+    27/105: $6\jump[0:0]
+    28/105: $6\imm[31:0]
+    29/105: $6\rd_addr[4:0]
+    30/105: $6\auipc[0:0]
+    31/105: $6\jalr[0:0]
+    32/105: $6\rd_sel[0:0]
+    33/105: $6\op_b_sel[0:0]
+    34/105: $9\alu_op[4:0]
+    35/105: $6\rs1_addr[4:0]
+    36/105: $8\alu_op[4:0]
+    37/105: $7\alu_op[4:0]
+    38/105: $5\branch[0:0]
+    39/105: $5\rd_sel[0:0]
+    40/105: $5\reg_write[0:0]
+    41/105: $5\op_b_sel[0:0]
+    42/105: $5\imm[31:0]
+    43/105: $5\rs2_addr[4:0]
+    44/105: $5\rs1_addr[4:0]
+    45/105: $5\auipc[0:0]
+    46/105: $5\jalr[0:0]
+    47/105: $5\jump[0:0]
+    48/105: $5\rd_addr[4:0]
+    49/105: $6\alu_op[4:0]
+    50/105: $4\op_b_sel[0:0]
+    51/105: $4\reg_write[0:0]
+    52/105: $4\mem_write[0:0]
+    53/105: $4\imm[31:0]
+    54/105: $4\rs2_addr[4:0]
+    55/105: $4\rs1_addr[4:0]
+    56/105: $4\auipc[0:0]
+    57/105: $4\jalr[0:0]
+    58/105: $4\jump[0:0]
+    59/105: $4\branch[0:0]
+    60/105: $4\rd_sel[0:0]
+    61/105: $4\rd_addr[4:0]
+    62/105: $5\alu_op[4:0]
+    63/105: $3\rd_sel[0:0]
+    64/105: $3\op_b_sel[0:0]
+    65/105: $3\reg_write[0:0]
+    66/105: $3\mem_read[0:0]
+    67/105: $3\rd_addr[4:0]
+    68/105: $3\rs1_addr[4:0]
+    69/105: $3\imm[31:0]
+    70/105: $3\mem_write[0:0]
+    71/105: $3\auipc[0:0]
+    72/105: $3\jalr[0:0]
+    73/105: $3\jump[0:0]
+    74/105: $3\branch[0:0]
+    75/105: $3\rs2_addr[4:0]
+    76/105: $4\alu_op[4:0]
+    77/105: $2\reg_write[0:0]
+    78/105: $3\alu_op[4:0]
+    79/105: $2\rd_sel[0:0]
+    80/105: $2\op_b_sel[0:0]
+    81/105: $2\rd_addr[4:0]
+    82/105: $2\imm[31:0]
+    83/105: $2\rs2_addr[4:0]
+    84/105: $2\rs1_addr[4:0]
+    85/105: $2\mem_write[0:0]
+    86/105: $2\mem_read[0:0]
+    87/105: $2\auipc[0:0]
+    88/105: $2\jalr[0:0]
+    89/105: $2\jump[0:0]
+    90/105: $2\branch[0:0]
+    91/105: $2\alu_op[4:0]
+    92/105: $1\alu_op[4:0]
+    93/105: $1\rd_sel[0:0]
+    94/105: $1\op_b_sel[0:0]
+    95/105: $1\reg_write[0:0]
+    96/105: $1\rd_addr[4:0]
+    97/105: $1\rs2_addr[4:0]
+    98/105: $1\rs1_addr[4:0]
+    99/105: $1\mem_write[0:0]
+   100/105: $1\mem_read[0:0]
+   101/105: $1\auipc[0:0]
+   102/105: $1\jalr[0:0]
+   103/105: $1\jump[0:0]
+   104/105: $1\branch[0:0]
+   105/105: $1\imm[31:0]
+Creating decoders for process `\wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+     1/19: $9\wrapper_mem_o[31:0]
+     2/19: $8\wrapper_mem_o[31:0]
+     3/19: $7\wrapper_mem_o[31:0]
+     4/19: $6\wrapper_mem_o[31:0]
+     5/19: $5\wrapper_mem_o[31:0]
+     6/19: $4\wrapper_mem_o[31:0]
+     7/19: $3\wrapper_mem_o[31:0]
+     8/19: $2\wrapper_mem_o[31:0]
+     9/19: $1\wrapper_mem_o[31:0]
+    10/19: $5\wrapper_mem_o_for_cache_i[31:0]
+    11/19: $5\store_op[3:0]
+    12/19: $4\wrapper_mem_o_for_cache_i[31:0]
+    13/19: $4\store_op[3:0]
+    14/19: $3\wrapper_mem_o_for_cache_i[31:0]
+    15/19: $3\store_op[3:0]
+    16/19: $2\wrapper_mem_o_for_cache_i[31:0]
+    17/19: $2\store_op[3:0]
+    18/19: $1\wrapper_mem_o_for_cache_i[31:0]
+    19/19: $1\store_op[3:0]
+Creating decoders for process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+     1/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_EN[31:0]$90
+     2/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_DATA[31:0]$89
+     3/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_ADDR[3:0]$88
+     4/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_EN[31:0]$87
+     5/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_DATA[31:0]$86
+     6/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_ADDR[3:0]$85
+     7/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_EN[31:0]$84
+     8/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_DATA[31:0]$83
+     9/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_ADDR[3:0]$82
+    10/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_EN[31:0]$81
+    11/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_DATA[31:0]$80
+    12/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_ADDR[3:0]$79
+    13/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_EN[31:0]$78
+    14/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_DATA[31:0]$77
+    15/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_ADDR[3:0]$76
+    16/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_EN[31:0]$75
+    17/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_DATA[31:0]$74
+    18/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_ADDR[3:0]$73
+    19/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_EN[31:0]$72
+    20/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_DATA[31:0]$71
+    21/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_ADDR[3:0]$70
+    22/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_EN[31:0]$69
+    23/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_DATA[31:0]$68
+    24/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_ADDR[3:0]$67
+    25/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_EN[31:0]$64
+    26/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_DATA[31:0]$63
+    27/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_ADDR[3:0]$62
+    28/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_EN[31:0]$61
+    29/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_DATA[31:0]$60
+    30/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_ADDR[3:0]$59
+    31/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_EN[31:0]$58
+    32/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_DATA[31:0]$57
+    33/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_ADDR[3:0]$56
+    34/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_EN[31:0]$55
+    35/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_DATA[31:0]$54
+    36/48: $2$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_ADDR[3:0]$53
+    37/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_EN[31:0]$52
+    38/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_DATA[31:0]$51
+    39/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_ADDR[3:0]$50
+    40/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_EN[31:0]$49
+    41/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_DATA[31:0]$48
+    42/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_ADDR[3:0]$47
+    43/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_EN[31:0]$46
+    44/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_DATA[31:0]$45
+    45/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_ADDR[3:0]$44
+    46/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_EN[31:0]$43
+    47/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_DATA[31:0]$42
+    48/48: $1$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_ADDR[3:0]$41
+Creating decoders for process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:16$10'.
+Creating decoders for process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+     1/9: $2$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_EN[31:0]$211
+     2/9: $2$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_DATA[31:0]$210
+     3/9: $2$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_ADDR[3:0]$209
+     4/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_EN[31:0]$203
+     5/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_DATA[31:0]$202
+     6/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_ADDR[3:0]$201
+     7/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_EN[31:0]$206
+     8/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_DATA[31:0]$205
+     9/9: $1$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_ADDR[3:0]$204
+Creating decoders for process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+
+14.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\registerfile.$mem2reg_rd$\rd$/home/hassan/project/src/REGISTER_FILE.v:36$165_DATA' from process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:36$180'.
+No latch inferred for signal `\registerfile.$mem2reg_rd$\rd$/home/hassan/project/src/REGISTER_FILE.v:35$164_DATA' from process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:35$177'.
+No latch inferred for signal `\alu.\result' from process `\alu.$proc$/home/hassan/project/src/ALU.v:11$138'.
+No latch inferred for signal `\instruct_mem.\instruction' from process `\instruct_mem.$proc$/home/hassan/project/src/INSTR_MEM.v:16$124'.
+No latch inferred for signal `\control_unit.\reg_write' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\rd_addr' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\rs1_addr' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\rs2_addr' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\alu_op' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\op_b_sel' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\imm' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\rd_sel' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\branch' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\jump' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\jalr' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\auipc' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\mem_read' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\control_unit.\mem_write' from process `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+No latch inferred for signal `\wrapper_mem.\store_op' from process `\wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+No latch inferred for signal `\wrapper_mem.\wrapper_mem_o_for_cache_i' from process `\wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+No latch inferred for signal `\wrapper_mem.\wrapper_mem_o' from process `\wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+No latch inferred for signal `\shared_mem.\rdata0' from process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:16$10'.
+No latch inferred for signal `\shared_mem.\rdata1' from process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:16$10'.
+No latch inferred for signal `\data_cache.\shared_addr' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+No latch inferred for signal `\data_cache.\shared_read' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+No latch inferred for signal `\data_cache.\shared_write' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+No latch inferred for signal `\data_cache.\shared_wdata' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+No latch inferred for signal `\data_cache.\shared_wmask' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+No latch inferred for signal `\data_cache.\cache_o' from process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+
+14.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\registerfile.\i' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2637' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[0]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2642' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[1]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2647' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[2]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2652' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[3]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2657' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[4]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2662' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[5]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2667' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[6]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2672' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[7]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2677' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[8]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2682' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[9]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2687' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[10]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2692' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[11]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2697' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[12]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2702' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[13]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2707' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[14]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2712' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[15]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2717' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[16]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2722' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[17]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2727' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[18]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2732' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[19]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2737' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[20]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2742' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[21]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2747' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[22]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2752' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[23]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2757' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[24]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2762' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[25]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2767' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[26]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2772' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[27]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2777' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[28]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2782' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[29]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2787' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[30]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2792' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.\rd[31]' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2797' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.$mem2reg_wr$\rd$/home/hassan/project/src/REGISTER_FILE.v:31$163_ADDR' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2802' with positive edge clock and positive level reset.
+Creating register for signal `\registerfile.$mem2reg_wr$\rd$/home/hassan/project/src/REGISTER_FILE.v:31$163_DATA' using process `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+  created $adff cell `$procdff$2807' with positive edge clock and positive level reset.
+Creating register for signal `\program_counter.\pc' using process `\program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+  created $adff cell `$procdff$2812' with positive edge clock and positive level reset.
+Creating register for signal `\program_counter.\pc_plus4' using process `\program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+  created $adff cell `$procdff$2817' with positive edge clock and positive level reset.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2818' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2819' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:26$2_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2820' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2821' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2822' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:27$3_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2823' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2824' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2825' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:28$4_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2826' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2827' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2828' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:29$5_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2829' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2830' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2831' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:32$6_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2832' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2833' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2834' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:33$7_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2835' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2836' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2837' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:34$8_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2838' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_ADDR' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2839' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_DATA' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2840' with positive edge clock.
+Creating register for signal `\shared_mem.$memwr$\mem$/home/hassan/project/src/shared_mem.v:35$9_EN' using process `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+  created $dff cell `$procdff$2841' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_ADDR' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2842' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_DATA' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2843' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:48$183_EN' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2844' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_ADDR' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2845' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_DATA' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2846' with positive edge clock.
+Creating register for signal `\data_cache.$memwr$\cache_data$/home/hassan/project/src/data_cache.v:50$184_EN' using process `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+  created $dff cell `$procdff$2847' with positive edge clock.
+
+14.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+14.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:36$180'.
+Removing empty process `registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:36$180'.
+Found and cleaned up 1 empty switch in `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:35$177'.
+Removing empty process `registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:35$177'.
+Found and cleaned up 1 empty switch in `\registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+Removing empty process `registerfile.$proc$/home/hassan/project/src/REGISTER_FILE.v:25$166'.
+Found and cleaned up 1 empty switch in `\alu.$proc$/home/hassan/project/src/ALU.v:11$138'.
+Removing empty process `alu.$proc$/home/hassan/project/src/ALU.v:11$138'.
+Found and cleaned up 2 empty switches in `\program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+Removing empty process `program_counter.$proc$/home/hassan/project/src/PC.v:24$128'.
+Found and cleaned up 1 empty switch in `\instruct_mem.$proc$/home/hassan/project/src/INSTR_MEM.v:16$124'.
+Removing empty process `instruct_mem.$proc$/home/hassan/project/src/INSTR_MEM.v:16$124'.
+Found and cleaned up 12 empty switches in `\control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+Removing empty process `control_unit.$proc$/home/hassan/project/src/CONTROL_UNIT.v:33$105'.
+Found and cleaned up 14 empty switches in `\wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+Removing empty process `wrapper_mem.$proc$/home/hassan/project/src/WRAPPER_MEM.v:36$96'.
+Found and cleaned up 10 empty switches in `\shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+Removing empty process `shared_mem.$proc$/home/hassan/project/src/shared_mem.v:24$16'.
+Removing empty process `shared_mem.$proc$/home/hassan/project/src/shared_mem.v:16$10'.
+Found and cleaned up 2 empty switches in `\data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+Removing empty process `data_cache.$proc$/home/hassan/project/src/data_cache.v:46$194'.
+Removing empty process `data_cache.$proc$/home/hassan/project/src/data_cache.v:35$188'.
+Cleaned up 45 empty switches.
+
+14.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module soc_top.
+Optimizing module registerfile.
+<suppressed ~73 debug messages>
+Optimizing module alu.
+<suppressed ~1 debug messages>
+Optimizing module program_counter.
+<suppressed ~4 debug messages>
+Optimizing module instruct_mem.
+Optimizing module control_unit.
+<suppressed ~2 debug messages>
+Optimizing module wrapper_mem.
+<suppressed ~10 debug messages>
+Optimizing module topmodule.
+Optimizing module shared_mem.
+Optimizing module data_cache.
+<suppressed ~1 debug messages>
+
+15. Executing FLATTEN pass (flatten design).
+Deleting now unused module registerfile.
+Deleting now unused module alu.
+Deleting now unused module program_counter.
+Deleting now unused module instruct_mem.
+Deleting now unused module control_unit.
+Deleting now unused module wrapper_mem.
+Deleting now unused module topmodule.
+Deleting now unused module shared_mem.
+Deleting now unused module data_cache.
+<suppressed ~10 debug messages>
+
+16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \soc_top..
+Removed 141 unused cells and 2006 unused wires.
+<suppressed ~327 debug messages>

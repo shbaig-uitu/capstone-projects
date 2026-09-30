@@ -1,0 +1,44 @@
+# Basics
+SYNTH_STRATEGY: "AREA 0"
+DESIGN_NAME: soc_top
+VERILOG_FILES: dir::src/*.v
+CLOCK_PERIOD: 20
+CLOCK_PORT: clk
+PNR_SDC_FILE: dir::src/impl.sdc
+SIGNOFF_SDC_FILE: dir::src/signoff.sdc
+# Floorplan & Dynamic Utilization
+FP_SIZING: "relative"
+FP_CORE_UTIL: 30 
+# PDN 
+PDN_VOFFSET: 1
+PDN_HOFFSET: 1
+PDN_VPITCH: 15
+PDN_HPITCH: 15
+PDN_CORE_RING: true
+PDN_SKIPTRIM: true
+CTS_CLK_BUFFERS:
+  - sky130_fd_sc_hd__clkbuf_4
+  - sky130_fd_sc_hd__clkbuf_8
+CTS_ROOT_BUFFER: sky130_fd_sc_hd__clkbuf_8
+# Pin Order
+IO_PIN_ORDER_CFG: dir::pin_order.cfg
+# Technology-Specific Configs
+pdk::sky130*:
+  FP_CORE_UTIL: 40
+  CLOCK_PERIOD: 20.0
+  scl::sky130_fd_sc_hs:
+    CLOCK_PERIOD: 20
+  scl::sky130_fd_sc_ls:
+    MAX_FANOUT_CONSTRAINT: 5
+    MAX_TRANSITION_CONSTRAINT: 0.75
+pdk::gf180mcu*:
+  CLOCK_PERIOD: 20.0
+  FP_CORE_UTIL: 40
+  MAX_FANOUT_CONSTRAINT: 4
+  MAX_TRANSITION_CONSTRAINT: 0.75
+  PL_TARGET_DENSITY: 0.5
+  PL_TIME_DRIVEN: TRUE
+  PL_ROUTABILITY_DRIVEN: TRUE
+  PL-Resizer-Timing_optimization: TRUE
+  GPL_CELL_PADDING: 1
+  DPL_CELL_PADDING: 1

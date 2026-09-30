@@ -1,0 +1,54 @@
+%Warning-WIDTHTRUNC: /home/hassan/project/src/CONTROL_UNIT.v:126:8: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's COND generates 40 bits.
+                                                                  : ... note: In instance 'soc_top.core1.u_cu'
+  126 |     imm=instruction[31] ? {19'b1,instruction[31],instruction[19:12],instruction[20],instruction[30:21],1'b0} :{19'b0,instruction[31],instruction[19:12],instruction[20],instruction[30:21],1'b0};
+      |        ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.044
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/TOP_MODULE.v:33:34: Signal is not used: 'store_op'
+                                                                  : ... note: In instance 'soc_top.core1'
+   33 |   wire[3:0]                      store_op;
+      |                                  ^~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/TOP_MODULE.v:38:27: Signal is not used: 'wrapper_mem_o_for_cache_i'
+                                                                  : ... note: In instance 'soc_top.core1'
+   38 | wire[31:0]                wrapper_mem_o_for_cache_i;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/shared_mem.v:8:24: Signal is not used: 'read0'
+                                                                 : ... note: In instance 'soc_top.u_shared_mem'
+    8 |     input  wire        read0, write0, read1, write1;
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/shared_mem.v:8:39: Signal is not used: 'read1'
+                                                                 : ... note: In instance 'soc_top.u_shared_mem'
+    8 |     input  wire        read0, write0, read1, write1;
+      |                                       ^~~~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/INSTR_MEM.v:9:32: Signal is not used: 'clk'
+                                                                : ... note: In instance 'soc_top.core1.u_ir0'
+    9 |     input wire                 clk;
+      |                                ^~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/PC.v:22:31: Bits of signal are not used: 'result'[31:1]
+                                                          : ... note: In instance 'soc_top.core1.u_pc'
+   22 |     input wire [31:0]         result;
+      |                               ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/WRAPPER_MEM.v:18:35: Bits of signal are not used: 'instruction'[31:15,11:0]
+                                                                   : ... note: In instance 'soc_top.core1.u_wm0'
+   18 |  input  wire [31:0]               instruction;
+      |                                   ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/hassan/project/src/WRAPPER_MEM.v:19:38: Bits of signal are not used: 'mem_addr'[13:6]
+                                                                   : ... note: In instance 'soc_top.core1.u_wm0'
+   19 |  input  wire [13:0]                  mem_addr; 
+      |                                      ^~~~~~~~
+%Warning-CASEINCOMPLETE: /home/hassan/project/src/WRAPPER_MEM.v:61:12: Case values incompletely covered (example pattern 0x3)
+   61 |            case(mem_addr[1:0])
+      |            ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.044
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+%Warning-CASEINCOMPLETE: /home/hassan/project/src/WRAPPER_MEM.v:89:12: Case values incompletely covered (example pattern 0x3)
+   89 |            case(mem_addr[1:0])
+      |            ^~~~
+%Warning-CASEINCOMPLETE: /home/hassan/project/src/WRAPPER_MEM.v:107:10: Case values incompletely covered (example pattern 0x3)
+  107 |          case(mem_addr[1:0])
+      |          ^~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 2.144 MB sources in 457 modules, into 0.254 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.340 s (elab=0.061, cvt=0.172, bld=0.000); cpu 0.340 s on 1 threads; alloced 28.945 MB
