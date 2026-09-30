@@ -1,0 +1,105 @@
+`ifndef AHB_COVERAGE_SV
+`define AHB_COVERAGE_SV
+
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+`include "ahb_transaction.sv"
+`include "rv32i_soc_defines.v"
+
+class ahb_coverage extends uvm_component;
+
+    `uvm_component_utils(ahb_coverage)
+
+    uvm_analysis_imp #(ahb_transaction, ahb_coverage) analysis_export;
+
+    bit [31:0] addr_s;
+    bit         write_s;
+    bit         resp_s;
+    int         wait_s;
+    int         master_s;
+    bit [2:0]  slave_s;
+
+    covergroup cg;
+        option.per_instance = 1;
+
+        cp_master: coverpoint master_s {
+            bins m0 = {0};
+            bins m1 = {1};
+        }
+
+        cp_slave: coverpoint slave_s {
+            bins dmem     = {0};
+            bins mailbox  = {1};
+            bins uart     = {2};
+            bins gpio     = {3};
+            bins unmapped = {7};
+        }
+
+        cp_write: coverpoint write_s {
+            bins rd = {0};
+            bins wr = {1};
+        }
+
+        cp_resp: coverpoint resp_s {
+            bins okay  = {0};
+            bins error = {1};
+        }
+
+        cp_wait: coverpoint wait_s {
+            bins no_wait    = {0};
+            bins one_wait   = {1};
+            ignore_bins multi_wait_unreachable = {[2:$]};
+        }
+
+        cross_master_slave: cross cp_master, cp_slave;
+
+        cross_slave_resp: cross cp_slave, cp_resp {
+            ignore_bins mapped_slaves_never_error =
+                binsof(cp_slave) intersect {0, 1, 2, 3} && binsof(cp_resp) intersect {1};
+            ignore_bins unmapped_never_okay =
+                binsof(cp_slave) intersect {7} && binsof(cp_resp) intersect {0};
+        }
+
+        cross_master_wait: cross cp_master, cp_wait {
+            ignore_bins multi_wait_unreachable =
+                binsof(cp_wait) intersect {[2:$]};
+        }
+
+    endgroup
+
+    function new(string name = "ahb_coverage", uvm_component parent = null);
+        super.new(name, parent);
+        analysis_export = new("analysis_export", this);
+        cg = new();
+    endfunction
+
+    function void write(ahb_transaction tr);
+        addr_s   = tr.addr;
+        write_s  = tr.write;
+        resp_s   = tr.resp;
+        wait_s   = tr.wait_cycles;
+        master_s = tr.master_id;
+
+        if ((tr.addr >= `DMEM_BASE) && (tr.addr <= `DMEM_END)) begin
+            slave_s = 0;
+        end else if ((tr.addr >= `MAILBOX_BASE) && (tr.addr <= `MAILBOX_END)) begin
+            slave_s = 1;
+        end else if ((tr.addr >= `UART_BASE) && (tr.addr <= `UART_END)) begin
+            slave_s = 2;
+        end else if ((tr.addr >= `GPIO_BASE) && (tr.addr <= `GPIO_END)) begin
+            slave_s = 3;
+        end else begin
+            slave_s = 7;
+        end
+
+        cg.sample();
+    endfunction
+
+    function void report_phase(uvm_phase phase);
+        `uvm_info("COVERAGE", $sformatf(
+            "Functional coverage = %0.2f %%", cg.get_coverage()), UVM_LOW)
+    endfunction
+
+endclass
+
+`endif

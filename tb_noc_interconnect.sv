@@ -1,0 +1,397 @@
+`timescale 1ns/1ps
+`include "rv32i_soc_defines.v"
+
+module tb_noc_interconnect;
+
+    reg clk;
+    reg rst_n;
+
+    reg  [31:0] m0_haddr;
+    reg          m0_hwrite;
+    reg  [1:0]  m0_hsize;
+    reg  [31:0] m0_hwdata;
+    reg          m0_hvalid;
+    wire [31:0] m0_hrdata;
+    wire         m0_hready;
+    wire         m0_hresp;
+
+    reg  [31:0] m1_haddr;
+    reg          m1_hwrite;
+    reg  [1:0]  m1_hsize;
+    reg  [31:0] m1_hwdata;
+    reg          m1_hvalid;
+    wire [31:0] m1_hrdata;
+    wire         m1_hready;
+    wire         m1_hresp;
+
+    wire [31:0] s_dmem_haddr;
+    wire         s_dmem_hwrite;
+    wire [1:0]  s_dmem_hsize;
+    wire [31:0] s_dmem_hwdata;
+    wire         s_dmem_hvalid;
+    wire [31:0] s_dmem_hrdata;
+    wire         s_dmem_hready;
+    wire         s_dmem_hresp;
+
+    wire [31:0] s_mailbox_haddr;
+    wire         s_mailbox_hwrite;
+    wire [1:0]  s_mailbox_hsize;
+    wire [31:0] s_mailbox_hwdata;
+    wire         s_mailbox_hvalid;
+    wire [31:0] s_mailbox_hrdata;
+    wire         s_mailbox_hready;
+    wire         s_mailbox_hresp;
+    wire         mbox_c0_to_c1_flag;
+    wire         mbox_c1_to_c0_flag;
+
+    wire [31:0] s_uart_haddr;
+    wire         s_uart_hwrite;
+    wire [1:0]  s_uart_hsize;
+    wire [31:0] s_uart_hwdata;
+    wire         s_uart_hvalid;
+    wire [31:0] s_uart_hrdata;
+    wire         s_uart_hready;
+    wire         s_uart_hresp;
+    wire         uart_tx;
+
+    wire [31:0] s_gpio_haddr;
+    wire         s_gpio_hwrite;
+    wire [1:0]  s_gpio_hsize;
+    wire [31:0] s_gpio_hwdata;
+    wire         s_gpio_hvalid;
+    wire [31:0] s_gpio_hrdata;
+    wire         s_gpio_hready;
+    wire         s_gpio_hresp;
+    wire [7:0]  led;
+
+    noc_interconnect u_interconnect (
+        .clk               (clk),
+        .rst_n             (rst_n),
+        .m0_haddr          (m0_haddr),
+        .m0_hwrite         (m0_hwrite),
+        .m0_hsize          (m0_hsize),
+        .m0_hwdata         (m0_hwdata),
+        .m0_hvalid         (m0_hvalid),
+        .m0_hrdata         (m0_hrdata),
+        .m0_hready         (m0_hready),
+        .m0_hresp          (m0_hresp),
+        .m1_haddr          (m1_haddr),
+        .m1_hwrite         (m1_hwrite),
+        .m1_hsize          (m1_hsize),
+        .m1_hwdata         (m1_hwdata),
+        .m1_hvalid         (m1_hvalid),
+        .m1_hrdata         (m1_hrdata),
+        .m1_hready         (m1_hready),
+        .m1_hresp          (m1_hresp),
+        .s_dmem_haddr      (s_dmem_haddr),
+        .s_dmem_hwrite     (s_dmem_hwrite),
+        .s_dmem_hsize      (s_dmem_hsize),
+        .s_dmem_hwdata     (s_dmem_hwdata),
+        .s_dmem_hvalid     (s_dmem_hvalid),
+        .s_dmem_hrdata     (s_dmem_hrdata),
+        .s_dmem_hready     (s_dmem_hready),
+        .s_dmem_hresp      (s_dmem_hresp),
+        .s_mailbox_haddr   (s_mailbox_haddr),
+        .s_mailbox_hwrite  (s_mailbox_hwrite),
+        .s_mailbox_hsize   (s_mailbox_hsize),
+        .s_mailbox_hwdata  (s_mailbox_hwdata),
+        .s_mailbox_hvalid  (s_mailbox_hvalid),
+        .s_mailbox_hrdata  (s_mailbox_hrdata),
+        .s_mailbox_hready  (s_mailbox_hready),
+        .s_mailbox_hresp   (s_mailbox_hresp),
+        .s_uart_haddr      (s_uart_haddr),
+        .s_uart_hwrite     (s_uart_hwrite),
+        .s_uart_hsize      (s_uart_hsize),
+        .s_uart_hwdata     (s_uart_hwdata),
+        .s_uart_hvalid     (s_uart_hvalid),
+        .s_uart_hrdata     (s_uart_hrdata),
+        .s_uart_hready     (s_uart_hready),
+        .s_uart_hresp      (s_uart_hresp),
+        .s_gpio_haddr      (s_gpio_haddr),
+        .s_gpio_hwrite     (s_gpio_hwrite),
+        .s_gpio_hsize      (s_gpio_hsize),
+        .s_gpio_hwdata     (s_gpio_hwdata),
+        .s_gpio_hvalid     (s_gpio_hvalid),
+        .s_gpio_hrdata     (s_gpio_hrdata),
+        .s_gpio_hready     (s_gpio_hready),
+        .s_gpio_hresp      (s_gpio_hresp)
+    );
+
+    shared_dmem #(
+        .DEPTH (2048)
+    ) u_shared_dmem (
+        .clk    (clk),
+        .rst_n  (rst_n),
+        .haddr  (s_dmem_haddr),
+        .hwrite (s_dmem_hwrite),
+        .hsize  (s_dmem_hsize),
+        .hwdata (s_dmem_hwdata),
+        .hvalid (s_dmem_hvalid),
+        .hrdata (s_dmem_hrdata),
+        .hready (s_dmem_hready),
+        .hresp  (s_dmem_hresp)
+    );
+
+    ic_mailbox u_mailbox (
+        .clk           (clk),
+        .rst_n         (rst_n),
+        .haddr         (s_mailbox_haddr),
+        .hwrite        (s_mailbox_hwrite),
+        .hsize         (s_mailbox_hsize),
+        .hwdata        (s_mailbox_hwdata),
+        .hvalid        (s_mailbox_hvalid),
+        .hrdata        (s_mailbox_hrdata),
+        .hready        (s_mailbox_hready),
+        .hresp         (s_mailbox_hresp),
+        .c0_to_c1_flag (mbox_c0_to_c1_flag),
+        .c1_to_c0_flag (mbox_c1_to_c0_flag)
+    );
+
+    uart_peripheral #(
+        .CLKS_PER_BIT (434)
+    ) u_uart (
+        .clk     (clk),
+        .rst_n   (rst_n),
+        .haddr   (s_uart_haddr),
+        .hwrite  (s_uart_hwrite),
+        .hsize   (s_uart_hsize),
+        .hwdata  (s_uart_hwdata),
+        .hvalid  (s_uart_hvalid),
+        .hrdata  (s_uart_hrdata),
+        .hready  (s_uart_hready),
+        .hresp   (s_uart_hresp),
+        .uart_tx (uart_tx)
+    );
+
+    gpio_peripheral u_gpio (
+        .clk    (clk),
+        .rst_n  (rst_n),
+        .haddr  (s_gpio_haddr),
+        .hwrite (s_gpio_hwrite),
+        .hsize  (s_gpio_hsize),
+        .hwdata (s_gpio_hwdata),
+        .hvalid (s_gpio_hvalid),
+        .hrdata (s_gpio_hrdata),
+        .hready (s_gpio_hready),
+        .hresp  (s_gpio_hresp),
+        .led    (led)
+    );
+
+    always #10 clk = ~clk;
+
+    int pass_count;
+    int fail_count;
+
+    task automatic check_equal(input string name, input logic [31:0] actual, input logic [31:0] expected);
+        if (actual === expected) begin
+            pass_count = pass_count + 1;
+            $display("[PASS] %s : got=0x%08h expected=0x%08h", name, actual, expected);
+        end else begin
+            fail_count = fail_count + 1;
+            $display("[FAIL] %s : got=0x%08h expected=0x%08h", name, actual, expected);
+        end
+    endtask
+
+    task automatic drive_master0(
+        input  logic [31:0] addr,
+        input  logic         write,
+        input  logic [31:0] wdata,
+        output logic [31:0] rdata,
+        output int          wait_cycles
+    );
+        wait_cycles = 0;
+        m0_haddr  = addr;
+        m0_hwrite = write;
+        m0_hwdata = wdata;
+        m0_hsize  = `HSIZE_WORD;
+        m0_hvalid = 1'b1;
+        @(posedge clk);
+        while (m0_hready !== 1'b1) begin
+            wait_cycles = wait_cycles + 1;
+            @(posedge clk);
+        end
+        rdata = m0_hrdata;
+        m0_hvalid = 1'b0;
+    endtask
+
+    task automatic drive_master1(
+        input  logic [31:0] addr,
+        input  logic         write,
+        input  logic [31:0] wdata,
+        output logic [31:0] rdata,
+        output int          wait_cycles
+    );
+        wait_cycles = 0;
+        m1_haddr  = addr;
+        m1_hwrite = write;
+        m1_hwdata = wdata;
+        m1_hsize  = `HSIZE_WORD;
+        m1_hvalid = 1'b1;
+        @(posedge clk);
+        while (m1_hready !== 1'b1) begin
+            wait_cycles = wait_cycles + 1;
+            @(posedge clk);
+        end
+        rdata = m1_hrdata;
+        m1_hvalid = 1'b0;
+    endtask
+
+    task automatic apply_reset;
+        rst_n     = 1'b0;
+        m0_hvalid = 1'b0;
+        m1_hvalid = 1'b0;
+        m0_haddr  = 32'h0000_0000;
+        m1_haddr  = 32'h0000_0000;
+        m0_hwrite = 1'b0;
+        m1_hwrite = 1'b0;
+        m0_hwdata = 32'h0000_0000;
+        m1_hwdata = 32'h0000_0000;
+        repeat (3) @(posedge clk);
+        rst_n = 1'b1;
+        repeat (2) @(posedge clk);
+    endtask
+
+    logic [31:0] rd0, rd1;
+    int          wc0, wc1;
+
+    logic [31:0] rd_dummy;
+    int          wc_dummy;
+    logic [7:0]  uart_rx_byte;
+    logic         uart_frame_ok;
+
+    localparam UART_CLKS_PER_BIT = 434;
+
+    task automatic uart_receive_byte(output logic [7:0] rxbyte, output logic frame_ok);
+        integer i;
+        begin
+            wait (uart_tx == 1'b0);
+            repeat (UART_CLKS_PER_BIT + (UART_CLKS_PER_BIT / 2)) @(posedge clk);
+            for (i = 0; i < 8; i = i + 1) begin
+                rxbyte[i] = uart_tx;
+                repeat (UART_CLKS_PER_BIT) @(posedge clk);
+            end
+            frame_ok = (uart_tx == 1'b1);
+        end
+    endtask
+
+    initial begin
+        clk        = 1'b0;
+        pass_count = 0;
+        fail_count = 0;
+
+        $display("---------------------------------------------------");
+        $display("TEST 1 : RESET TEST");
+        $display("---------------------------------------------------");
+        apply_reset();
+        check_equal("s_dmem_hvalid after reset",    s_dmem_hvalid,    1'b0);
+        check_equal("s_mailbox_hvalid after reset", s_mailbox_hvalid, 1'b0);
+        check_equal("mbox_c0_to_c1_flag after reset", mbox_c0_to_c1_flag, 1'b0);
+        check_equal("led after reset",              {24'h0, led},     32'h0000_0000);
+
+        $display("---------------------------------------------------");
+        $display("TEST 2 : SIMULTANEOUS ACCESS / ARBITRATION TO SHARED SRAM");
+        $display("---------------------------------------------------");
+        fork
+            drive_master0(`DMEM_BASE,       1'b1, 32'hAAAA_0000, rd0, wc0);
+            drive_master1(`DMEM_BASE + 4,   1'b1, 32'hBBBB_1111, rd1, wc1);
+        join
+
+        $display("master0 wait_cycles = %0d", wc0);
+        $display("master1 wait_cycles = %0d", wc1);
+
+        check_equal("master1 wins arbitration first (0 wait cycles)", wc1, 32'd0);
+        check_equal("master0 stalls exactly 1 cycle (loses first round)", wc0, 32'd1);
+
+        fork
+            drive_master0(`DMEM_BASE,     1'b0, 32'h0000_0000, rd0, wc0);
+            drive_master1(`DMEM_BASE + 4, 1'b0, 32'h0000_0000, rd1, wc1);
+        join
+
+        check_equal("shared_dmem[0] readback (written by master0)", rd0, 32'hAAAA_0000);
+        check_equal("shared_dmem[1] readback (written by master1)", rd1, 32'hBBBB_1111);
+
+        $display("---------------------------------------------------");
+        $display("TEST 3 : MAILBOX INTER-CORE COMMUNICATION");
+        $display("---------------------------------------------------");
+        drive_master0(`MBOX_C0_TO_C1_DATA, 1'b1, 32'hCAFE_BABE, rd_dummy, wc_dummy);
+        drive_master0(`MBOX_C0_TO_C1_FLAG, 1'b1, 32'h0000_0001, rd_dummy, wc_dummy);
+        #1;
+        check_equal("mbox_c0_to_c1_flag asserted after core0 write", {31'h0, mbox_c0_to_c1_flag}, 32'h0000_0001);
+
+        drive_master1(`MBOX_C0_TO_C1_DATA, 1'b0, 32'h0000_0000, rd1, wc1);
+        check_equal("core1 reads correct mailbox data", rd1, 32'hCAFE_BABE);
+
+        drive_master1(`MBOX_C0_TO_C1_FLAG, 1'b0, 32'h0000_0000, rd1, wc1);
+        check_equal("core1 reads flag = 1 before ack", rd1, 32'h0000_0001);
+
+        drive_master1(`MBOX_C0_TO_C1_FLAG, 1'b1, 32'h0000_0000, rd_dummy, wc_dummy);
+        #1;
+        check_equal("mbox_c0_to_c1_flag cleared after core1 ack", {31'h0, mbox_c0_to_c1_flag}, 32'h0000_0000);
+
+        $display("---------------------------------------------------");
+        $display("TEST 4 : UART PERIPHERAL BYTE TRANSMISSION");
+        $display("---------------------------------------------------");
+        fork
+            drive_master0(`UART_TXDATA, 1'b1, 32'h0000_0041, rd_dummy, wc_dummy);
+            uart_receive_byte(uart_rx_byte, uart_frame_ok);
+        join
+
+        check_equal("UART transmitted byte matches 0x41 ('A')", {24'h0, uart_rx_byte}, 32'h0000_0041);
+        check_equal("UART stop bit / frame valid", {31'h0, uart_frame_ok}, 32'h0000_0001);
+
+        repeat (UART_CLKS_PER_BIT) @(posedge clk);
+        drive_master0(`UART_STATUS, 1'b0, 32'h0000_0000, rd0, wc0);
+        check_equal("UART busy flag cleared after transmission", rd0, 32'h0000_0000);
+
+        $display("---------------------------------------------------");
+        $display("TEST 5 : GPIO / LED PERIPHERAL");
+        $display("---------------------------------------------------");
+        drive_master1(`GPIO_LED, 1'b1, 32'h0000_00A5, rd_dummy, wc_dummy);
+        drive_master0(`GPIO_LED, 1'b0, 32'h0000_0000, rd0, wc0);
+        check_equal("GPIO register readback", rd0, 32'h0000_00A5);
+        check_equal("physical led pins reflect written value", {24'h0, led}, 32'h0000_00A5);
+
+        $display("---------------------------------------------------");
+        $display("TEST 6 : INVALID / UNMAPPED ADDRESS ACCESS");
+        $display("---------------------------------------------------");
+        drive_master0(32'h5000_0000, 1'b0, 32'h0000_0000, rd0, wc0);
+        check_equal("unmapped access completes with 0 wait cycles", wc0, 32'd0);
+        check_equal("unmapped access returns HRESP_ERROR", m0_hresp, `HRESP_ERROR);
+
+        drive_master1(32'h5000_0000, 1'b1, 32'hDEAD_BEEF, rd_dummy, wc_dummy);
+        check_equal("unmapped write also returns HRESP_ERROR", m1_hresp, `HRESP_ERROR);
+
+        $display("---------------------------------------------------");
+        $display("TEST 7 : BACK-TO-BACK ACCESSES (SAME MASTER)");
+        $display("---------------------------------------------------");
+        drive_master0(`DMEM_BASE + 8,  1'b1, 32'h1111_2222, rd_dummy, wc_dummy);
+        drive_master0(`DMEM_BASE + 12, 1'b1, 32'h3333_4444, rd_dummy, wc_dummy);
+        drive_master0(`DMEM_BASE + 8,  1'b0, 32'h0000_0000, rd0, wc0);
+        drive_master0(`DMEM_BASE + 12, 1'b0, 32'h0000_0000, rd1, wc1);
+        check_equal("back-to-back write 1 readback", rd0, 32'h1111_2222);
+        check_equal("back-to-back write 2 readback", rd1, 32'h3333_4444);
+
+        $display("---------------------------------------------------");
+        $display("TEST 8 : PARALLEL ROUTING TO DIFFERENT SLAVES (NoC PROPERTY)");
+        $display("---------------------------------------------------");
+        fork
+            drive_master0(`DMEM_BASE + 16,       1'b1, 32'h5555_6666, rd0, wc0);
+            drive_master1(`MBOX_C1_TO_C0_DATA,   1'b1, 32'h7777_8888, rd1, wc1);
+        join
+
+        check_equal("master0 -> DMEM sees no stall despite same-cycle master1 request", wc0, 32'd0);
+        check_equal("master1 -> MAILBOX sees no stall despite same-cycle master0 request", wc1, 32'd0);
+
+        drive_master0(`DMEM_BASE + 16,     1'b0, 32'h0000_0000, rd0, wc0);
+        drive_master1(`MBOX_C1_TO_C0_DATA, 1'b0, 32'h0000_0000, rd1, wc1);
+        check_equal("parallel DMEM write landed correctly",    rd0, 32'h5555_6666);
+        check_equal("parallel MAILBOX write landed correctly", rd1, 32'h7777_8888);
+
+        $display("---------------------------------------------------");
+        $display("TEST SUMMARY : PASS=%0d  FAIL=%0d", pass_count, fail_count);
+        $display("---------------------------------------------------");
+
+        $finish;
+    end
+
+endmodule

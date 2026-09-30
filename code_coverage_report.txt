@@ -1,0 +1,2163 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_uvm_top/ahb_if0
+=== Design Unit: work.ahb_if
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       4         4         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_uvm_top/ahb_if0/assert__p_no_indefinite_hang
+                     ahb_if.sv(69)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_stable_during_wait
+                     ahb_if.sv(62)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_no_unknown_addr
+                     ahb_if.sv(55)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_reset_clears_valid
+                     ahb_if.sv(48)                      0          1
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/tb_uvm_top/ahb_if0/cover__0             ahb_if Verilog  SVA  ahb_if.sv(75)      1 Covered   
+
+=================================================================================
+=== Instance: /tb_uvm_top/ahb_if1
+=== Design Unit: work.ahb_if
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       4         4         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_uvm_top/ahb_if1/assert__p_no_indefinite_hang
+                     ahb_if.sv(69)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_stable_during_wait
+                     ahb_if.sv(62)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_no_unknown_addr
+                     ahb_if.sv(55)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_reset_clears_valid
+                     ahb_if.sv(48)                      0          1
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/tb_uvm_top/ahb_if1/cover__0             ahb_if Verilog  SVA  ahb_if.sv(75)      2 Covered   
+
+=================================================================================
+=== Instance: /tb_uvm_top
+=== Design Unit: work.tb_uvm_top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      11        11         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tb_uvm_top.sv
+    175             1                       8854     
+    175             2                       8853     
+    178             1                          1     
+    179             1                          1     
+    180             1                          3     
+    180             2                          3     
+    181             1                          1     
+    185             1                          1     
+    186             1                          1     
+    187             1                          1     
+    189             1                          1     
+
+=================================================================================
+=== Instance: /tb_uvm_top_sv_unit
+=== Design Unit: work.tb_uvm_top_sv_unit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       271        43       228    15.86%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_uvm_top_sv_unit
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ahb_transaction.sv
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              3                    ***0***     
+    20              4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    21                                   ***0***     Count coming in to CASE
+    21              2                    ***0***     
+    21              3                    ***0***     
+    21              5                    ***0***     
+    21              9                    ***0***     
+    21             10                    ***0***     
+    21             11                    ***0***     
+    21             12                    ***0***     
+    21             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    22                                   ***0***     Count coming in to CASE
+    22              2                    ***0***     
+    22              3                    ***0***     
+    22              5                    ***0***     
+    22              9                    ***0***     
+    22             10                    ***0***     
+    22             11                    ***0***     
+    22             12                    ***0***     
+    22             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    23                                   ***0***     Count coming in to CASE
+    23              2                    ***0***     
+    23              3                    ***0***     
+    23              5                    ***0***     
+    23              9                    ***0***     
+    23             10                    ***0***     
+    23             11                    ***0***     
+    23             12                    ***0***     
+    23             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    24                                   ***0***     Count coming in to CASE
+    24              2                    ***0***     
+    24              3                    ***0***     
+    24              5                    ***0***     
+    24              9                    ***0***     
+    24             10                    ***0***     
+    24             11                    ***0***     
+    24             12                    ***0***     
+    24             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    25                                   ***0***     Count coming in to CASE
+    25              2                    ***0***     
+    25              3                    ***0***     
+    25              5                    ***0***     
+    25              9                    ***0***     
+    25             10                    ***0***     
+    25             11                    ***0***     
+    25             12                    ***0***     
+    25             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    26                                   ***0***     Count coming in to CASE
+    26              2                    ***0***     
+    26              3                    ***0***     
+    26              5                    ***0***     
+    26              9                    ***0***     
+    26             10                    ***0***     
+    26             11                    ***0***     
+    26             12                    ***0***     
+    26             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    27                                   ***0***     Count coming in to CASE
+    27              2                    ***0***     
+    27              3                    ***0***     
+    27              5                    ***0***     
+    27              9                    ***0***     
+    27             10                    ***0***     
+    27             11                    ***0***     
+    27             12                    ***0***     
+    27             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                   ***0***     Count coming in to IF
+    27             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------CASE Branch------------------------------------
+    28                                   ***0***     Count coming in to CASE
+    28              2                    ***0***     
+    28              3                    ***0***     
+    28              5                    ***0***     
+    28              9                    ***0***     
+    28             10                    ***0***     
+    28             11                    ***0***     
+    28             12                    ***0***     
+    28             13                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 9 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28              4                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28              7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28              8                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28             14                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                   ***0***     Count coming in to IF
+    28             15                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File ahb_if.sv
+------------------------------------IF Branch------------------------------------
+    21                                         2     Count coming in to IF
+    21              1                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                   ***0***     Count coming in to IF
+    22              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File ahb_monitor.sv
+------------------------------------IF Branch------------------------------------
+    24                                         2     Count coming in to IF
+    24              1                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                         2     Count coming in to IF
+    27              1                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    41                                      8854     Count coming in to IF
+    41              1                         31     
+                                            8823     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    42                                        31     Count coming in to IF
+    42              1                         28     
+    54              1                          3     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+  File ahb_agent.sv
+------------------------------------IF Branch------------------------------------
+    29                                         2     Count coming in to IF
+    29              1                          2     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    37                                         2     Count coming in to IF
+    37              1                          2     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File ahb_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    41                                        28     Count coming in to IF
+    41              1                          2     
+                                              26     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    42                                         2     Count coming in to IF
+    42              1                          2     
+    47              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    44                                         2     Count coming in to IF
+    44              1                          2     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                   ***0***     Count coming in to IF
+    49              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                        26     Count coming in to IF
+    56              1                    ***0***     
+                                              26     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                   ***0***     Count coming in to IF
+    58              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                        26     Count coming in to IF
+    64              1                          3     
+                                              23     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    66                                         3     Count coming in to IF
+    66              1                          3     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    72                                        23     Count coming in to IF
+    72              1                         12     
+    78              1                         11     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                        12     Count coming in to IF
+    75              1                         12     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                        11     Count coming in to IF
+    79              1                         11     
+    79              2                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                        11     Count coming in to IF
+    80              1                         11     
+    85              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    82                                        11     Count coming in to IF
+    82              1                         11     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    87                                   ***0***     Count coming in to IF
+    87              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                         1     Count coming in to IF
+    95              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File ahb_coverage.sv
+------------------------------------IF Branch------------------------------------
+    83                                        28     Count coming in to IF
+    83              1                         14     
+    85              1                          7     
+    87              1                          3     
+    89              1                          2     
+    91              1                          2     
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    99                                         1     Count coming in to IF
+    99              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File ahb_sequences.sv
+------------------------------------IF Branch------------------------------------
+    11                                   ***0***     Count coming in to IF
+    11              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    11                                   ***0***     Count coming in to IF
+    11              2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    11                                   ***0***     Count coming in to IF
+    11              3                    ***0***     
+    11              4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    11                                   ***0***     Count coming in to IF
+    11              5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    11                                   ***0***     Count coming in to IF
+    11              6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File ahb_base_test.sv
+------------------------------------IF Branch------------------------------------
+    25                                         1     Count coming in to IF
+    25              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    59                                         1     Count coming in to IF
+    59              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    63                                         1     Count coming in to IF
+    63              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    68                                         1     Count coming in to IF
+    68              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                         1     Count coming in to IF
+    73              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                         1     Count coming in to IF
+    78              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    85                                         1     Count coming in to IF
+    85              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                         1     Count coming in to IF
+    92              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    98                                         1     Count coming in to IF
+    98              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    102                                        1     Count coming in to IF
+    102             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    106                                        1     Count coming in to IF
+    106             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    112                                        1     Count coming in to IF
+    112             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    117                                        1     Count coming in to IF
+    117             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      46         5        41    10.86%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb_uvm_top_sv_unit --
+
+  File ahb_transaction.sv
+----------------Focused Condition View-------------------
+Line       20 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       20 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       21 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       21 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       21 Item    3  (this.addr !== local_data__.addr)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                         Input Term   Covered  Reason for no coverage   Hint
+                        -----------  --------  -----------------------  --------------
+  (this.addr !== local_data__.addr)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                           Non-masking condition(s)      
+ ---------  ---------  --------------------                 -------------------------     
+  Row   1:    ***0***  (this.addr !== local_data__.addr)_0  -                             
+  Row   2:    ***0***  (this.addr !== local_data__.addr)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       21 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       22 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       22 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       22 Item    3  (this.write !== local_data__.write)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                           Input Term   Covered  Reason for no coverage   Hint
+                          -----------  --------  -----------------------  --------------
+  (this.write !== local_data__.write)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                             Non-masking condition(s)      
+ ---------  ---------  --------------------                   -------------------------     
+  Row   1:    ***0***  (this.write !== local_data__.write)_0  -                             
+  Row   2:    ***0***  (this.write !== local_data__.write)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       22 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    3  (this.wdata !== local_data__.wdata)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                           Input Term   Covered  Reason for no coverage   Hint
+                          -----------  --------  -----------------------  --------------
+  (this.wdata !== local_data__.wdata)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                             Non-masking condition(s)      
+ ---------  ---------  --------------------                   -------------------------     
+  Row   1:    ***0***  (this.wdata !== local_data__.wdata)_0  -                             
+  Row   2:    ***0***  (this.wdata !== local_data__.wdata)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       24 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       24 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       24 Item    3  (this.size !== local_data__.size)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                         Input Term   Covered  Reason for no coverage   Hint
+                        -----------  --------  -----------------------  --------------
+  (this.size !== local_data__.size)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                           Non-masking condition(s)      
+ ---------  ---------  --------------------                 -------------------------     
+  Row   1:    ***0***  (this.size !== local_data__.size)_0  -                             
+  Row   2:    ***0***  (this.size !== local_data__.size)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       24 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       25 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       25 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       25 Item    3  (this.rdata !== local_data__.rdata)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                           Input Term   Covered  Reason for no coverage   Hint
+                          -----------  --------  -----------------------  --------------
+  (this.rdata !== local_data__.rdata)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                             Non-masking condition(s)      
+ ---------  ---------  --------------------                   -------------------------     
+  Row   1:    ***0***  (this.rdata !== local_data__.rdata)_0  -                             
+  Row   2:    ***0***  (this.rdata !== local_data__.rdata)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       25 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       26 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       26 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       26 Item    3  (this.resp !== local_data__.resp)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                         Input Term   Covered  Reason for no coverage   Hint
+                        -----------  --------  -----------------------  --------------
+  (this.resp !== local_data__.resp)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                           Non-masking condition(s)      
+ ---------  ---------  --------------------                 -------------------------     
+  Row   1:    ***0***  (this.resp !== local_data__.resp)_0  -                             
+  Row   2:    ***0***  (this.resp !== local_data__.resp)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       26 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       27 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       27 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       27 Item    3  (this.wait_cycles !== local_data__.wait_cycles)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                       Input Term   Covered  Reason for no coverage   Hint
+                                      -----------  --------  -----------------------  --------------
+  (this.wait_cycles !== local_data__.wait_cycles)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                         Non-masking condition(s)      
+ ---------  ---------  --------------------                               -------------------------     
+  Row   1:    ***0***  (this.wait_cycles !== local_data__.wait_cycles)_0  -                             
+  Row   2:    ***0***  (this.wait_cycles !== local_data__.wait_cycles)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       27 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       28 Item    1  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       28 Item    2  (local_data__ == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (local_data__ == null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (local_data__ == null)_0  -                             
+  Row   2:    ***0***  (local_data__ == null)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       28 Item    3  (this.master_id !== local_data__.master_id)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                   Input Term   Covered  Reason for no coverage   Hint
+                                  -----------  --------  -----------------------  --------------
+  (this.master_id !== local_data__.master_id)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                     Non-masking condition(s)      
+ ---------  ---------  --------------------                           -------------------------     
+  Row   1:    ***0***  (this.master_id !== local_data__.master_id)_0  -                             
+  Row   2:    ***0***  (this.master_id !== local_data__.master_id)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       28 Item    4  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                                                                                                              Input Term   Covered  Reason for no coverage   Hint
+                                                                                                                             -----------  --------  -----------------------  --------------
+  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                                                                                                                                Non-masking condition(s)      
+ ---------  ---------  --------------------                                                                                                                      -------------------------     
+  Row   1:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_0  -                             
+  Row   2:    ***0***  (__m_uvm_status_container.comparer.result && (__m_uvm_status_container.comparer.show_max <= __m_uvm_status_container.comparer.result))_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       52 Item    1  (this.vif.hready !== 1'b1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       80 Item    1  (tr.rdata === expected)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+               Input Term   Covered  Reason for no coverage   Hint
+              -----------  --------  -----------------------  --------------
+  (tr.rdata === expected)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                 Non-masking condition(s)      
+ ---------  ---------  --------------------       -------------------------     
+  Row   1:    ***0***  (tr.rdata === expected)_0  -                             
+  Row   2:          1  (tr.rdata === expected)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       83 Item    1  ((tr.addr >= 268435456) && (tr.addr <= 268443647))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (tr.addr >= 268435456)         N  '_0' not hit             Hit '_0'
+  (tr.addr <= 268443647)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (tr.addr >= 268435456)_0  -                             
+  Row   2:          1  (tr.addr >= 268435456)_1  (tr.addr <= 268443647)        
+  Row   3:          1  (tr.addr <= 268443647)_0  (tr.addr >= 268435456)        
+  Row   4:          1  (tr.addr <= 268443647)_1  (tr.addr >= 268435456)        
+
+----------------Focused Condition View-------------------
+Line       85 Item    1  ((tr.addr >= 536870912) && (tr.addr <= 536871167))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (tr.addr >= 536870912)         N  '_0' not hit             Hit '_0'
+  (tr.addr <= 536871167)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (tr.addr >= 536870912)_0  -                             
+  Row   2:          1  (tr.addr >= 536870912)_1  (tr.addr <= 536871167)        
+  Row   3:          1  (tr.addr <= 536871167)_0  (tr.addr >= 536870912)        
+  Row   4:          1  (tr.addr <= 536871167)_1  (tr.addr >= 536870912)        
+
+----------------Focused Condition View-------------------
+Line       87 Item    1  ((tr.addr >= 805306368) && (tr.addr <= 805306623))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (tr.addr >= 805306368)         N  '_0' not hit             Hit '_0'
+  (tr.addr <= 805306623)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (tr.addr >= 805306368)_0  -                             
+  Row   2:          1  (tr.addr >= 805306368)_1  (tr.addr <= 805306623)        
+  Row   3:          1  (tr.addr <= 805306623)_0  (tr.addr >= 805306368)        
+  Row   4:          1  (tr.addr <= 805306623)_1  (tr.addr >= 805306368)        
+
+----------------Focused Condition View-------------------
+Line       89 Item    1  ((tr.addr >= 805306624) && (tr.addr <= 805306879))
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (tr.addr >= 805306624)         N  '_0' not hit             Hit '_0'
+  (tr.addr <= 805306879)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (tr.addr >= 805306624)_0  -                             
+  Row   2:          1  (tr.addr >= 805306624)_1  (tr.addr <= 805306879)        
+  Row   3:          1  (tr.addr <= 805306879)_0  (tr.addr >= 805306624)        
+  Row   4:          1  (tr.addr <= 805306879)_1  (tr.addr >= 805306624)        
+
+
+
+----------------Focused Condition View-------------------
+Line       11 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       11 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          8        na        na        na
+            Covergroup Bins         32        32         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_uvm_top_sv_unit/ahb_coverage/cg             100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_master                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin m0                                             16          1          -    Covered              
+        bin m1                                             12          1          -    Covered              
+    Coverpoint cp_slave                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin dmem                                           14          1          -    Covered              
+        bin mailbox                                         7          1          -    Covered              
+        bin uart                                            3          1          -    Covered              
+        bin gpio                                            2          1          -    Covered              
+        bin unmapped                                        2          1          -    Covered              
+    Coverpoint cp_write                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd                                             14          1          -    Covered              
+        bin wr                                             14          1          -    Covered              
+    Coverpoint cp_resp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                           26          1          -    Covered              
+        bin error                                           2          1          -    Covered              
+    Coverpoint cp_wait                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin multi_wait_unreachable                   0                     -    ZERO                 
+        bin no_wait                                        25          1          -    Covered              
+        bin one_wait                                        3          1          -    Covered              
+    Cross cross_master_slave                          100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,unmapped>                               1          1          -    Covered              
+            bin <m0,unmapped>                               1          1          -    Covered              
+            bin <m1,gpio>                                   1          1          -    Covered              
+            bin <m0,gpio>                                   1          1          -    Covered              
+            bin <m1,uart>                                   1          1          -    Covered              
+            bin <m0,uart>                                   2          1          -    Covered              
+            bin <m1,mailbox>                                5          1          -    Covered              
+            bin <m0,mailbox>                                2          1          -    Covered              
+            bin <m1,dmem>                                   4          1          -    Covered              
+            bin <m0,dmem>                                  10          1          -    Covered              
+    Cross cross_slave_resp                            100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <unmapped,error>                            2          1          -    Covered              
+            bin <gpio,okay>                                 2          1          -    Covered              
+            bin <mailbox,okay>                              7          1          -    Covered              
+            bin <uart,okay>                                 3          1          -    Covered              
+            bin <dmem,okay>                                14          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin unmapped_never_okay                  0                     -    ZERO                 
+            ignore_bin mapped_slaves_never_error            0                     -    ZERO                 
+    Cross cross_master_wait                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,one_wait>                               2          1          -    Covered              
+            bin <m0,one_wait>                               1          1          -    Covered              
+            bin <m1,no_wait>                               10          1          -    Covered              
+            bin <m0,no_wait>                               15          1          -    Covered              
+ Covergroup instance \/tb_uvm_top_sv_unit::ahb_coverage::cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_master                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin m0                                             16          1          -    Covered              
+        bin m1                                             12          1          -    Covered              
+    Coverpoint cp_slave                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin dmem                                           14          1          -    Covered              
+        bin mailbox                                         7          1          -    Covered              
+        bin uart                                            3          1          -    Covered              
+        bin gpio                                            2          1          -    Covered              
+        bin unmapped                                        2          1          -    Covered              
+    Coverpoint cp_write                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd                                             14          1          -    Covered              
+        bin wr                                             14          1          -    Covered              
+    Coverpoint cp_resp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                           26          1          -    Covered              
+        bin error                                           2          1          -    Covered              
+    Coverpoint cp_wait                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin multi_wait_unreachable                   0                     -    ZERO                 
+        bin no_wait                                        25          1          -    Covered              
+        bin one_wait                                        3          1          -    Covered              
+    Cross cross_master_slave                          100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,unmapped>                               1          1          -    Covered              
+            bin <m0,unmapped>                               1          1          -    Covered              
+            bin <m1,gpio>                                   1          1          -    Covered              
+            bin <m0,gpio>                                   1          1          -    Covered              
+            bin <m1,uart>                                   1          1          -    Covered              
+            bin <m0,uart>                                   2          1          -    Covered              
+            bin <m1,mailbox>                                5          1          -    Covered              
+            bin <m0,mailbox>                                2          1          -    Covered              
+            bin <m1,dmem>                                   4          1          -    Covered              
+            bin <m0,dmem>                                  10          1          -    Covered              
+    Cross cross_slave_resp                            100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <unmapped,error>                            2          1          -    Covered              
+            bin <gpio,okay>                                 2          1          -    Covered              
+            bin <mailbox,okay>                              7          1          -    Covered              
+            bin <uart,okay>                                 3          1          -    Covered              
+            bin <dmem,okay>                                14          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin unmapped_never_okay                  0                     -    ZERO                 
+            ignore_bin mapped_slaves_never_error            0                     -    ZERO                 
+    Cross cross_master_wait                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,one_wait>                               2          1          -    Covered              
+            bin <m0,one_wait>                               1          1          -    Covered              
+            bin <m1,no_wait>                               10          1          -    Covered              
+            bin <m0,no_wait>                               15          1          -    Covered              
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     12        11         1    91.66%
+
+================================Expression Details================================
+
+Expression Coverage for instance /tb_uvm_top_sv_unit --
+
+  File ahb_scoreboard.sv
+----------------Focused Expression View-----------------
+Line       35 Item    1  ((tr.addr >= 268435456) && (tr.addr <= 268443647))
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (tr.addr >= 268435456)         N  '_0' not hit             Hit '_0'
+  (tr.addr <= 268443647)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:    ***0***  (tr.addr >= 268435456)_0  -                             
+  Row   2:          1  (tr.addr >= 268435456)_1  (tr.addr <= 268443647)        
+  Row   3:          1  (tr.addr <= 268443647)_0  (tr.addr >= 268435456)        
+  Row   4:          1  (tr.addr <= 268443647)_1  (tr.addr >= 268435456)        
+
+----------------Focused Expression View-----------------
+Line       36 Item    1  ((tr.addr >= 536870912) && (tr.addr <= 536871167))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       37 Item    1  ((tr.addr >= 805306368) && (tr.addr <= 805306623))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       38 Item    1  ((tr.addr >= 805306624) && (tr.addr <= 805306879))
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       39 Item    1  (((is_dmem | is_mailbox) | is_uart) | is_gpio)
+Expression totals: 4 of 4 input terms covered = 100.00%
+
+
+
+
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     356       176       180    49.43%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_uvm_top_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ahb_transaction.sv
+    20              1                    ***0***     
+    20              2                    ***0***     
+    20              3                    ***0***     
+    20              4                    ***0***     
+    20              5                    ***0***     
+    20              6                         28     
+    20              7                    ***0***     
+    20              8                    ***0***     
+    20              9                    ***0***     
+    20             10                    ***0***     
+    21              1                    ***0***     
+    21              2                    ***0***     
+    21              3                    ***0***     
+    21              4                    ***0***     
+    21              5                    ***0***     
+    21              6                    ***0***     
+    21              7                    ***0***     
+    21              8                    ***0***     
+    21              9                    ***0***     
+    21             10                    ***0***     
+    21             11                    ***0***     
+    21             12                    ***0***     
+    21             13                    ***0***     
+    21             14                    ***0***     
+    21             15                    ***0***     
+    21             16                    ***0***     
+    22              1                    ***0***     
+    22              2                    ***0***     
+    22              3                    ***0***     
+    22              4                    ***0***     
+    22              5                    ***0***     
+    22              6                    ***0***     
+    22              7                    ***0***     
+    22              8                    ***0***     
+    22              9                    ***0***     
+    22             10                    ***0***     
+    22             11                    ***0***     
+    22             12                    ***0***     
+    22             13                    ***0***     
+    22             14                    ***0***     
+    22             15                    ***0***     
+    22             16                    ***0***     
+    23              1                    ***0***     
+    23              2                    ***0***     
+    23              3                    ***0***     
+    23              4                    ***0***     
+    23              5                    ***0***     
+    23              6                    ***0***     
+    23              7                    ***0***     
+    23              8                    ***0***     
+    23              9                    ***0***     
+    23             10                    ***0***     
+    23             11                    ***0***     
+    23             12                    ***0***     
+    23             13                    ***0***     
+    23             14                    ***0***     
+    23             15                    ***0***     
+    23             16                    ***0***     
+    24              1                    ***0***     
+    24              2                    ***0***     
+    24              3                    ***0***     
+    24              4                    ***0***     
+    24              5                    ***0***     
+    24              6                    ***0***     
+    24              7                    ***0***     
+    24              8                    ***0***     
+    24              9                    ***0***     
+    24             10                    ***0***     
+    24             11                    ***0***     
+    24             12                    ***0***     
+    24             13                    ***0***     
+    24             14                    ***0***     
+    24             15                    ***0***     
+    24             16                    ***0***     
+    25              1                    ***0***     
+    25              2                    ***0***     
+    25              3                    ***0***     
+    25              4                    ***0***     
+    25              5                    ***0***     
+    25              6                    ***0***     
+    25              7                    ***0***     
+    25              8                    ***0***     
+    25              9                    ***0***     
+    25             10                    ***0***     
+    25             11                    ***0***     
+    25             12                    ***0***     
+    25             13                    ***0***     
+    25             14                    ***0***     
+    25             15                    ***0***     
+    25             16                    ***0***     
+    26              1                    ***0***     
+    26              2                    ***0***     
+    26              3                    ***0***     
+    26              4                    ***0***     
+    26              5                    ***0***     
+    26              6                    ***0***     
+    26              7                    ***0***     
+    26              8                    ***0***     
+    26              9                    ***0***     
+    26             10                    ***0***     
+    26             11                    ***0***     
+    26             12                    ***0***     
+    26             13                    ***0***     
+    26             14                    ***0***     
+    26             15                    ***0***     
+    26             16                    ***0***     
+    27              1                    ***0***     
+    27              2                    ***0***     
+    27              3                    ***0***     
+    27              4                    ***0***     
+    27              5                    ***0***     
+    27              6                    ***0***     
+    27              7                    ***0***     
+    27              8                    ***0***     
+    27              9                    ***0***     
+    27             10                    ***0***     
+    27             11                    ***0***     
+    27             12                    ***0***     
+    27             13                    ***0***     
+    27             14                    ***0***     
+    27             15                    ***0***     
+    27             16                    ***0***     
+    28              1                    ***0***     
+    28              2                    ***0***     
+    28              3                    ***0***     
+    28              4                    ***0***     
+    28              5                    ***0***     
+    28              6                    ***0***     
+    28              7                    ***0***     
+    28              8                    ***0***     
+    28              9                    ***0***     
+    28             10                    ***0***     
+    28             11                    ***0***     
+    28             12                    ***0***     
+    28             13                    ***0***     
+    28             14                    ***0***     
+    28             15                    ***0***     
+    28             16                    ***0***     
+    32              1                         56     
+  File ahb_if.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                    ***0***     
+    16              1                          2     
+    20              1                          2     
+    22              1                    ***0***     
+    27              1                          2     
+    28              1                          2     
+    29              1                          2     
+    30              1                          2     
+    31              1                          2     
+    33              1                          2     
+    35              1                         30     
+    36              1                         28     
+    37              1                         28     
+    42              1                         28     
+    44              1                         28     
+    45              1                         28     
+    46              1                         28     
+    47              1                         28     
+    48              1                         28     
+    50              1                         28     
+    52              1                         31     
+    53              1                          3     
+    54              1                          3     
+    57              1                         28     
+    58              1                         28     
+    60              1                         28     
+  File ahb_sequencer.sv
+    10              1                    ***0***     
+    10              2                    ***0***     
+    10              3                    ***0***     
+    13              1                          2     
+  File ahb_monitor.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                    ***0***     
+    19              1                          2     
+    23              1                          2     
+    25              1                    ***0***     
+    28              1                    ***0***     
+    30              1                          2     
+    37              1                          2     
+    39              1                          2     
+    40              1                       8856     
+    43              1                         28     
+    44              1                         28     
+    45              1                         28     
+    46              1                         28     
+    47              1                         28     
+    48              1                         28     
+    49              1                         28     
+    50              1                         28     
+    51              1                         28     
+    52              1                         28     
+    53              1                         28     
+    55              1                          3     
+  File ahb_agent.sv
+    12              1                    ***0***     
+    12              2                    ***0***     
+    12              3                    ***0***     
+    14              1                          2     
+    21              1                          2     
+    25              1                          2     
+    27              1                          2     
+    30              1                          2     
+    31              1                          2     
+    36              1                          2     
+    38              1                          2     
+  File ahb_scoreboard.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                    ***0***     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    35              1                         28     
+    36              1                         28     
+    37              1                         28     
+    38              1                         28     
+    39              1                         28     
+    43              1                          2     
+    44              1                          2     
+    48              1                    ***0***     
+    49              1                    ***0***     
+    53              1                          2     
+    57              1                    ***0***     
+    58              1                    ***0***     
+    61              1                    ***0***     
+    65              1                          3     
+    66              1                          3     
+    69              1                          3     
+    73              1                         12     
+    74              1                         12     
+    75              1                         12     
+    79              1                         11     
+    81              1                         11     
+    82              1                         11     
+    86              1                    ***0***     
+    87              1                    ***0***     
+    95              1                          1     
+  File ahb_coverage.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                    ***0***     
+    71              1                          1     
+    72              1                          1     
+    73              1                          1     
+    77              1                         28     
+    78              1                         28     
+    79              1                         28     
+    80              1                         28     
+    81              1                         28     
+    84              1                         14     
+    86              1                          7     
+    88              1                          3     
+    90              1                          2     
+    92              1                          2     
+    95              1                         28     
+    99              1                          1     
+  File ahb_env.sv
+    12              1                    ***0***     
+    12              2                    ***0***     
+    12              3                    ***0***     
+    20              1                          1     
+    24              1                          1     
+    26              1                          1     
+    27              1                          1     
+    29              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    36              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+  File ahb_sequences.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                    ***0***     
+    11              4                    ***0***     
+    11              5                    ***0***     
+    11              6                         28     
+    11              7                    ***0***     
+    11              8                    ***0***     
+    11              9                    ***0***     
+    11             10                    ***0***     
+    22              1                         28     
+    23              1                         28     
+    28              1                         28     
+    30              1                         28     
+    31              1                         28     
+    32              1                         28     
+    33              1                         28     
+    34              1                         28     
+    35              1                         28     
+    36              1                         28     
+    38              1                         28     
+  File ahb_base_test.sv
+    13              1                    ***0***     
+    13              2                    ***0***     
+    13              3                          1     
+    19              1                          1     
+    23              1                          1     
+    24              1                          1     
+    26              1                    ***0***     
+    41              1                         28     
+    42              1                         28     
+    43              1                         28     
+    44              1                         28     
+    45              1                         28     
+    46              1                         28     
+    47              1                         28     
+    48              1                         28     
+    49              1                         28     
+    57              1                          1     
+    59              1                          1     
+    60              1                          1     
+    61              1                          2     
+    61              2                          2     
+    63              1                          1     
+    65              1                          1     
+    66              1                          1     
+    68              1                          1     
+    70              1                          1     
+    71              1                          1     
+    73              1                          1     
+    75              1                          1     
+    76              1                          1     
+    78              1                          1     
+    81              1                          1     
+    82              1                          1     
+    85              1                          1     
+    86              1                          1     
+    87              1                          1     
+    88              1                          1     
+    89              1                          1     
+    90              1                          1     
+    92              1                          1     
+    93              1                          1     
+    94              1                       4390     
+    94              2                       4390     
+    95              1                          1     
+    96              1                          1     
+    98              1                          1     
+    99              1                          1     
+    100             1                          1     
+    102             1                          1     
+    103             1                          1     
+    104             1                          1     
+    106             1                          1     
+    107             1                          1     
+    108             1                          1     
+    109             1                          1     
+    110             1                          1     
+    112             1                          1     
+    114             1                          1     
+    115             1                          1     
+    117             1                          1     
+    119             1                          1     
+    120             1                          1     
+    122             1                          1     
+    123             1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_uvm_top_sv_unit/ahb_coverage/cg             100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_master                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin m0                                             16          1          -    Covered              
+        bin m1                                             12          1          -    Covered              
+    Coverpoint cp_slave                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin dmem                                           14          1          -    Covered              
+        bin mailbox                                         7          1          -    Covered              
+        bin uart                                            3          1          -    Covered              
+        bin gpio                                            2          1          -    Covered              
+        bin unmapped                                        2          1          -    Covered              
+    Coverpoint cp_write                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd                                             14          1          -    Covered              
+        bin wr                                             14          1          -    Covered              
+    Coverpoint cp_resp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                           26          1          -    Covered              
+        bin error                                           2          1          -    Covered              
+    Coverpoint cp_wait                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin multi_wait_unreachable                   0                     -    ZERO                 
+        bin no_wait                                        25          1          -    Covered              
+        bin one_wait                                        3          1          -    Covered              
+    Cross cross_master_slave                          100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,unmapped>                               1          1          -    Covered              
+            bin <m0,unmapped>                               1          1          -    Covered              
+            bin <m1,gpio>                                   1          1          -    Covered              
+            bin <m0,gpio>                                   1          1          -    Covered              
+            bin <m1,uart>                                   1          1          -    Covered              
+            bin <m0,uart>                                   2          1          -    Covered              
+            bin <m1,mailbox>                                5          1          -    Covered              
+            bin <m0,mailbox>                                2          1          -    Covered              
+            bin <m1,dmem>                                   4          1          -    Covered              
+            bin <m0,dmem>                                  10          1          -    Covered              
+    Cross cross_slave_resp                            100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <unmapped,error>                            2          1          -    Covered              
+            bin <gpio,okay>                                 2          1          -    Covered              
+            bin <mailbox,okay>                              7          1          -    Covered              
+            bin <uart,okay>                                 3          1          -    Covered              
+            bin <dmem,okay>                                14          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin unmapped_never_okay                  0                     -    ZERO                 
+            ignore_bin mapped_slaves_never_error            0                     -    ZERO                 
+    Cross cross_master_wait                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,one_wait>                               2          1          -    Covered              
+            bin <m0,one_wait>                               1          1          -    Covered              
+            bin <m1,no_wait>                               10          1          -    Covered              
+            bin <m0,no_wait>                               15          1          -    Covered              
+ Covergroup instance \/tb_uvm_top_sv_unit::ahb_coverage::cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_master                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin m0                                             16          1          -    Covered              
+        bin m1                                             12          1          -    Covered              
+    Coverpoint cp_slave                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin dmem                                           14          1          -    Covered              
+        bin mailbox                                         7          1          -    Covered              
+        bin uart                                            3          1          -    Covered              
+        bin gpio                                            2          1          -    Covered              
+        bin unmapped                                        2          1          -    Covered              
+    Coverpoint cp_write                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd                                             14          1          -    Covered              
+        bin wr                                             14          1          -    Covered              
+    Coverpoint cp_resp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin okay                                           26          1          -    Covered              
+        bin error                                           2          1          -    Covered              
+    Coverpoint cp_wait                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin multi_wait_unreachable                   0                     -    ZERO                 
+        bin no_wait                                        25          1          -    Covered              
+        bin one_wait                                        3          1          -    Covered              
+    Cross cross_master_slave                          100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,unmapped>                               1          1          -    Covered              
+            bin <m0,unmapped>                               1          1          -    Covered              
+            bin <m1,gpio>                                   1          1          -    Covered              
+            bin <m0,gpio>                                   1          1          -    Covered              
+            bin <m1,uart>                                   1          1          -    Covered              
+            bin <m0,uart>                                   2          1          -    Covered              
+            bin <m1,mailbox>                                5          1          -    Covered              
+            bin <m0,mailbox>                                2          1          -    Covered              
+            bin <m1,dmem>                                   4          1          -    Covered              
+            bin <m0,dmem>                                  10          1          -    Covered              
+    Cross cross_slave_resp                            100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <unmapped,error>                            2          1          -    Covered              
+            bin <gpio,okay>                                 2          1          -    Covered              
+            bin <mailbox,okay>                              7          1          -    Covered              
+            bin <uart,okay>                                 3          1          -    Covered              
+            bin <dmem,okay>                                14          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin unmapped_never_okay                  0                     -    ZERO                 
+            ignore_bin mapped_slaves_never_error            0                     -    ZERO                 
+    Cross cross_master_wait                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <m1,one_wait>                               2          1          -    Covered              
+            bin <m0,one_wait>                               1          1          -    Covered              
+            bin <m1,no_wait>                               10          1          -    Covered              
+            bin <m0,no_wait>                               15          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/tb_uvm_top/ahb_if0/cover__0             ahb_if Verilog  SVA  ahb_if.sv(75)      1 Covered   
+/tb_uvm_top/ahb_if1/cover__0             ahb_if Verilog  SVA  ahb_if.sv(75)      2 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 2
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_uvm_top/ahb_if0/assert__p_no_indefinite_hang
+                     ahb_if.sv(69)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_stable_during_wait
+                     ahb_if.sv(62)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_no_unknown_addr
+                     ahb_if.sv(55)                      0          1
+/tb_uvm_top/ahb_if0/assert__p_reset_clears_valid
+                     ahb_if.sv(48)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_no_indefinite_hang
+                     ahb_if.sv(69)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_stable_during_wait
+                     ahb_if.sv(62)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_no_unknown_addr
+                     ahb_if.sv(55)                      0          1
+/tb_uvm_top/ahb_if1/assert__p_reset_clears_valid
+                     ahb_if.sv(48)                      0          1
+
+Total Coverage By Instance (filtered view): 67.05%
+

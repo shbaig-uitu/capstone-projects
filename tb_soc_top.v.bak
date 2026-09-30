@@ -1,0 +1,58 @@
+`timescale 1ns/1ps
+`include "rv32i_soc_defines.v"
+
+module tb_soc_top;
+
+    reg clk;
+    reg rst_n;
+
+    wire        uart_tx;
+    wire [7:0]  led;
+    wire        mbox_c0_to_c1_flag;
+    wire        mbox_c1_to_c0_flag;
+
+    soc_top #(
+        .CORE0_IMEM_FILE ("core0_prog.hex"),
+        .CORE1_IMEM_FILE ("core1_prog.hex")
+    ) u_dut (
+        .clk                (clk),
+        .rst_n              (rst_n),
+        .uart_tx            (uart_tx),
+        .led                (led),
+        .mbox_c0_to_c1_flag (mbox_c0_to_c1_flag),
+        .mbox_c1_to_c0_flag (mbox_c1_to_c0_flag)
+    );
+
+    always #10 clk = ~clk;
+
+    initial begin
+        clk   = 1'b0;
+        rst_n = 1'b0;
+        #45;
+        rst_n = 1'b1;
+    end
+
+    initial begin
+        $dumpfile("tb_soc_top.vcd");
+        $dumpvars(0, tb_soc_top);
+    end
+
+    initial begin
+        $display("TIME\tRST\tPC0\t\tPC1\t\tLED\t\tMBOX01\tMBOX10\tUART_TX");
+        $monitor("%0t\t%b\t%h\t%h\t%h\t%b\t%b\t%b",
+                  $time, rst_n,
+                  u_dut.u_core0.pc, u_dut.u_core1.pc,
+                  led, mbox_c0_to_c1_flag, mbox_c1_to_c0_flag, uart_tx);
+    end
+
+    initial begin
+        #10000;
+        $display("SIMULATION COMPLETE AT TIME %0t", $time);
+        $display("FINAL LED VALUE       = %h", led);
+        $display("FINAL SHARED_DMEM[0]  = %h", u_dut.u_shared_dmem.mem[0]);
+        $display("FINAL MBOX C0->C1 DATA = %h", u_dut.u_mailbox.c0_to_c1_data);
+        $display("FINAL MBOX C0->C1 FLAG = %b", u_dut.u_mailbox.c0_to_c1_flag_r);
+        $finish;
+    end
+
+endmodule

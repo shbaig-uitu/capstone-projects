@@ -1,0 +1,225 @@
+/home/cl4/Desktop/riscv_soc_project/tb_uvm_top.sv {2 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/tb_uvm_top.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/tb_uvm_top.sv(3): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: /home/cl4/Desktop/riscv_soc_project/tb_uvm_top.sv(2): (vlog-13233) Design unit "tb_uvm_top_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package tb_uvm_top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+-- Compiling module tb_uvm_top
+
+Top level modules:
+	tb_uvm_top
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/tb_noc_interconnect.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/tb_noc_interconnect.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module tb_noc_interconnect
+
+Top level modules:
+	tb_noc_interconnect
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/noc_interconnect.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/noc_interconnect.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module noc_interconnect
+
+Top level modules:
+	noc_interconnect
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_agent.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_agent.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_agent.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_agent_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/tb_soc_top.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/tb_soc_top.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module tb_soc_top
+
+Top level modules:
+	tb_soc_top
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_monitor.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_monitor.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_monitor.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_monitor_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_env.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_env.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_env.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_env_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/decoder.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/decoder.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/rv321i_core.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/rv321i_core.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module rv32i_core
+
+Top level modules:
+	rv32i_core
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_base_test.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_base_test.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_base_test.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_base_test_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/uart_peripheral.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/uart_peripheral.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module uart_peripheral
+
+Top level modules:
+	uart_peripheral
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/soc_top.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/soc_top.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module soc_top
+
+Top level modules:
+	soc_top
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_sequences.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_sequences.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_sequences.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_sequences_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_scoreboard.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_scoreboard.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_scoreboard.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_scoreboard_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/shared_dmem.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/shared_dmem.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module shared_dmem
+
+Top level modules:
+	shared_dmem
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/alu.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/alu.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/gpio_peripheral.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/gpio_peripheral.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module gpio_peripheral
+
+Top level modules:
+	gpio_peripheral
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_transaction.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_transaction.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_transaction.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_transaction_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_protocol_checker.sv {2 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_protocol_checker.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module ahb_protocol_checker
+-- Compiling package ahb_protocol_checker_sv_unit
+
+Top level modules:
+** Warning: (vlog-2650) 'bind' found in compilation unit scope. Please use -cuname to ensure that 'bind' gets elaborated.
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/regfile.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/regfile.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/rv32i_soc_defines.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/rv32i_soc_defines.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ic_mailbox.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/ic_mailbox.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module ic_mailbox
+
+Top level modules:
+	ic_mailbox
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_sequencer.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_sequencer.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_sequencer.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_sequencer_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/addr_decoder.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/addr_decoder.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module addr_decoder
+
+Top level modules:
+	addr_decoder
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/imem.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/imem.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module imem
+
+Top level modules:
+	imem
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/arbiter.v {1 {vlog -work work -vopt -stats=none /home/cl4/Desktop/riscv_soc_project/arbiter.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_driver.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_driver.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_driver.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_driver_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface ahb_if
+
+Top level modules:
+	--none--
+
+} {} {}} /home/cl4/Desktop/riscv_soc_project/ahb_coverage.sv {1 {vlog -work work -vopt -sv -stats=none /home/cl4/Desktop/riscv_soc_project/ahb_coverage.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+** Note: (vlog-2286) /home/cl4/Desktop/riscv_soc_project/ahb_coverage.sv(5): Using implicit +incdir+/home/cl4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ahb_coverage_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}}

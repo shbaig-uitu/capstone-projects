@@ -1,0 +1,33 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule WIDTHEXPAND -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/imem.v" -match "Operator ASSIGNW expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 30 bits.*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v" -match "Signal is not used: 'hresp'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v" -match "Signal is not used: 'txn_done'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v" -match "Signal is not used: 'issue_txn'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/imem.v" -match "Bits of signal are not used: 'addr'[1:0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/shared_dmem.v" -match "Signal is not used: 'rst_n'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/shared_dmem.v" -match "Bits of signal are not used: 'word_index'[31:11]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/ic_mailbox.v" -match "Signal is not used: 'hsize'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/uart_peripheral.v" -match "Signal is not used: 'hsize'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/uart_peripheral.v" -match "Bits of signal are not used: 'hwdata'[31:8]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/gpio_peripheral.v" -match "Signal is not used: 'hsize'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/cl4/Desktop/training/riscv_soc_pd_ready/src/decoder.v" -match "Bits of signal are not used: 'funct7'[6,4:0]*"
+

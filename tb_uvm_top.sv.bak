@@ -1,0 +1,193 @@
+`timescale 1ns/1ps
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+`include "ahb_if.sv"
+`include "ahb_protocol_checker.sv"
+`include "ahb_base_test.sv"
+`include "rv32i_soc_defines.v"
+
+module tb_uvm_top;
+
+    reg clk;
+    reg rst_n;
+
+    ahb_if ahb_if0 (.clk(clk), .rst_n(rst_n));
+    ahb_if ahb_if1 (.clk(clk), .rst_n(rst_n));
+
+    wire [31:0] s_dmem_haddr;
+    wire         s_dmem_hwrite;
+    wire [1:0]  s_dmem_hsize;
+    wire [31:0] s_dmem_hwdata;
+    wire         s_dmem_hvalid;
+    wire [31:0] s_dmem_hrdata;
+    wire         s_dmem_hready;
+    wire         s_dmem_hresp;
+
+    wire [31:0] s_mailbox_haddr;
+    wire         s_mailbox_hwrite;
+    wire [1:0]  s_mailbox_hsize;
+    wire [31:0] s_mailbox_hwdata;
+    wire         s_mailbox_hvalid;
+    wire [31:0] s_mailbox_hrdata;
+    wire         s_mailbox_hready;
+    wire         s_mailbox_hresp;
+    wire         mbox_c0_to_c1_flag;
+    wire         mbox_c1_to_c0_flag;
+
+    wire [31:0] s_uart_haddr;
+    wire         s_uart_hwrite;
+    wire [1:0]  s_uart_hsize;
+    wire [31:0] s_uart_hwdata;
+    wire         s_uart_hvalid;
+    wire [31:0] s_uart_hrdata;
+    wire         s_uart_hready;
+    wire         s_uart_hresp;
+    wire         uart_tx;
+
+    wire [31:0] s_gpio_haddr;
+    wire         s_gpio_hwrite;
+    wire [1:0]  s_gpio_hsize;
+    wire [31:0] s_gpio_hwdata;
+    wire         s_gpio_hvalid;
+    wire [31:0] s_gpio_hrdata;
+    wire         s_gpio_hready;
+    wire         s_gpio_hresp;
+    wire [7:0]  led;
+
+    noc_interconnect u_interconnect (
+        .clk               (clk),
+        .rst_n             (rst_n),
+
+        .m0_haddr          (ahb_if0.haddr),
+        .m0_hwrite         (ahb_if0.hwrite),
+        .m0_hsize          (ahb_if0.hsize),
+        .m0_hwdata         (ahb_if0.hwdata),
+        .m0_hvalid         (ahb_if0.hvalid),
+        .m0_hrdata         (ahb_if0.hrdata),
+        .m0_hready         (ahb_if0.hready),
+        .m0_hresp          (ahb_if0.hresp),
+
+        .m1_haddr          (ahb_if1.haddr),
+        .m1_hwrite         (ahb_if1.hwrite),
+        .m1_hsize          (ahb_if1.hsize),
+        .m1_hwdata         (ahb_if1.hwdata),
+        .m1_hvalid         (ahb_if1.hvalid),
+        .m1_hrdata         (ahb_if1.hrdata),
+        .m1_hready         (ahb_if1.hready),
+        .m1_hresp          (ahb_if1.hresp),
+
+        .s_dmem_haddr      (s_dmem_haddr),
+        .s_dmem_hwrite     (s_dmem_hwrite),
+        .s_dmem_hsize      (s_dmem_hsize),
+        .s_dmem_hwdata     (s_dmem_hwdata),
+        .s_dmem_hvalid     (s_dmem_hvalid),
+        .s_dmem_hrdata     (s_dmem_hrdata),
+        .s_dmem_hready     (s_dmem_hready),
+        .s_dmem_hresp      (s_dmem_hresp),
+
+        .s_mailbox_haddr   (s_mailbox_haddr),
+        .s_mailbox_hwrite  (s_mailbox_hwrite),
+        .s_mailbox_hsize   (s_mailbox_hsize),
+        .s_mailbox_hwdata  (s_mailbox_hwdata),
+        .s_mailbox_hvalid  (s_mailbox_hvalid),
+        .s_mailbox_hrdata  (s_mailbox_hrdata),
+        .s_mailbox_hready  (s_mailbox_hready),
+        .s_mailbox_hresp   (s_mailbox_hresp),
+
+        .s_uart_haddr      (s_uart_haddr),
+        .s_uart_hwrite     (s_uart_hwrite),
+        .s_uart_hsize      (s_uart_hsize),
+        .s_uart_hwdata     (s_uart_hwdata),
+        .s_uart_hvalid     (s_uart_hvalid),
+        .s_uart_hrdata     (s_uart_hrdata),
+        .s_uart_hready     (s_uart_hready),
+        .s_uart_hresp      (s_uart_hresp),
+
+        .s_gpio_haddr      (s_gpio_haddr),
+        .s_gpio_hwrite     (s_gpio_hwrite),
+        .s_gpio_hsize      (s_gpio_hsize),
+        .s_gpio_hwdata     (s_gpio_hwdata),
+        .s_gpio_hvalid     (s_gpio_hvalid),
+        .s_gpio_hrdata     (s_gpio_hrdata),
+        .s_gpio_hready     (s_gpio_hready),
+        .s_gpio_hresp      (s_gpio_hresp)
+    );
+
+    shared_dmem #(
+        .DEPTH (2048)
+    ) u_shared_dmem (
+        .clk    (clk),
+        .rst_n  (rst_n),
+        .haddr  (s_dmem_haddr),
+        .hwrite (s_dmem_hwrite),
+        .hsize  (s_dmem_hsize),
+        .hwdata (s_dmem_hwdata),
+        .hvalid (s_dmem_hvalid),
+        .hrdata (s_dmem_hrdata),
+        .hready (s_dmem_hready),
+        .hresp  (s_dmem_hresp)
+    );
+
+    ic_mailbox u_mailbox (
+        .clk           (clk),
+        .rst_n         (rst_n),
+        .haddr         (s_mailbox_haddr),
+        .hwrite        (s_mailbox_hwrite),
+        .hsize         (s_mailbox_hsize),
+        .hwdata        (s_mailbox_hwdata),
+        .hvalid        (s_mailbox_hvalid),
+        .hrdata        (s_mailbox_hrdata),
+        .hready        (s_mailbox_hready),
+        .hresp         (s_mailbox_hresp),
+        .c0_to_c1_flag (mbox_c0_to_c1_flag),
+        .c1_to_c0_flag (mbox_c1_to_c0_flag)
+    );
+
+    uart_peripheral #(
+        .CLKS_PER_BIT (434)
+    ) u_uart (
+        .clk     (clk),
+        .rst_n   (rst_n),
+        .haddr   (s_uart_haddr),
+        .hwrite  (s_uart_hwrite),
+        .hsize   (s_uart_hsize),
+        .hwdata  (s_uart_hwdata),
+        .hvalid  (s_uart_hvalid),
+        .hrdata  (s_uart_hrdata),
+        .hready  (s_uart_hready),
+        .hresp   (s_uart_hresp),
+        .uart_tx (uart_tx)
+    );
+
+    gpio_peripheral u_gpio (
+        .clk    (clk),
+        .rst_n  (rst_n),
+        .haddr  (s_gpio_haddr),
+        .hwrite (s_gpio_hwrite),
+        .hsize  (s_gpio_hsize),
+        .hwdata (s_gpio_hwdata),
+        .hvalid (s_gpio_hvalid),
+        .hrdata (s_gpio_hrdata),
+        .hready (s_gpio_hready),
+        .hresp  (s_gpio_hresp),
+        .led    (led)
+    );
+
+    always #10 clk = ~clk;
+
+    initial begin
+        clk   = 1'b0;
+        rst_n = 1'b0;
+        repeat (3) @(posedge clk);
+        rst_n = 1'b1;
+    end
+
+    initial begin
+        uvm_config_db#(virtual ahb_if)::set(null, "*.agent0.*", "vif", ahb_if0);
+        uvm_config_db#(virtual ahb_if)::set(null, "*.agent1.*", "vif", ahb_if1);
+        uvm_config_db#(virtual ahb_if)::set(null, "*", "vif0", ahb_if0);
+
+        run_test("ahb_base_test");
+    end
+
+endmodule

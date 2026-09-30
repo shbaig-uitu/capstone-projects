@@ -1,0 +1,79 @@
+`ifndef AHB_IF_SV
+`define AHB_IF_SV
+
+interface ahb_if (
+    input logic clk,
+    input logic rst_n
+);
+
+    logic [31:0] haddr;
+    logic         hwrite;
+    logic [1:0]  hsize;
+    logic [31:0] hwdata;
+    logic         hvalid;
+    logic [31:0] hrdata;
+    logic         hready;
+    logic         hresp;
+
+    modport MASTER (
+        input  clk,
+        input  rst_n,
+        output haddr,
+        output hwrite,
+        output hsize,
+        output hwdata,
+        output hvalid,
+        input  hrdata,
+        input  hready,
+        input  hresp
+    );
+
+    modport MONITOR (
+        input clk,
+        input rst_n,
+        input haddr,
+        input hwrite,
+        input hsize,
+        input hwdata,
+        input hvalid,
+        input hrdata,
+        input hready,
+        input hresp
+    );
+
+    property p_reset_clears_valid;
+        @(posedge clk)
+        (!rst_n) |-> (!hvalid);
+    endproperty
+    assert property (p_reset_clears_valid)
+        else $error("PROTOCOL VIOLATION: hvalid asserted while rst_n is low");
+
+    property p_no_unknown_addr;
+        @(posedge clk) disable iff (!rst_n)
+        (hvalid) |-> (!$isunknown(haddr));
+    endproperty
+    assert property (p_no_unknown_addr)
+        else $error("PROTOCOL VIOLATION: haddr contains unknown bits while hvalid is asserted");
+
+    property p_stable_during_wait;
+        @(posedge clk) disable iff (!rst_n)
+        (hvalid && !hready) |=> ($stable(haddr) && $stable(hwrite) && $stable(hwdata) && $stable(hsize) && hvalid);
+    endproperty
+    assert property (p_stable_during_wait)
+        else $error("PROTOCOL VIOLATION: address/data changed or hvalid dropped while a transfer was still waiting on hready");
+
+    property p_no_indefinite_hang;
+        @(posedge clk) disable iff (!rst_n)
+        (hvalid) |-> ##[0:5] (hready);
+    endproperty
+    assert property (p_no_indefinite_hang)
+        else $error("PROTOCOL VIOLATION: hready did not arrive within 5 cycles of hvalid being asserted");
+
+    cover property (
+        @(posedge clk) disable iff (!rst_n)
+        (hvalid && !hready)
+    );
+
+endinterface
+
+`endif

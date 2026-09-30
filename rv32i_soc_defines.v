@@ -1,0 +1,60 @@
+`ifndef RV32I_SOC_DEFINES_VH
+`define RV32I_SOC_DEFINES_VH
+
+`define XLEN 32
+
+`define IMEM0_BASE   32'h0000_0000
+`define IMEM0_SIZE   32'h0000_1000
+`define IMEM1_BASE   32'h0000_0000
+`define IMEM1_SIZE   32'h0000_1000
+
+`define DMEM_BASE    32'h1000_0000
+`define DMEM_SIZE    32'h0000_2000
+`define DMEM_END     32'h1000_1FFF
+
+`define MAILBOX_BASE 32'h2000_0000
+`define MAILBOX_SIZE 32'h0000_0100
+`define MAILBOX_END  32'h2000_00FF
+
+`define UART_BASE    32'h3000_0000
+`define UART_SIZE    32'h0000_0100
+`define UART_END     32'h3000_00FF
+
+`define GPIO_BASE    32'h3000_0100
+`define GPIO_SIZE    32'h0000_0100
+`define GPIO_END     32'h3000_01FF
+
+`define MBOX_C0_TO_C1_DATA 32'h2000_0000
+`define MBOX_C0_TO_C1_FLAG 32'h2000_0004
+`define MBOX_C1_TO_C0_DATA 32'h2000_0008
+`define MBOX_C1_TO_C0_FLAG 32'h2000_000C
+
+`define UART_TXDATA  32'h3000_0000
+`define UART_STATUS  32'h3000_0004
+
+`define GPIO_LED     32'h3000_0100
+
+`define SLAVE_DMEM    3'd0
+`define SLAVE_MAILBOX 3'd1
+`define SLAVE_UART    3'd2
+`define SLAVE_GPIO    3'd3
+`define SLAVE_NONE    3'd7
+
+`define HRESP_OKAY  1'b0
+`define HRESP_ERROR 1'b1
+
+`define HSIZE_BYTE 2'b00
+`define HSIZE_HALF 2'b01
+`define HSIZE_WORD 2'b10
+
+`define OPCODE_RTYPE  7'b0110011
+`define OPCODE_ITYPE  7'b0010011
+`define OPCODE_LOAD   7'b0000011
+`define OPCODE_STORE  7'b0100011
+`define OPCODE_BRANCH 7'b1100011
+`define OPCODE_JAL    7'b1101111
+`define OPCODE_JALR   7'b1100111
+`define OPCODE_LUI    7'b0110111
+`define OPCODE_AUIPC  7'b0010111
+
+`endif

@@ -1,0 +1,55 @@
+%Warning-WIDTHEXPAND: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/imem.v:13:28: Operator ASSIGNW expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 30 bits.
+                                                                                    : ... note: In instance 'soc_top.u_imem1'
+   13 |     wire [31:0] word_index = addr[31:2];
+      |                            ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.044
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v:17:25: Signal is not used: 'hresp'
+                                                                                            : ... note: In instance 'soc_top.u_core1'
+   17 |     input  wire         hresp
+      |                         ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v:96:10: Signal is not used: 'txn_done'
+                                                                                            : ... note: In instance 'soc_top.u_core1'
+   96 |     wire txn_done    = hready;
+      |          ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/rv321i_core.v:97:10: Signal is not used: 'issue_txn'
+                                                                                            : ... note: In instance 'soc_top.u_core1'
+   97 |     wire issue_txn   = is_mem_op & (state == S_IDLE);
+      |          ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/imem.v:7:24: Bits of signal are not used: 'addr'[1:0]
+                                                                                    : ... note: In instance 'soc_top.u_imem1'
+    7 |     input  wire [31:0] addr,
+      |                        ^~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/shared_dmem.v:7:24: Signal is not used: 'rst_n'
+                                                                                           : ... note: In instance 'soc_top.u_shared_dmem'
+    7 |     input  wire        rst_n,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/shared_dmem.v:23:17: Bits of signal are not used: 'word_index'[31:11]
+                                                                                            : ... note: In instance 'soc_top.u_shared_dmem'
+   23 |     wire [31:0] word_index = (haddr - 32'h1000_0000) >> 2;
+      |                 ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/ic_mailbox.v:9:24: Signal is not used: 'hsize'
+                                                                                          : ... note: In instance 'soc_top.u_mailbox'
+    9 |     input  wire [1:0]  hsize,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/uart_peripheral.v:11:24: Signal is not used: 'hsize'
+                                                                                                : ... note: In instance 'soc_top.u_uart'
+   11 |     input  wire [1:0]  hsize,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/uart_peripheral.v:12:24: Bits of signal are not used: 'hwdata'[31:8]
+                                                                                                : ... note: In instance 'soc_top.u_uart'
+   12 |     input  wire [31:0] hwdata,
+      |                        ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/gpio_peripheral.v:9:24: Signal is not used: 'hsize'
+                                                                                               : ... note: In instance 'soc_top.u_gpio'
+    9 |     input  wire [1:0]  hsize,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/cl4/Desktop/training/riscv_soc_pd_ready/src/decoder.v:35:16: Bits of signal are not used: 'funct7'[6,4:0]
+                                                                                        : ... note: In instance 'soc_top.u_core1.u_decoder'
+   35 |     wire [6:0] funct7 = instr[31:25];
+      |                ^~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 3.381 MB sources in 460 modules, into 0.262 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.101 s (elab=0.014, cvt=0.047, bld=0.000); cpu 0.101 s on 1 threads; alloced 29.859 MB
